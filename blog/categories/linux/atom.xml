@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-01-08T17:12:52+07:00</updated>
+  <id>http://nurulhuda.github.com/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu tanpa unity]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/08/ubuntu-tanpa-unity/"/>
+    <updated>2013-01-08T14:42:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/08/ubuntu-tanpa-unity</id>
+    <content type="html"><![CDATA[<p>Tampaknya <em>desktop environment</em> keluaran baru semuanya
+lebih mengedepankan sisi penampilan (appearance).
+Tampilannya sih memang canggih tapi beratnya itu loh.
+Buat yang komputernya canggih barangkali tidak begitu
+merasakannya. Tapi buat aku dengan komputer jadul weeek....</p>
+]]></content>
+  </entry>
+  
+</feed>
