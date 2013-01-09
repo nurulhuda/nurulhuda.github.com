@@ -1,6 +1,33 @@
-Static Web Pages
-================
+## Static Web Pages
 
-Er adiamet eum erci tat. Ostrud dolor sit la consenit velent lor sum quipit lutating euis dolorem nullupt atumsan exer secte magnisim num dit ipsustrud te magna feugiam consecte molore el euguer sendip esed tat eui blam nostrud do ero el essequatem auguerilit praesenibh endrer iusto eu facilit la faccum volore vullut lor am amet er autat accumsan ut nim vero dolor ip ero od deliqui smodio esto commy nim dolestrud ea alit nos et prat verostie er iureet, sum dolesting et lore dolor illam nonsent dui tin henim zzriureros dolore ea ad tionsequi tisisi.
+Ini merupakan proyek blog pribadi yang dibuat dengan [Octopress](http://octopress.org/), 
+yang merupakan pengembangan dari [Jekyll](https://github.com/mojombo/jekyll).
 
-To consenibh et iliquipit lumsan henit euis ad eraesequi ea consequi tet volor acilluptat iure dit laor atum iureet, quat luptatumsan ulla feum estie do odo dunt incipisit ullut iriusci liquat.
+Berbeda dengan CMS pada umumnya, Octopress menghasilkan kode HTML yang statis.
+Tidak perlu PHP dan MYSQL. Semua kode ditulis di komputer lokal. Setelah melalui
+proses kompilasi, kode sumber yg sudah jadi bisa diunggah ke server web.
+
+
+## Documentasi
+
+Petunjuk penggunaan dan dokumentasi bisa anda temukan di 
+[Octopress.org](http://octopress.org/docs).
+
+
+## Kontribusi
+
+Anda bisa berkontribusi terhadap pengembangan Octopress, misalnya dengan melaporkan
+adanya *bug* atau memberikan saran dan masukan kepada pengembang.
+Saat ini, untuk menjaga agar kode sumber tidak terlalu gemuk, pengembang hanya 
+fokus pada kebutuhan dasar pembuatan blog, jadi masukan dari anda kemungkinan
+tidak akan diaplikasikan. Anda dapat menggunakan [plug-ins](https://github.com/imathis/octopress/wiki/3rd-party-plugins)
+dari pihak ketiga dimana anda juga dapat mendaftarkan plug-in buatan anda.
+Ke depan, pengembang akan mencari cara agar plug-in tsb bisa disertakan dalam
+*release* berikutnya.
+
+
+#### Anda bisa membantu pengembang dg cara:
+- Tampilkan kredit 'Powered by Octopress' pada *footer*.
+- Tambahkan situs anda ke Wiki sehingga pengembang bisa mengetahui pertumbuhan
+  komunitas ini.
+

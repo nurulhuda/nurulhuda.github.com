@@ -4,7 +4,7 @@
   <title><![CDATA[Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-01-09T08:42:58+07:00</updated>
+  <updated>2013-01-09T12:52:21+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[bookmark]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/09/bookmark/"/>
+    <updated>2013-01-09T12:18:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/09/bookmark</id>
+    <content type="html"><![CDATA[<p><em>Bookmark</em> (ind. tanda buku kali ya) adalah sebuah penanda pada buku. Bookmark
+biasanya berupa pita kecil berwarna merah. Ada juga yang berupa karton kecil segi
+empat seperti sebuah penggaris. Kadang kita malah mem-<em>bookmark</em> buku kita dengan
+cara melipat sudut halaman buku.</p>
+
+<p>Dengan bookmark kita bisa lebih cepat menemukan sampai dimana terakhir kali kita
+membaca buku. Sehingga kita bisa langung melanjutkan membaca buku tanpa perlu
+mengingat-ingat &#8220;sampai di mana ya?&#8221;. Bookmark juga bisa digunakan untuk menandai
+bagian-bagian buku yang penting.</p>
+
+<p>Seiring perkembangan zaman, bookmark tidak hanya digunakan pada buku yang terbuat
+dari lembaran-lembaran kertas. Saat ini istilah bookmark digunakan pada semua jenis
+dokumen elektronik <em>(ebook)</em>. Fungsi bookmark pada ebook bahkan lebih luwes. Karena
+bookmark bisa digunakan untuk menandai setiap bab dan subbab. Sehingga bookmark
+bisa menggantikan fungsi daftar isi.</p>
+
+<p>Selain pada ebook, bookmark juga digunakan pada <em>web browser</em>. Situs-situs web
+favorit bisa disimpan dalam bookmark. Jadi, sewaktu-waktu kita ingin mengunjungi
+web favorit, tinggal klik pada bookmark. Beres deh. [=]</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu tanpa unity]]></title>
