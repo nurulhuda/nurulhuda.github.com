@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pandu van Java]]></title>
-  <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Motivasi | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/motivasi/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
   <updated>2013-01-15T14:39:21+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
@@ -34,54 +34,6 @@
   <li>Bagian yang paling penting dari sebuah pensil adalah arang yang ada di dalamnya, bukan warnanya atau kayu pembungkusnya. Demikian pula dengan manusia. Kualitas manusia tidak dinilai dari pangkat, jabatan, dan kekayaannya. Melainkan amal perbuatan dan budi pekertinya. Oleh karena itu, kita perlu terus memupuk kekayaan hati dan mental dalam setiap tindakan kita.</li>
   <li>Pensil selalu meninggalkan goresan. Seperti juga manusia, kita harus sadar bahwa setiap perbuatan kita akan meninggalkan kesan dan goresan. Perbuatan yang baik akan meninggalkan kesan yang baik pula. Demikian pula sebaliknya, perbuatan yang buruk akan meninggalkan kesan yang buruk. Oleh karena itu kita harus berhati-hati dalam bertindak. Jangan sampai kita meninggalkan jejak yang buruk yang akan menjadi beban bagi anak cucu kita kelak.</li>
 </ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Bookmark]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/01/bookmark/"/>
-    <updated>2013-01-09T12:18:00+07:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/01/bookmark</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.com/images/Book-Bookmark-gonereading.com.jpg" width="170" height="113" alt="" /><em>Bookmark</em> (ind. tanda buku kali ya) adalah sebuah penanda pada buku. Bookmark
-biasanya berupa pita kecil berwarna merah. Ada juga yang berupa karton kecil segi 
-empat seperti sebuah penggaris. Kadang kita malah mem-<em>bookmark</em> buku kita dengan 
-cara melipat sudut halaman buku.</p>
-
-<p>Dengan bookmark kita bisa lebih cepat menemukan sampai dimana terakhir kali kita
-membaca buku. Sehingga kita bisa langung melanjutkan membaca buku tanpa perlu
-mengingat-ingat “sampai di mana ya?”. Bookmark juga bisa digunakan untuk menandai
-bagian-bagian buku yang penting.
-<!-- more --></p>
-
-<p>Seiring perkembangan zaman, bookmark tidak hanya digunakan pada buku yang terbuat
-dari lembaran-lembaran kertas. Saat ini istilah bookmark digunakan pada semua jenis
-dokumen elektronik <em>(ebook)</em>. Fungsi bookmark pada ebook bahkan lebih luwes. Karena
-bookmark bisa digunakan untuk menandai setiap bab dan subbab. Sehingga bookmark
-bisa menggantikan fungsi daftar isi.</p>
-
-<p>Selain pada ebook, bookmark juga digunakan pada <em>web browser</em>. Situs-situs web 
-favorit bisa disimpan dalam bookmark. Jadi, sewaktu-waktu kita ingin mengunjungi
-web favorit, tinggal klik pada bookmark. Beres deh. [=]</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu tanpa unity]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/01/ubuntu-tanpa-unity/"/>
-    <updated>2013-01-08T14:42:00+07:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/01/ubuntu-tanpa-unity</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/ubuntu-logo-large.png" class="left" width="170" height="170" alt="Logo Ubuntu" />Tampaknya <em>desktop environment</em> keluaran baru semuanya 
-lebih mengedepankan sisi penampilan <em>(appearance)</em>. 
-Sebut saja KDE 4, Gnome 3, Unity, Cinamon, dll.
-Tampilannya boleh jadi memang canggih tapi beratnya itu loh.
-Buat yang komputernya canggih barangkali tidak begitu 
-merasakannya. Tapi buat komputerku yg jadul, duhh…. nggak deh.</p>
-
-<p>Aku lebih suka dengan <em>desktop environment</em> yang ringan2 saja seperti Xfce.
-So, tanpa ragu2 langsung saja aku <code>apt-get install xubuntu-desktop</code> di Ubuntu.
-Dengan Xfce, Ubuntu di komputerku terasa jauh lebih ringan… tuing.. 
-tuing.. tuing….</p>
 
 ]]></content>
   </entry>

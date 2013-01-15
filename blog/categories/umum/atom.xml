@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pandu van Java]]></title>
-  <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Umum | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/umum/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
   <updated>2013-01-15T14:39:21+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
@@ -63,26 +63,6 @@ bisa menggantikan fungsi daftar isi.</p>
 <p>Selain pada ebook, bookmark juga digunakan pada <em>web browser</em>. Situs-situs web 
 favorit bisa disimpan dalam bookmark. Jadi, sewaktu-waktu kita ingin mengunjungi
 web favorit, tinggal klik pada bookmark. Beres deh. [=]</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu tanpa unity]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/01/ubuntu-tanpa-unity/"/>
-    <updated>2013-01-08T14:42:00+07:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/01/ubuntu-tanpa-unity</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/ubuntu-logo-large.png" class="left" width="170" height="170" alt="Logo Ubuntu" />Tampaknya <em>desktop environment</em> keluaran baru semuanya 
-lebih mengedepankan sisi penampilan <em>(appearance)</em>. 
-Sebut saja KDE 4, Gnome 3, Unity, Cinamon, dll.
-Tampilannya boleh jadi memang canggih tapi beratnya itu loh.
-Buat yang komputernya canggih barangkali tidak begitu 
-merasakannya. Tapi buat komputerku yg jadul, duhh…. nggak deh.</p>
-
-<p>Aku lebih suka dengan <em>desktop environment</em> yang ringan2 saja seperti Xfce.
-So, tanpa ragu2 langsung saja aku <code>apt-get install xubuntu-desktop</code> di Ubuntu.
-Dengan Xfce, Ubuntu di komputerku terasa jauh lebih ringan… tuing.. 
-tuing.. tuing….</p>
-
 ]]></content>
   </entry>
   
