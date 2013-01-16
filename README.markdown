@@ -1,4 +1,4 @@
-## Static Web Pages
+## My Personal Blog
 
 Ini merupakan proyek blog pribadi yang dibuat dengan [Octopress](http://octopress.org/), 
 yang merupakan pengembangan dari [Jekyll](https://github.com/mojombo/jekyll).
