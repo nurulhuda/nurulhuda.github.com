@@ -8,10 +8,10 @@ Tidak perlu PHP dan MYSQL. Semua kode ditulis di komputer lokal. Setelah melalui
 proses kompilasi, kode sumber yg sudah jadi bisa diunggah ke server web.
 
 
-## Documentasi
+## Dokumentasi
 
-Petunjuk penggunaan dan dokumentasi bisa anda temukan di 
-[Octopress.org](http://octopress.org/docs).
+Petunjuk penggunaan dan dokumentasi Octopress bisa anda temukan 
+[di sini](http://octopress.org/docs).
 
 
 ## Kontribusi
