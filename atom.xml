@@ -4,7 +4,7 @@
   <title><![CDATA[Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-01-31T10:54:10+07:00</updated>
+  <updated>2013-01-31T10:59:00+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -18,7 +18,7 @@
     <link href="http://nurulhuda.github.com/blog/2013/01/es-lolipop/"/>
     <updated>2013-01-31T10:42:00+07:00</updated>
     <id>http://nurulhuda.github.com/blog/2013/01/es-lolipop</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/es-buah.JPG" class="left" /></p>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/es-buah.JPG" alt="Es Lolipop" /></p>
 
 <!-- more -->
 <p>Bahan:</p>
