@@ -296,6 +296,12 @@ article > footer p.meta { margin-bottom: .8em; font-size: .85em; clear: both; ov
 #content div.pagination a:hover { color: #ff6e11; }
 #content div.pagination a[href*=archive]:before, #content div.pagination a[href*=archive]:after { content: '\2014'; padding: 0 .3em; }
 
+#content div.page-content article { font-size: 0.85em; }
+#content div.page-content article h2 { font-size: 1.1em; }
+#content div.page-content article h3 { font-size: 1em; }
+#content div.page-content article ul, #content div.page-content article ol { margin-left: 1.3em; }
+#content div.page-content article ul li, #content div.page-content article ol li { margin-bottom: 0.65em; }
+
 p.meta + .sharing { padding-top: 1em; padding-left: 0; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') top left repeat-x; }
 
 #fb-root { display: none; }

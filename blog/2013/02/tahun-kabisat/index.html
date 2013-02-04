@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ciptakan Jalanmu - Pandu van Java</title>
+  <title>Tahun Kabisat - Pandu van Java</title>
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Ada orang yang berkata kepada saya, “Pak, saya sudah rutin sedekah, kok rezeki tak juga datang?” Yang lain merajuk, “Kakek, saya sudah minta ridho &hellip;">
+  <meta name="description" content="Tahun kabisat adalah sebuah tahun syamsiah dimana pada tahun tersebut jumlah harinya adalah 366 hari, bukan 365. Satu tahun syamsiah tidak secara &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/01/ciptakan-jalanmu/">
+  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/02/tahun-kabisat/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -75,7 +75,7 @@
   
   <header>
     
-      <h1 class="entry-title">Ciptakan Jalanmu</h1>
+      <h1 class="entry-title">Tahun Kabisat</h1>
     
     
       <p class="meta">
@@ -91,7 +91,7 @@
   
 
 
-<time datetime="2013-01-31T08:49:00+07:00" pubdate data-updated="true">31 Januari 2013</time>
+<time datetime="2013-02-04T10:51:00+07:00" pubdate data-updated="true">04 Februari 2013</time>
         
          | <a href="#disqus_thread">Komentar</a>
         
@@ -100,22 +100,87 @@
   </header>
 
 
-<div class="entry-content"><p>Ada orang yang berkata kepada saya, “Pak, saya sudah rutin sedekah, kok rezeki tak juga datang?” Yang lain merajuk, “Kakek, saya sudah minta ridho orang tua, tapi kok bisnisnya hasilnya masih pas-pasan melulu?”  Nah, ada yang lebih seru lagi, dia protes “Om, saya dhuha gak pernah telat tapi rezeki kok masih seret?”</p>
+<div class="entry-content"><p>Tahun kabisat adalah sebuah tahun syamsiah dimana pada tahun tersebut jumlah harinya adalah 366 hari, bukan 365.</p>
 
-<p>Perlu dipahami bahwa sedekah, ridho orang tua, dhuha dan lain-lain itu hanyalah pelicin datangnya rezeki. Anda harus terlebih dahulu menciptakan jalan untuk lewatnya rezeki. Selalu tanyakan pada diri Anda, “Melalui jalur apa kira-kira Sang Maha Pemberi Rezeki menggelontorkan rezekinya kepada saya?”</p>
+<p>Satu tahun syamsiah tidak secara persis terdiri dari 365 hari, tetapi 365 hari 5 jam 48 menit 45,1814 detik. Jika hal ini tidak dihiraukan, maka setiap 4 tahun akan kekurangan hampir 1 hari (tepatnya 23 jam 15 menit 0,7256 detik).</p>
 
-<p>Tanyakan juga pada diri Anda, “Bila melalui pekerjaan saat ini, pantaskah saya meminta rezeki dalam bentuk uang senilai satu milyar padahal saya bergaji di bawah 10 juta setiap bulan?” Kalau jawabnya “tidak pantas”, lanjutkan pertanyaannya, “Kira-kira jalan apa yang perlu saya ciptakan agar pantas dan cukup menampung uang sebanyak itu?”</p>
+<p>Maka untuk mengkompensasi hal ini, setiap 4 tahun sekali (tahun yang bisa dibagi 4), diberi 1 hari ekstra: 29 Februari. Tetapi karena 5 jam 48 menit 45,1814 detik kurang dari 6 jam, maka tahun-tahun yang bisa dibagi 100 (seperti tahun 1900), bukan tahun kabisat, kecuali bisa dibagi dengan 400 (seperti tahun 2000).
+<!-- more --></p>
 
-<!-- more -->
-<p>Bagi Anda yang berbisnis, ajukanlah pertanyaan, “Apakah bisnis saya sudah siap mengelola dana yang berlimpah? Wadah apa yang perlu saya siapkan bila Allah menggelontokan dana yang berlimpah? Apakah saya sudah menyiapkan jejaring dan juga SDM yang siap mengelola dana besar?”</p>
+<h3 id="algoritma">Algoritma</h3>
 
-<p>Ayo ciptakan banyak jalan agar rezeki yang datang bisa memilih lewat jalan mana rezeki bisa datang kepada Anda. Jangan berharap rezeki besar bila jalan yang Anda siapkan adalah “jalan setapak”. Kecuali, bila Anda memang sadar memilih jalan setapak tetapi jumlahnya sangat banyak dan ada dimana-mana.</p>
+<p>Terdapat algoritma mudah untuk menentukan apakah suatu tahun termasuk tahun kabisat atau bukan, yaitu sebagai berikut:</p>
 
-<p>Ayo merenung sejenak, “Kira-kira jalan utama mana yang bisa saya andalkan untuk datangnya rezeki yang berlimpah? Selain itu, jalur alternatif mana saja yang bisa menjadi jalan rezeki sampai ke tangan saya? Dan, jalan setapak mana yang itu juga memperlancar aliran rezeki lancar datang meghampiri saya?”</p>
+<ul>
+  <li>Jika angka tahun itu habis dibagi 400, maka tahun itu sudah pasti tahun kabisat.</li>
+  <li>Jika angka tahun itu tidak habis dibagi 400 tetapi habis dibagi 100, maka tahun itu sudah pasti <strong>bukan</strong> merupakan tahun kabisat.</li>
+  <li>Jika angka tahun itu tidak habis dibagi 400, tidak habis dibagi 100 akan tetapi habis dibagi 4, maka tahun itu merupakan tahun kabisat.</li>
+  <li>Jika angka tahun tidak habis dibagi 400, tidak habis dibagi 100, dan tidak habis dibagi 4, maka tahun tersebut bukan merupakan tahun kabisat.</li>
+</ul>
 
-<p>Bila Anda tidak menciptakan jalannya, jangan berharap Anda mendapatkan rezeki dalam jumlah yang berlimpah. Ayo segera ciptakan jalan itu.</p>
+<p>Berdasarkan algoritma di atas, kita dapat membuat sebuah fungsi pada aplikasi MS Excel sebagai berikut.</p>
 
-<p>sumber: <a href="http://www.jamilazzaini.com/ciptakan-jalanmu/">jamilazzaini.com</a></p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Public Function CEKKABISAT(myRange As Range) As String
+</span><span class="line">    Dim tahun As Variant
+</span><span class="line">    Dim kabisat As Boolean
+</span><span class="line">    
+</span><span class="line">    tahun = myRange.Value
+</span><span class="line">    If tahun Mod 4 = 0 Then
+</span><span class="line">        If tahun Mod 100 = 0 Then
+</span><span class="line">            If tahun Mod 400 = 0 Then
+</span><span class="line">                kabisat = True
+</span><span class="line">            Else
+</span><span class="line">                kabisat = False
+</span><span class="line">            End If
+</span><span class="line">        Else
+</span><span class="line">            kabisat = True
+</span><span class="line">        End If
+</span><span class="line">    Else
+</span><span class="line">        kabisat = False
+</span><span class="line">    End If
+</span><span class="line">    
+</span><span class="line">    If kabisat Then
+</span><span class="line">        CEKKABISAT = "Kabisat"
+</span><span class="line">    Else
+</span><span class="line">        CEKKABISAT = "Bukan Kabisat"
+</span><span class="line">    End If
+</span><span class="line">End Function</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+
+<p><code>=CEKKABISAT(A1)</code></p>
+
+<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+
+<p><code>=IF(MOD(A1,4)=0,IF(MOD(A1,100)=0,IF(MOD(A1,400)=0,"Kabisat","Bukan Kabisat"),"Kabisat"),"Bukan Kabisat")</code></p>
+
+<p>Sumber: <a href="http://id.wikipedia.org/wiki/Tahun_Kabisat">id.wikipedia.org</a></p>
+
 </div>
 
 
@@ -138,12 +203,12 @@
   
 
 
-<time datetime="2013-01-31T08:49:00+07:00" pubdate data-updated="true">31 Januari 2013</time>
+<time datetime="2013-02-04T10:51:00+07:00" pubdate data-updated="true">04 Februari 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/motivasi/'>Motivasi</a>
+    <a class='category' href='/blog/categories/ms-excel/'>MS Excel</a>, <a class='category' href='/blog/categories/vba/'>VBA</a>
   
 </span>
 
@@ -167,10 +232,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/hiding-the-facebook-like/" title="Previous Post: Menyembunyikan 'Kesukaan' pada Profil Facebook">&laquo; Menyembunyikan 'Kesukaan' pada Profil Facebook</a>
+        <a class="basic-alignment left" href="/blog/2013/01/es-lolipop/" title="Previous Post: Es Lolipop Buah Semangka">&laquo; Es Lolipop Buah Semangka</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/es-lolipop/" title="Next Post: Es Lolipop Buah Semangka">Es Lolipop Buah Semangka &raquo;</a>
       
     </p>
   </footer>
@@ -303,8 +366,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/01/ciptakan-jalanmu/';
-        var disqus_url = 'http://nurulhuda.github.com/blog/2013/01/ciptakan-jalanmu/';
+        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/02/tahun-kabisat/';
+        var disqus_url = 'http://nurulhuda.github.com/blog/2013/02/tahun-kabisat/';
         var disqus_script = 'embed.js';
       
     (function () {

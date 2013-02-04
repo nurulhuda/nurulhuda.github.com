@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Umum | Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/blog/categories/umum/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-01-31T10:59:00+07:00</updated>
+  <updated>2013-02-04T16:13:27+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Menyembunyikan 'Kesukaan' pada Profil Facebook]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/hiding-the-facebook-like/"/>
+    <updated>2013-01-30T16:53:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/hiding-the-facebook-like</id>
+    <content type="html"><![CDATA[<p>Anda memiliki ‘kesukaan’ <em>(Like)</em> yang tidak ingin diketahui oleh teman-teman anda?
+Misalnya ‘kesukaan’ yang akan membuat anda malu bila ada teman anda mengetahuinya.
+Sayangnya, facebook tidak mengizinkan anda utk menyembunyikan ‘kesukaan’ anda 
+secara individual. Tenang… Anda bisa menyembunyikannya menurut kategorinya.
+Berikut ini adalah cara menyembunyikan ‘kesukaan’ anda.</p>
+
+<p>Facebook telah menyediakan beberapa kategori kesukaan yang mungkin beberapa diantaranya tidak anda pakai. Jadi, untuk menyembunyikan ‘kesukaan’ anda yang memalukan itu lakukan:</p>
+
+<ol>
+  <li>Dari halaman profil anda masuklah ke halaman ‘Kesukaan’ kemudian klik ‘Sunting’.</li>
+  <li>Pilihlah satu kategori yang ingin anda sembunyikan, misalnya kategori ‘Atlet’ dan ubahlah aturan privasinya menjadi “Hanya Saya” <em>(Only Me)</em>.</li>
+  <li>Kemudian tambahkan ‘kesukaan’ anda yang memalukan itu ke dalam kategori yang telah diubah privasinya tersebut.<br />Caranya: </li>
+  <li>Klik tombol ‘Selesai sunting’.</li>
+</ol>
+
+<p>Sekarang teman-teman anda tidak akan melihat halaman kesukaan anda.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[5 Kualitas Pensil]]></title>
