@@ -4,7 +4,7 @@
   <title><![CDATA[Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-02-04T16:13:27+07:00</updated>
+  <updated>2013-02-06T15:44:30+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[5 Cara Gila Menjadi Wirausahawan Sukses]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/02/5-cara-gila/"/>
+    <updated>2013-02-06T15:11:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/02/5-cara-gila</id>
+    <content type="html"><![CDATA[<p><img class="left" alt="5 Cara Gila Menjadi Wirausahawan Sukses" src="http://www.inginbisnis.com/wp-content/uploads/2013/02/Cara-Gila-Menjadi-Wirausahawan-Sukses.jpg" height="272" width="306" />Banyak pertanyaan sederhana mengenai bagaimana untuk menjadi seorang pelaku bisnis yang sukses. Jawabannya sebenarnya ada banyak tergantung dari usaha yang dijalankannya, tetapi secara umum jika ingin sukses seorang wirausahawan harus “gila” ketika masuk dalam dunia bisnis. Apa saja kegilaan yang harus dimiliki? Silakan baca di bawah ini.
+<!-- more --></p>
+
+<ul>
+  <li><strong>Berani Berkhayal Hingga Ujung Langit</strong><br />
+Membuat suatu produk barang atau jasa tidak selalu menciptakan hal-hal yang benar-benar baru, tetapi bisa berinovasi dengan berdasarkan ide guna mengembangkan yang sudah ada. Untuk itu seseorang perlu untuk berkhayal dan bermimpi hingga pada hal yang tidak mungkin karena dari sanalah ide muncul dan berusaha untuk direalisasikan. Seperti orang-orang sukses terdahulu mereka membuat suatu produk baru atau pengembangan yang menarik berdasarkan khayalan.</li>
+  <li><strong>Berani Beda</strong><br />
+Dalam dunia bisnis sah-sah saja jika seorang pelaku usaha melakukan segala sesuatu yang cenderung unik dan aneh menurut pandangan orang. Dari produk hingga gaya pemasaran yang berbeda dibandingkan dengan cara-cara umum biasanya mendatangkan keuntungan tersendiri. Hal itu disebabkan punya daya tarik tersendiri hingga membuat orang penasaran dan ingin tahu.</li>
+  <li><strong>Berani Gagal</strong><br />
+Seseorang bisa dikatakan wirausahawan yang ulet adalah orang yang berani gagal, otomatis efek dari kegagalan itu salah satunya dipermalukan orang lain akibat terlalu spkelutaif dalam menjalankan bisnis. Setiap kegagalan bukan akhir dari hidup seseorang untuk mempertahankan eksistensi hidupnya. Tetapi kegagalan adalah cara paling ekstrim dalam mempelajari segala sesuatu yang salah agar bisa diperbaiki pada masa mendatang agar bisa meraih kesuksesan.</li>
+  <li><strong>Berani Malu</strong><br />
+Memasarkan suatu produk seringkali memerlukan cara-cara baru agar lebih efektif, dan biasanya teknik pemasaran yang tidak lazim akan membuat anda seperti mempermalukan diri di depan orang banyak. Tetapi perlu diingin bahwa banyak cara-cara pemasaran saat ini yang dulunya dianggap aneh namun setelah gaya marketing tersebut sukses akhirnya banyak ditiru orang dan menjadi suatu hal yang biasa.</li>
+  <li><strong>Berani Rugi</strong><br />
+Tidak selamanya dalam menjalankan usaha itu akan mendapatkan keuntungan secara terus menerus, pasti pada suatu saat akan jatuh dengan membawa efek kerugian bisnis yang bervariasi. Selain itu juga harus berani melakukan pengeluaran lebih ketika menemukan kesempatan atau peluang untuk mengembangkan bisnis.</li>
+</ul>
+
+<p>Sumber: <a href="http://www.inginbisnis.com/tipsbisnis/5-cara-gila-menjadi-wirausahawan-sukses">inginbisnis.com</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tahun Kabisat]]></title>
@@ -89,11 +114,11 @@
 </span><span class="line">    End If
 </span><span class="line">End Function</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range &ldquo;A1&rdquo;, ketikkan formula berikut pada range &ldquo;B1&rdquo;.</p>
 
 <p><code>=CEKKABISAT(A1)</code></p>
 
-<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range &ldquo;A1&rdquo;, ketikkan formula berikut pada range &ldquo;B1&rdquo;.</p>
 
 <p><code>=IF(MOD(A1,4)=0,IF(MOD(A1,100)=0,IF(MOD(A1,400)=0,"Kabisat","Bukan Kabisat"),"Kabisat"),"Bukan Kabisat")</code></p>
 
@@ -137,18 +162,18 @@
     <link href="http://nurulhuda.github.com/blog/2013/01/ciptakan-jalanmu/"/>
     <updated>2013-01-31T08:49:00+07:00</updated>
     <id>http://nurulhuda.github.com/blog/2013/01/ciptakan-jalanmu</id>
-    <content type="html"><![CDATA[<p>Ada orang yang berkata kepada saya, “Pak, saya sudah rutin sedekah, kok rezeki tak juga datang?” Yang lain merajuk, “Kakek, saya sudah minta ridho orang tua, tapi kok bisnisnya hasilnya masih pas-pasan melulu?”  Nah, ada yang lebih seru lagi, dia protes “Om, saya dhuha gak pernah telat tapi rezeki kok masih seret?”</p>
+    <content type="html"><![CDATA[<p>Ada orang yang berkata kepada saya, &ldquo;Pak, saya sudah rutin sedekah, kok rezeki tak juga datang?&rdquo; Yang lain merajuk, &ldquo;Kakek, saya sudah minta ridho orang tua, tapi kok bisnisnya hasilnya masih pas-pasan melulu?&rdquo;  Nah, ada yang lebih seru lagi, dia protes &ldquo;Om, saya dhuha gak pernah telat tapi rezeki kok masih seret?&rdquo;</p>
 
-<p>Perlu dipahami bahwa sedekah, ridho orang tua, dhuha dan lain-lain itu hanyalah pelicin datangnya rezeki. Anda harus terlebih dahulu menciptakan jalan untuk lewatnya rezeki. Selalu tanyakan pada diri Anda, “Melalui jalur apa kira-kira Sang Maha Pemberi Rezeki menggelontorkan rezekinya kepada saya?”</p>
+<p>Perlu dipahami bahwa sedekah, ridho orang tua, dhuha dan lain-lain itu hanyalah pelicin datangnya rezeki. Anda harus terlebih dahulu menciptakan jalan untuk lewatnya rezeki. Selalu tanyakan pada diri Anda, &ldquo;Melalui jalur apa kira-kira Sang Maha Pemberi Rezeki menggelontorkan rezekinya kepada saya?&rdquo;</p>
 
-<p>Tanyakan juga pada diri Anda, “Bila melalui pekerjaan saat ini, pantaskah saya meminta rezeki dalam bentuk uang senilai satu milyar padahal saya bergaji di bawah 10 juta setiap bulan?” Kalau jawabnya “tidak pantas”, lanjutkan pertanyaannya, “Kira-kira jalan apa yang perlu saya ciptakan agar pantas dan cukup menampung uang sebanyak itu?”</p>
+<p>Tanyakan juga pada diri Anda, &ldquo;Bila melalui pekerjaan saat ini, pantaskah saya meminta rezeki dalam bentuk uang senilai satu milyar padahal saya bergaji di bawah 10 juta setiap bulan?&rdquo; Kalau jawabnya &ldquo;tidak pantas&rdquo;, lanjutkan pertanyaannya, &ldquo;Kira-kira jalan apa yang perlu saya ciptakan agar pantas dan cukup menampung uang sebanyak itu?&rdquo;</p>
 
 <!-- more -->
-<p>Bagi Anda yang berbisnis, ajukanlah pertanyaan, “Apakah bisnis saya sudah siap mengelola dana yang berlimpah? Wadah apa yang perlu saya siapkan bila Allah menggelontokan dana yang berlimpah? Apakah saya sudah menyiapkan jejaring dan juga SDM yang siap mengelola dana besar?”</p>
+<p>Bagi Anda yang berbisnis, ajukanlah pertanyaan, &ldquo;Apakah bisnis saya sudah siap mengelola dana yang berlimpah? Wadah apa yang perlu saya siapkan bila Allah menggelontokan dana yang berlimpah? Apakah saya sudah menyiapkan jejaring dan juga SDM yang siap mengelola dana besar?&rdquo;</p>
 
-<p>Ayo ciptakan banyak jalan agar rezeki yang datang bisa memilih lewat jalan mana rezeki bisa datang kepada Anda. Jangan berharap rezeki besar bila jalan yang Anda siapkan adalah “jalan setapak”. Kecuali, bila Anda memang sadar memilih jalan setapak tetapi jumlahnya sangat banyak dan ada dimana-mana.</p>
+<p>Ayo ciptakan banyak jalan agar rezeki yang datang bisa memilih lewat jalan mana rezeki bisa datang kepada Anda. Jangan berharap rezeki besar bila jalan yang Anda siapkan adalah &ldquo;jalan setapak&rdquo;. Kecuali, bila Anda memang sadar memilih jalan setapak tetapi jumlahnya sangat banyak dan ada dimana-mana.</p>
 
-<p>Ayo merenung sejenak, “Kira-kira jalan utama mana yang bisa saya andalkan untuk datangnya rezeki yang berlimpah? Selain itu, jalur alternatif mana saja yang bisa menjadi jalan rezeki sampai ke tangan saya? Dan, jalan setapak mana yang itu juga memperlancar aliran rezeki lancar datang meghampiri saya?”</p>
+<p>Ayo merenung sejenak, &ldquo;Kira-kira jalan utama mana yang bisa saya andalkan untuk datangnya rezeki yang berlimpah? Selain itu, jalur alternatif mana saja yang bisa menjadi jalan rezeki sampai ke tangan saya? Dan, jalan setapak mana yang itu juga memperlancar aliran rezeki lancar datang meghampiri saya?&rdquo;</p>
 
 <p>Bila Anda tidak menciptakan jalannya, jangan berharap Anda mendapatkan rezeki dalam jumlah yang berlimpah. Ayo segera ciptakan jalan itu.</p>
 
@@ -161,19 +186,19 @@
     <link href="http://nurulhuda.github.com/blog/2013/01/hiding-the-facebook-like/"/>
     <updated>2013-01-30T16:53:00+07:00</updated>
     <id>http://nurulhuda.github.com/blog/2013/01/hiding-the-facebook-like</id>
-    <content type="html"><![CDATA[<p>Anda memiliki ‘kesukaan’ <em>(Like)</em> yang tidak ingin diketahui oleh teman-teman anda?
-Misalnya ‘kesukaan’ yang akan membuat anda malu bila ada teman anda mengetahuinya.
-Sayangnya, facebook tidak mengizinkan anda utk menyembunyikan ‘kesukaan’ anda 
-secara individual. Tenang… Anda bisa menyembunyikannya menurut kategorinya.
-Berikut ini adalah cara menyembunyikan ‘kesukaan’ anda.</p>
+    <content type="html"><![CDATA[<p>Anda memiliki &lsquo;kesukaan&rsquo; <em>(Like)</em> yang tidak ingin diketahui oleh teman-teman anda?
+Misalnya &lsquo;kesukaan&rsquo; yang akan membuat anda malu bila ada teman anda mengetahuinya.
+Sayangnya, facebook tidak mengizinkan anda utk menyembunyikan &lsquo;kesukaan&rsquo; anda 
+secara individual. Tenang&hellip; Anda bisa menyembunyikannya menurut kategorinya.
+Berikut ini adalah cara menyembunyikan &lsquo;kesukaan&rsquo; anda.</p>
 
-<p>Facebook telah menyediakan beberapa kategori kesukaan yang mungkin beberapa diantaranya tidak anda pakai. Jadi, untuk menyembunyikan ‘kesukaan’ anda yang memalukan itu lakukan:</p>
+<p>Facebook telah menyediakan beberapa kategori kesukaan yang mungkin beberapa diantaranya tidak anda pakai. Jadi, untuk menyembunyikan &lsquo;kesukaan&rsquo; anda yang memalukan itu lakukan:</p>
 
 <ol>
-  <li>Dari halaman profil anda masuklah ke halaman ‘Kesukaan’ kemudian klik ‘Sunting’.</li>
-  <li>Pilihlah satu kategori yang ingin anda sembunyikan, misalnya kategori ‘Atlet’ dan ubahlah aturan privasinya menjadi “Hanya Saya” <em>(Only Me)</em>.</li>
-  <li>Kemudian tambahkan ‘kesukaan’ anda yang memalukan itu ke dalam kategori yang telah diubah privasinya tersebut.<br />Caranya: </li>
-  <li>Klik tombol ‘Selesai sunting’.</li>
+  <li>Dari halaman profil anda masuklah ke halaman &lsquo;Kesukaan&rsquo; kemudian klik &lsquo;Sunting&rsquo;.</li>
+  <li>Pilihlah satu kategori yang ingin anda sembunyikan, misalnya kategori &lsquo;Atlet&rsquo; dan ubahlah aturan privasinya menjadi &ldquo;Hanya Saya&rdquo; <em>(Only Me)</em>.</li>
+  <li>Kemudian tambahkan &lsquo;kesukaan&rsquo; anda yang memalukan itu ke dalam kategori yang telah diubah privasinya tersebut.<br />Caranya: </li>
+  <li>Klik tombol &lsquo;Selesai sunting&rsquo;.</li>
 </ol>
 
 <p>Sekarang teman-teman anda tidak akan melihat halaman kesukaan anda.</p>
@@ -191,7 +216,7 @@ Berikut ini adalah cara menyembunyikan ‘kesukaan’ anda.</p>
 مَن كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجاً (٢) وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ &#8230; (٣) 
 </p>
   <p>Barangsiapa bertakwa kepada Allah niscaya Dia akan mengadakan baginya jalan keluar. 
-Dan memberinya rezeki dari arah yang tiada diduga-duga… (At-Thalaaq: 2-3)</p>
+Dan memberinya rezeki dari arah yang tiada diduga-duga&hellip; (At-Thalaaq: 2-3)</p>
 </blockquote>
 
 <p><img src="http://nurulhuda.github.com/images/rupiah.jpg" class="left" width="287" height="191" />Apakah Anda termasuk orang yang berpenghasilan lima belas koma? Maksudnya, bukan lima belas juta koma sekian ratus ribu tapi tanggal 15 sudah koma. Atau, masihkah Anda merasa sudah bekerja keras banting tulang tetapi penghasilan hanya pas-pasan? Anda tidak punya investasi apapun juga sangat sulit bersedekah dalam jumlah besar.</p>
@@ -203,11 +228,11 @@ Dan memberinya rezeki dari arah yang tiada diduga-duga… (At-Thalaaq: 2-3)</p>
 
 <p>Bagaimana caranya? Sebelum saya memberitahu bagaimana caranya, Anda harus yakin dulu bahwa janji Sang Maha itu pasti. Dia tak pernah ingkar janji. Apa-apa yang sudah dijanjikan oleh-Nya melalui Kitab Suci dan rasul-Nya itu pasti. Termasuk janji Allah dalam urusan rezeki, juga pasti.</p>
 
-<p>Nah, bagaimana janji-Nya agar rezeki datang ke kita dari arah yang tidak diduga-duga? <strong>Pertama</strong>, Anda harus bertakwa kepada Allah. Janji-Nya di dalam Al Qur’an surat At-Thalaaq: 2-3: <em>”… Barangsiapa bertakwa kepada Allah niscaya Dia akan mengadakan baginya jalan keluar. Dan memberinya rezeki dari arah yang tiada diduga-duga…“</em></p>
+<p>Nah, bagaimana janji-Nya agar rezeki datang ke kita dari arah yang tidak diduga-duga? <strong>Pertama</strong>, Anda harus bertakwa kepada Allah. Janji-Nya di dalam Al Qur’an surat At-Thalaaq: 2-3: <em>&rdquo;&hellip; Barangsiapa bertakwa kepada Allah niscaya Dia akan mengadakan baginya jalan keluar. Dan memberinya rezeki dari arah yang tiada diduga-duga&hellip;&ldquo;</em></p>
 
 <p>Bawa Dia dan tunduklah kepada-Nya dimanapun Anda berada. Dia ada bukan hanya di tempat ibadah. Dia ada bukan hanya saat pernikahan dan kematian. Dia ada bukan hanya saat kita berdoa. Dia ada di setiap waktu, tempat dan keadaan. Dia juga melihat, mendengar dan mengetahui apapun yang kita lakukan. Dia selalu bersama kita, itulah inti takwa.</p>
 
-<p><strong>Kedua</strong>, bertaubatlah. Di dalam hadis yang diriwayatkan oleh Abu Dawud, Rasulullah bersabda, <em>”… Barangsiapa memperbanyak mohon ampunan (bertaubat) maka Allah akan membebaskannya dari kedukaan, memberinya jalan keluar bagi kesempitannya, dan memberinya rezeki dari arah yang tidak diduga-duganya.”</em></p>
+<p><strong>Kedua</strong>, bertaubatlah. Di dalam hadis yang diriwayatkan oleh Abu Dawud, Rasulullah bersabda, <em>&rdquo;&hellip; Barangsiapa memperbanyak mohon ampunan (bertaubat) maka Allah akan membebaskannya dari kedukaan, memberinya jalan keluar bagi kesempitannya, dan memberinya rezeki dari arah yang tidak diduga-duganya.&rdquo;</em></p>
 
 <p>Berapa kali Anda mohon ampunan Allah dalam satu hari? Nabi, orang yang paling dicintai-Nya, sedikitnya 70 kali mohon ampun dalam satu hari. Apakah kita lebih baik atau lebih suci dibandingkan Nabi? Tentu tidak, maka sungguh sangat wajar bila kita mohon ampun jauh lebih banyak dibandingkan Nabi.</p>
 
@@ -228,7 +253,7 @@ Dan memberinya rezeki dari arah yang tiada diduga-duga… (At-Thalaaq: 2-3)</p>
 <!-- more -->
 <p>Orang Jerman pernah mencoba memproduksi batang grafit yang terbuat dari grafit bubuk, tetapi tidak praktis. Pada tahun 1795, Nicholas Jacques Conte (seorang perwira Perancis pada angkatan perang Napoleon) mematenkan metode modern pembuatan pensil. Conte mencampur bubuk grafit dengan tanah liat untuk membuat batang grafit. Dengan mengubah rasio antara grafit dan tanah liat, kekerasan grafit yang dihasilkan pun akan bervariasi.</p>
 
-<p>Kata “pensil” sendiri berasal dari bahasa Latin “penicillus” yang berarti <em>“little tail”</em> - nama kuas kecil yang digunakan orang-orang Romawi kuno sebagai alat tulis. Grafit (dari bahasa Yunani yang berarti “menulis”) dianalisis secara kimiawi pada tahun 1779 oleh KW Scheele dan diberi nama pada tahun 1789 oleh AG Werner.</p>
+<p>Kata &ldquo;pensil&rdquo; sendiri berasal dari bahasa Latin &ldquo;penicillus&rdquo; yang berarti <em>&ldquo;little tail&rdquo;</em> - nama kuas kecil yang digunakan orang-orang Romawi kuno sebagai alat tulis. Grafit (dari bahasa Yunani yang berarti &ldquo;menulis&rdquo;) dianalisis secara kimiawi pada tahun 1779 oleh KW Scheele dan diberi nama pada tahun 1789 oleh AG Werner.</p>
 
 <p>Terlepas dari sejarah penemuannya, pensil sebenarnya mempunyai 5 kualitas unggulan yang bisa kita ambil sebagai pelajaran dalam kehidupan.</p>
 
@@ -255,7 +280,7 @@ cara melipat sudut halaman buku.</p>
 
 <p>Dengan bookmark kita bisa lebih cepat menemukan sampai dimana terakhir kali kita
 membaca buku. Sehingga kita bisa langung melanjutkan membaca buku tanpa perlu
-mengingat-ingat “sampai di mana ya?”. Bookmark juga bisa digunakan untuk menandai
+mengingat-ingat &ldquo;sampai di mana ya?&rdquo;. Bookmark juga bisa digunakan untuk menandai
 bagian-bagian buku yang penting.
 <!-- more --></p>
 
@@ -281,12 +306,12 @@ lebih mengedepankan sisi penampilan <em>(appearance)</em>.
 Sebut saja KDE 4, Gnome 3, Unity, Cinamon, dll.
 Tampilannya boleh jadi memang canggih tapi beratnya itu loh.
 Buat yang komputernya canggih barangkali tidak begitu 
-merasakannya. Tapi buat komputerku yg jadul, duhh…. nggak deh.</p>
+merasakannya. Tapi buat komputerku yg jadul, duhh&hellip;. nggak deh.</p>
 
 <p>Aku lebih suka dengan <em>desktop environment</em> yang ringan2 saja seperti Xfce.
 So, tanpa ragu2 langsung saja aku <code>apt-get install xubuntu-desktop</code> di Ubuntu.
-Dengan Xfce, Ubuntu di komputerku terasa jauh lebih ringan… tuing.. 
-tuing.. tuing….</p>
+Dengan Xfce, Ubuntu di komputerku terasa jauh lebih ringan&hellip; tuing.. 
+tuing.. tuing&hellip;.</p>
 
 ]]></content>
   </entry>

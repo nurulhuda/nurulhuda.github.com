@@ -4,7 +4,7 @@
   <title><![CDATA[Category: VBA | Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/blog/categories/vba/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-02-04T16:13:27+07:00</updated>
+  <updated>2013-02-06T15:44:30+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -65,11 +65,11 @@ Else
 End If End Function ```
 </code></pre>
 
-<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range &ldquo;A1&rdquo;, ketikkan formula berikut pada range &ldquo;B1&rdquo;.</p>
 
 <p><code>=CEKKABISAT(A1)</code></p>
 
-<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range &ldquo;A1&rdquo;, ketikkan formula berikut pada range &ldquo;B1&rdquo;.</p>
 
 <p><code>=IF(MOD(A1,4)=0,IF(MOD(A1,100)=0,IF(MOD(A1,400)=0,"Kabisat","Bukan Kabisat"),"Kabisat"),"Bukan Kabisat")</code></p>
 
