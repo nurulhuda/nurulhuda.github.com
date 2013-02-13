@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
@@ -80,3 +81,112 @@ web favorit, tinggal klik pada bookmark. Beres deh. [=]</p>
   </entry>
   
 </feed>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Umum | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/umum/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-02-06T18:12:16+07:00</updated>
+  <id>http://nurulhuda.github.com/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mengapa Jendela pada Menara ATC Dibuat Miring?]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/02/menara-atc/"/>
+    <updated>2013-02-06T17:36:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/02/menara-atc</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/Air_Traffic_Control.jpg" class="left" width="287" height="290" alt="Air_Traffic_Control.jpg" />Setiap bandara yang ada di dunia memiliki rancangan yang beragam. Namun ternyata ada satu kesamaan, yaitu jendela pada menara ATC <em>(Air Traffic Control)</em> selalu dibuat miring. Mengapa? Banyak orang beranggapan bahwa jendela itu dibuat begitu supaya tidak memantulkan sinar matahari yang dapat menyilaukan pandangan pilot. Kalau anda juga beranggapan seperti ini, anda keliru. Karena bangunan-bangunan di sekitarnya toh memiliki jendela yang dibuat tegak lurus.</p>
+
+<p>Ternyata kemiringan kaca jendela ini untuk kepentingan pengamat yang berada di dalam tower. Jika kaca dibuat tegak lurus, kaca itu akan memantulkan semua objek yang ada di depannya, misalnya layar monitor, lampu, dll. Pengamat tidak boleh terganggu dengan pantulan-pantulan cahaya seperti itu. Maka kaca jendela dibuat miring menghadap ke langit-langit yang bercat hitam.</p>
+
+<p>sumber: <a href="http://www.lifeslittlemysteries.com/360-why-do-air-traffic-control-towers-have-slanted-windows.html">lifeslittlemysteries.com</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Menyembunyikan 'Kesukaan' pada Profil Facebook]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/hiding-the-facebook-like/"/>
+    <updated>2013-01-30T16:53:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/hiding-the-facebook-like</id>
+    <content type="html"><![CDATA[<p>Anda memiliki &lsquo;kesukaan&rsquo; <em>(Like)</em> yang tidak ingin diketahui oleh teman-teman anda?
+Misalnya &lsquo;kesukaan&rsquo; yang akan membuat anda malu bila ada teman anda mengetahuinya.
+Sayangnya, facebook tidak mengizinkan anda utk menyembunyikan &lsquo;kesukaan&rsquo; anda 
+secara individual. Tenang&hellip; Anda bisa menyembunyikannya menurut kategorinya.
+Berikut ini adalah cara menyembunyikan &lsquo;kesukaan&rsquo; anda.</p>
+
+<p>Facebook telah menyediakan beberapa kategori kesukaan yang mungkin beberapa diantaranya tidak anda pakai. Jadi, untuk menyembunyikan &lsquo;kesukaan&rsquo; anda yang memalukan itu lakukan:</p>
+
+<ol>
+  <li>Dari halaman profil anda masuklah ke halaman &lsquo;Kesukaan&rsquo; kemudian klik &lsquo;Sunting&rsquo;.</li>
+  <li>Pilihlah satu kategori yang ingin anda sembunyikan, misalnya kategori &lsquo;Atlet&rsquo; dan ubahlah aturan privasinya menjadi &ldquo;Hanya Saya&rdquo; <em>(Only Me)</em>.</li>
+  <li>Kemudian tambahkan &lsquo;kesukaan&rsquo; anda yang memalukan itu ke dalam kategori yang telah diubah privasinya tersebut.<br />Caranya: </li>
+  <li>Klik tombol &lsquo;Selesai sunting&rsquo;.</li>
+</ol>
+
+<p>Sekarang teman-teman anda tidak akan melihat halaman kesukaan anda.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[5 Kualitas Pensil]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/pensil/"/>
+    <updated>2013-01-15T09:00:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/pensil</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/evt110519071200327.jpg" class="left" width="287" height="179" />Pensil diciptakan pertama kali pada tahun 1564. Berawal dari ditemukannya sebuah tambang grafit (karbon hitam) di Borrowdale, Cumbria, Inggris. Grafit murni itu digergaji menjadi lembaran dan kemudian dipotong menjadi batang-batang persegi. Batang grafit kemudian disatukan dengan batang kayu sebagai pemegang, jadilah pensil. Inggris sempat memonopoli produksi pensil karena tambang grafit hanya ada di Inggris.</p>
+
+<!-- more -->
+<p>Orang Jerman pernah mencoba memproduksi batang grafit yang terbuat dari grafit bubuk, tetapi tidak praktis. Pada tahun 1795, Nicholas Jacques Conte (seorang perwira Perancis pada angkatan perang Napoleon) mematenkan metode modern pembuatan pensil. Conte mencampur bubuk grafit dengan tanah liat untuk membuat batang grafit. Dengan mengubah rasio antara grafit dan tanah liat, kekerasan grafit yang dihasilkan pun akan bervariasi.</p>
+
+<p>Kata &ldquo;pensil&rdquo; sendiri berasal dari bahasa Latin &ldquo;penicillus&rdquo; yang berarti <em>&ldquo;little tail&rdquo;</em> - nama kuas kecil yang digunakan orang-orang Romawi kuno sebagai alat tulis. Grafit (dari bahasa Yunani yang berarti &ldquo;menulis&rdquo;) dianalisis secara kimiawi pada tahun 1779 oleh KW Scheele dan diberi nama pada tahun 1789 oleh AG Werner.</p>
+
+<p>Terlepas dari sejarah penemuannya, pensil sebenarnya mempunyai 5 kualitas unggulan yang bisa kita ambil sebagai pelajaran dalam kehidupan.</p>
+
+<ol>
+  <li>Pensil dapat menjadi pengingat. Pensil bisa menghasilkan tulisan yang indah karena ada tangan yang menggerakkannya. Demikian pula dengan kita. Kita bisa menghasilkan sesuatu yang hebat pasti karena ada “tangan” yang menggerakkan kita. Dialah Allah swt yang selalu membimbing kita sesuai dengan ajaran-ajarannya.</li>
+  <li>Setelah dipakai beberapa lama, biasanya pensil akan kehilangan ketajamannya alias menjadi tumpul. Di saat seperti inilah pensil membutuhkan peruncing. Peruncing itu seakan membuat pensil menderita. Tapi setelah itu pensil akan menjadi tajam kembali. Demikian pula dengan kita. Allah akan menempa manusia dengan kesulitan-kesulitan, karena hanya dengan itu manusia akan menjadi kuat dan tahan banting. Ingat! Tidak ada keberhasilan yang bisa diraih oleh orang yang lemah.</li>
+  <li>Pensil selalu memberi kita kesempatan untuk menggunakan penghapus sebagai upaya memperbaiki kesalahan. Setiap orang pasti pernah membuat kesalahan. Memperbaiki kesalahan dalam hidup ini bukanlah hal yang buruk. Itu bahkan membantu kita untuk tetap berada di jalan yang benar.</li>
+  <li>Bagian yang paling penting dari sebuah pensil adalah arang yang ada di dalamnya, bukan warnanya atau kayu pembungkusnya. Demikian pula dengan manusia. Kualitas manusia tidak dinilai dari pangkat, jabatan, dan kekayaannya. Melainkan amal perbuatan dan budi pekertinya. Oleh karena itu, kita perlu terus memupuk kekayaan hati dan mental dalam setiap tindakan kita.</li>
+  <li>Pensil selalu meninggalkan goresan. Seperti juga manusia, kita harus sadar bahwa setiap perbuatan kita akan meninggalkan kesan dan goresan. Perbuatan yang baik akan meninggalkan kesan yang baik pula. Demikian pula sebaliknya, perbuatan yang buruk akan meninggalkan kesan yang buruk. Oleh karena itu kita harus berhati-hati dalam bertindak. Jangan sampai kita meninggalkan jejak yang buruk yang akan menjadi beban bagi anak cucu kita kelak.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bookmark]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/bookmark/"/>
+    <updated>2013-01-09T12:18:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/bookmark</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.com/images/Book-Bookmark-gonereading.com.jpg" width="287" height="190" alt="" /><em>Bookmark</em> (ind. tanda buku kali ya) adalah sebuah penanda pada buku. Bookmark
+biasanya berupa pita kecil berwarna merah. Ada juga yang berupa karton kecil segi 
+empat seperti sebuah penggaris. Kadang kita malah mem-<em>bookmark</em> buku kita dengan 
+cara melipat sudut halaman buku.</p>
+
+<p>Dengan bookmark kita bisa lebih cepat menemukan sampai dimana terakhir kali kita
+membaca buku. Sehingga kita bisa langung melanjutkan membaca buku tanpa perlu
+mengingat-ingat &ldquo;sampai di mana ya?&rdquo;. Bookmark juga bisa digunakan untuk menandai
+bagian-bagian buku yang penting.
+<!-- more --></p>
+
+<p>Seiring perkembangan zaman, bookmark tidak hanya digunakan pada buku yang terbuat
+dari lembaran-lembaran kertas. Saat ini istilah bookmark digunakan pada semua jenis
+dokumen elektronik <em>(ebook)</em>. Fungsi bookmark pada ebook bahkan lebih luwes. Karena
+bookmark bisa digunakan untuk menandai setiap bab dan subbab. Sehingga bookmark
+bisa menggantikan fungsi daftar isi.</p>
+
+<p>Selain pada ebook, bookmark juga digunakan pada <em>web browser</em>. Situs-situs web 
+favorit bisa disimpan dalam bookmark. Jadi, sewaktu-waktu kita ingin mengunjungi
+web favorit, tinggal klik pada bookmark. Beres deh. [=]</p>
+]]></content>
+  </entry>
+  
+</feed>
+>>>>>>> 579415624cf0a756d87d537496c3dea7d65bcec9

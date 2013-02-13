@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
@@ -34,3 +35,41 @@ tuing.. tuing….</p>
   </entry>
   
 </feed>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-02-06T18:12:16+07:00</updated>
+  <id>http://nurulhuda.github.com/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu tanpa unity]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/ubuntu-tanpa-unity/"/>
+    <updated>2013-01-08T14:42:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/ubuntu-tanpa-unity</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/ubuntu-logo-large.png" class="left" width="170" height="170" alt="Logo Ubuntu" />Tampaknya <em>desktop environment</em> keluaran baru semuanya 
+lebih mengedepankan sisi penampilan <em>(appearance)</em>. 
+Sebut saja KDE 4, Gnome 3, Unity, Cinamon, dll.
+Tampilannya boleh jadi memang canggih tapi beratnya itu loh.
+Buat yang komputernya canggih barangkali tidak begitu 
+merasakannya. Tapi buat komputerku yg jadul, duhh&hellip;. nggak deh.</p>
+
+<p>Aku lebih suka dengan <em>desktop environment</em> yang ringan2 saja seperti Xfce.
+So, tanpa ragu2 langsung saja aku <code>apt-get install xubuntu-desktop</code> di Ubuntu.
+Dengan Xfce, Ubuntu di komputerku terasa jauh lebih ringan&hellip; tuing.. 
+tuing.. tuing&hellip;.</p>
+
+]]></content>
+  </entry>
+  
+</feed>
+>>>>>>> 579415624cf0a756d87d537496c3dea7d65bcec9

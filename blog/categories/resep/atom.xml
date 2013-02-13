@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
@@ -44,3 +45,51 @@
   </entry>
   
 </feed>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Resep | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/resep/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-02-06T18:12:16+07:00</updated>
+  <id>http://nurulhuda.github.com/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Es Lolipop Buah Semangka]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/01/es-lolipop/"/>
+    <updated>2013-01-31T10:42:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/01/es-lolipop</id>
+    <content type="html"><![CDATA[<p><img src="/images/es-buah.JPG" alt="Es Lolipop" /></p>
+
+<!-- more -->
+<p>Bahan:</p>
+
+<ul>
+  <li>3 gelas semangka yang telah dihancurkan (kira-kira 1/4 s.d 1/2 bagian semangka)</li>
+  <li>1/2 gelas bluberi segar</li>
+  <li>1/2 gelas stroberi segar, cincang</li>
+  <li>1 buah kiwi, kupas dan iris tipis-tipis</li>
+  <li>1 peach atau nektarin, potong dadu</li>
+  <li>segenggam ceri segar, cincang</li>
+</ul>
+
+<p>Potong buah semangka menjadi potongan kecil-kecil kemudian blender sampai halus. Sisihkan.</p>
+
+<p>Siapkan cetakan es lolipop (jumlahnya bervariasi tergantung pada ukuran cetakan). Isi masing-masing cetakan dengan buah segar cincang. Kemudian tuangkanlah semangka yang telah halus sampai cetakan penuh. Masukkan stik es krim ke masing-masing cetakan. Masukkan ke dalam freezer selama sekitar 6 s.d. 8 jam hingga membeku.</p>
+
+<p>Buah semangka dapat diganti dengan melon atau blewah. Sebaiknya gunakan semangka tanpa biji. Pilihlah buah-buahan dengan warna yang kontras supaya es lolipop tampak lebih cantik. </p>
+
+<p>Supaya mudah mengeluarkan es dari cetakan, terlebih dahulu celupkan cetakan ke dalam air hangat selama beberapa detik. Selamat mencoba!</p>
+
+]]></content>
+  </entry>
+  
+</feed>
+>>>>>>> 579415624cf0a756d87d537496c3dea7d65bcec9
