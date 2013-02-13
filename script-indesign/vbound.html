@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Belajar Script Indesign CS3 - Pandu van Java</title>
+  <title>visibleBounds dan geometricBounds, Persamaan dan Perbedaannya - Pandu van Java</title>
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Belajar Script Indesign CS3 Menggambar Persegi dan Oval Saya rasa tidak perlu banyak berteori ya. Baik.. pada pelajaran pertama ini saya akan &hellip;">
+  <meta name="description" content="visibleBounds Dan geometricBounds, Persamaan Dan Perbedaannya Persamaan Kedua properti ini memiliki fungsi yang sama yaitu memberikan informasi &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nurulhuda.github.com/script-indesign/lesson-01.html">
+  <link rel="canonical" href="http://nurulhuda.github.com/script-indesign/vbound.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,25 +68,50 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Belajar Script Indesign CS3</h1>
+    <h1 class="entry-title">visibleBounds Dan geometricBounds, Persamaan Dan Perbedaannya</h1>
     
   </header>
   
-  <h2 id="menggambar-persegi-dan-oval">Menggambar Persegi dan Oval</h2>
+  <h2 id="persamaan">Persamaan</h2>
 
-<p>Saya rasa tidak perlu banyak berteori ya. Baik.. pada pelajaran pertama ini saya akan menggambar sebuah persegi pada halaman pertama dokumen yang sedang aktif. Adapun persegi dengan ketentuan sebagai berikut:</p>
+<p>Kedua properti ini memiliki fungsi yang sama yaitu memberikan informasi kedudukan suatu objek pada halaman inDesign relatif terhadap titik pusat koordinat. Properti ini juga berfungsi untuk mengatur kedudukan objek berdasarkan nilai yang diberikan.</p>
+
+<h2 id="perbedaan">Perbedaan</h2>
+
+<p>Perbedaan kedua properti ini akan sangat terlihat pada objek yang memiliki garis outline sangat tebal. Sedangkan pada objek yang tidak memiliki garis outline, misalnya pada textFrame, kedua properti ini akan memberikan nilai yang sama.</p>
+
+<p>Sesuai dengan namanya, <em>visibleBounds</em> memberikan informasi kedudukan objek secara visual, sedangkan <em>geometricBounds</em> memberikan informasi kedudukan objek secara geometris. Untuk lebih jelasnya, perhatikan gambar ilustrasi di bawah ini.</p>
+
+<p><img src="/images/rect.png" alt="rectangle.png" /></p>
+
+<p>Gambar di atas menunjukkan sebuah segiempat dengan ketebalan outline 8 pt. 
+Dengan <em>geometricBounds</em>, maka posisi objek yang kita dapatkan adalah segiempat dengan outline warna biru, yaitu objek segiempat yang sebenarnya. Dengan kata lain, <em>geometricBounds</em> mengabaikan garis outline. Sedangkan dengan <em>visibleBounds</em> data yang kita peroleh adalah posisi objek termasuk garis outline-nya.</p>
+
+<h2 id="syntax">Syntax</h2>
 
 <ul>
-  <li>ukuran: 20 cm x 15 cm</li>
-  <li>warna latar belakang <em>(background)</em>: hitam dengan kepadatan <em>(tint)</em> 20%</li>
-  <li>warna garis <em>(outline)</em>: hitam dengan kerapatan <em>(tint)</em> 100%</li>
-  <li>model garis outline: solid dg ketebalan 1 pt</li>
-  <li>sudut: melengkung <em>(rounded)</em> dg radius 2 mm</li>
+  <li>sebagai properti get, yaitu untuk mendapatkan posisi objek<br />
+<code>var myVar = myObject.visibleBounds;</code><br />
+atau<br />
+<code>var myVar = myObject.geometricBounds;</code><br />
+myVar adalah variabel yang akan menerima nilai dalam bentuk array, dimana:
+    <ul>
+      <li>myVar[0] adalah nilai y1 (atas)</li>
+      <li>myVar[1] adalah nilai x1 (kiri)</li>
+      <li>myVar[2] adalah nilai y2 (bawah)</li>
+      <li>myVar[3] adalah nilai x2 (kanan)</li>
+    </ul>
+  </li>
+  <li>sebagai properti let, yaitu untuk mengatur posisi objek<br />
+<code>myObject.geometricBounds = new Array(y1, x1, y2, x2);</code><br />
+atau<br />
+<code>myObject.visibleBounds = [y1, x1, y2, x2];</code><br />
+Nilai yang diberikan adalah berupa array dari koordinat titik kiri-atas dan koordinat titik kanan-bawah.</li>
 </ul>
 
-<p>Berikut ini script yg telah saya buat:</p>
+<p>Untuk lebih jelasnya, perhatikan contoh script di bawah ini!</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>lesson-01.jsx  </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (visiblebounds.jsx)</span> <a href="/script-indesign/code/visiblebounds.jsx">download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -120,76 +145,52 @@
 <span class="line-number">31</span>
 <span class="line-number">32</span>
 <span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="cm">/*</span>
-</span><span class="line"><span class="cm">   Script      :  lesson1.jsx</span>
-</span><span class="line"><span class="cm">   by          :  Nurul Huda</span>
-</span><span class="line"><span class="cm">   description :  drawing a rectangle on the 1st page of the active document</span>
-</span><span class="line"><span class="cm">*/</span>
-</span><span class="line">
-</span><span class="line"><span class="c1">// terlebih dahulu periksa apakah ada dokumen yg terbuka</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="cm">/*</span>
+</span><span class="line"><span class="cm"> *   script     :  visiblebounds.jsx</span>
+</span><span class="line"><span class="cm"> *   creator    :  Nurul Huda</span>
+</span><span class="line"><span class="cm"> */</span>
+</span><span class="line">	
 </span><span class="line"><span class="k">if</span> <span class="p">(</span><span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">){</span>
-</span><span class="line">   <span class="c1">// myDoc -&gt; dokumen yang sedang aktif</span>
 </span><span class="line">   <span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
 </span><span class="line">
-</span><span class="line">   <span class="c1">// myPage -&gt; halaman 1 dokumen aktif</span>
-</span><span class="line">   <span class="kd">var</span> <span class="nx">mypage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">.[</span><span class="mi">0</span><span class="p">];</span>
-</span><span class="line">	
-</span><span class="line">   <span class="c1">// gambar sebuah segi4</span>
-</span><span class="line">   <span class="kd">var</span> <span class="nx">myRect</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-</span><span class="line">	
-</span><span class="line">   <span class="c1">// warna background (isi) hitam</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">fillColor</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">swatches</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="s1">&#39;Black&#39;</span><span class="p">);</span>
-</span><span class="line">   <span class="c1">// dengan kerapatan (tint) 20%</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">fillTint</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-</span><span class="line">	
-</span><span class="line">   <span class="c1">// warna garis/outline hitam</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">strokeColor</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">swatches</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="s1">&#39;Black&#39;</span><span class="p">);</span>
-</span><span class="line">   <span class="c1">// dg kerapatan 100%</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">strokeTint</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-</span><span class="line">   <span class="c1">// model garis solid</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">strokeType</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">strokeStyles</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="s1">&#39;Solid&#39;</span><span class="p">);</span>
-</span><span class="line">   <span class="c1">// dg ketebalan 1pt</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">strokeWeight</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class="line">   <span class="c1">// periksa adakah objek yg dipilih?</span>
+</span><span class="line">   <span class="k">if</span> <span class="p">(</span><span class="nx">myDoc</span><span class="p">.</span><span class="nx">selection</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class="line">      <span class="kd">var</span> <span class="nx">myRect</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">selection</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 </span><span class="line">
-</span><span class="line">   <span class="c1">// sudut segi empat melengkung</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">cornerOption</span> <span class="o">=</span> <span class="nx">CornerOptions</span><span class="p">.</span><span class="nx">ROUNDED_CORNER</span><span class="p">;</span>
-</span><span class="line">   <span class="c1">// dg radius 2mm</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">cornerRadius</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-</span><span class="line">	
-</span><span class="line">   <span class="c1">// atur posisi dan ukuran segi4</span>
-</span><span class="line">   <span class="nx">myRect</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">];</span>
+</span><span class="line">      <span class="c1">// periksa apakah objek yg dipilih adalah &#39;Rectangle&#39;?</span>
+</span><span class="line">      <span class="k">if</span> <span class="p">(</span><span class="nx">myRect</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span> <span class="o">==</span> <span class="s1">&#39;Rectangle&#39;</span><span class="p">){</span>
+</span><span class="line">
+</span><span class="line">         <span class="c1">// mendapatkan posisi objek dg properti visibleBounds dan geometricBounds</span>
+</span><span class="line">         <span class="c1">// masing2 ditampung pada variabel v dan g</span>
+</span><span class="line">         <span class="kd">var</span> <span class="nx">v</span> <span class="o">=</span> <span class="nx">myRect</span><span class="p">.</span><span class="nx">visibleBounds</span><span class="p">;</span>
+</span><span class="line">         <span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="nx">myRect</span><span class="p">.</span><span class="nx">geometricBounds</span><span class="p">;</span>
+</span><span class="line">
+</span><span class="line">         <span class="c1">// tampilkan nilai variabel v dan g</span>
+</span><span class="line">         <span class="nx">alert</span><span class="p">(</span> <span class="s1">&#39;Posisi objek dg visibleBounds: &#39;</span> <span class="o">+</span> <span class="nx">v</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;\r\n\r\n&#39;</span> <span class="o">+</span>
+</span><span class="line">                <span class="s1">&#39;Posisi objek dg geometricBounds: &#39;</span> <span class="o">+</span> <span class="nx">g</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">));</span>
+</span><span class="line">      <span class="p">}</span>
+</span><span class="line">      <span class="k">else</span>
+</span><span class="line">         <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Salah! Anda harus memilih sebuah persegi (rectangle).&#39;</span><span class="p">);</span>
+</span><span class="line">   <span class="p">}</span>
+</span><span class="line">   <span class="k">else</span>
+</span><span class="line">      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Salah! Tidak ada objek yang anda pilih.&#39;</span><span class="p">);</span>
 </span><span class="line"><span class="p">}</span>
-</span><span class="line"><span class="k">else</span> <span class="p">{</span>
-</span><span class="line">   <span class="c1">// jika tidak ada dokumen yg terbuka</span>
-</span><span class="line">   <span class="c1">// tampilkan pesan kesalahan di bawah ini</span>
-</span><span class="line">   <span class="nx">alert</span> <span class="p">(</span> <span class="s1">&#39;Error! Tidak ada dokumen yang terbuka.&#39;</span> <span class="p">);</span>
-</span><span class="line"><span class="p">}</span>
+</span><span class="line"><span class="k">else</span>
+</span><span class="line">   <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Salah! Tidak ada dokumen yang terbuka.&#39;</span><span class="p">);</span>
+</span><span class="line">
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h3 id="penjelasan-program">Penjelasan program</h3>
+<p>Keterangan:</p>
 
-<ol>
-  <li>Baris 1-5 adalah komentar yang berisi penjelasan tentang script, pembuat, dan
-deskripsi singkat tentang script. Bagian ini boleh ada boleh tidak. </li>
-  <li>Baris 8 untuk memastikan bahwa ada dokumen yang terbuka. Baris ini penting,
-sebab scrip ini hanya bekerja jika ada dokumen yang terbuka. Jika ternyata
-tidak ada dokumen yang terbuka, maka script akan menuju ke baris 43, yaitu
-menampilkan kesalahan. Buka satu atau beberapa dokumen dan jalankan script
-ini sekali lagi. </li>
-  <li>Baris 10</li>
-</ol>
+<ul>
+  <li>Pertama, script akan memeriksa apakah ada dokumen yg terbuka (baris 1), apakah ada objek yg dipilih (baris 5), dan apakah objek yg dipilih adalah sebuah persegi (baris 9)</li>
+  <li>Jika semua syarat telah terpenuhi, dapatkan informasi mengenai posisi persegi tsb dengan properti <em>visibleBounds</em> (baris 13) dan <em>geometricBounds</em> (baris 14)</li>
+  <li>Terakhir, tampilkan nilai dari variable v dan g.</li>
+</ul>
 
+<p>Download script di atas dan simpan di folder: c:\program files\adobe\adobe indesign cs3\scripts\scripts panel.</p>
+
+<p>[bersambung…]</p>
 
   
     <footer>
@@ -342,8 +343,8 @@ ini sekali lagi. </li>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nurulhuda.github.com/script-indesign/lesson-01.html';
-        var disqus_url = 'http://nurulhuda.github.com/script-indesign/lesson-01.html';
+        var disqus_identifier = 'http://nurulhuda.github.com/script-indesign/vbound.html';
+        var disqus_url = 'http://nurulhuda.github.com/script-indesign/vbound.html';
         var disqus_script = 'embed.js';
       
     (function () {
