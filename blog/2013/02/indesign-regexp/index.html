@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Tahun Kabisat - Pandu van Java</title>
+  <title>Tutorial InDesign CS3: Find/Change dengan GREP - Pandu van Java</title>
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Tahun kabisat adalah sebuah tahun syamsiah dimana pada tahun tersebut jumlah harinya adalah 366 hari, bukan 365. Satu tahun syamsiah tidak secara &hellip;">
+  <meta name="description" content="GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus regular expression (regexp). Dengan GREP, pencarian dan penggantian &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/02/tahun-kabisat/">
+  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/02/indesign-regexp/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">Tahun Kabisat</h1>
+      <h1 class="entry-title">Tutorial InDesign CS3: Find/Change dengan GREP</h1>
     
     
       <p class="meta">
@@ -86,7 +86,7 @@
   
 
 
-<time datetime="2013-02-04T10:51:00+07:00" pubdate data-updated="true">04 Februari 2013</time>
+<time datetime="2013-02-20T08:03:00+07:00" pubdate data-updated="true">20 Februari 2013</time>
         
          | <a href="#disqus_thread">Komentar</a>
         
@@ -95,87 +95,66 @@
   </header>
 
 
-<div class="entry-content"><p>Tahun kabisat adalah sebuah tahun syamsiah dimana pada tahun tersebut jumlah harinya adalah 366 hari, bukan 365.</p>
-
-<p>Satu tahun syamsiah tidak secara persis terdiri dari 365 hari, tetapi 365 hari 5 jam 48 menit 45,1814 detik. Jika hal ini tidak dihiraukan, maka setiap 4 tahun akan kekurangan hampir 1 hari (tepatnya 23 jam 15 menit 0,7256 detik).</p>
-
-<p>Maka untuk mengkompensasi hal ini, setiap 4 tahun sekali (tahun yang bisa dibagi 4), diberi 1 hari ekstra: 29 Februari. Tetapi karena 5 jam 48 menit 45,1814 detik kurang dari 6 jam, maka tahun-tahun yang bisa dibagi 100 (seperti tahun 1900), bukan tahun kabisat, kecuali bisa dibagi dengan 400 (seperti tahun 2000).
+<div class="entry-content"><p>GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression (regexp)</a>. Dengan GREP, pencarian dan penggantian teks dapat dilakukan dengan sangat efektif. Sebagai contoh, saya pernah menerima naskah dari penulis dengan format seperti ini:
 <!-- more --></p>
 
-<h3 id="algoritma">Algoritma</h3>
+<p><img src="/images/berantakan.jpg" /></p>
 
-<p>Terdapat algoritma mudah untuk menentukan apakah suatu tahun termasuk tahun kabisat atau bukan, yaitu sebagai berikut:</p>
+<p>Berantakan ya? Padahal format yang benar seharusnya seperti ini.</p>
+
+<p><img src="/images/rapi.jpg" /></p>
+
+<p>Apa yang akan anda lakukan dengan naskah dari penulis tersebut? Cara paling
+mudah tentu saja dengan menekan tombol Enter pada setiap pilihan b, c, dan d. 
+Kalau jumlah soal ada 30, berapa kali anda harus menekan tombol Enter? 
+Berapa lama waktu yang anda butuhkan? Tidak efektif bukan? Capek deh…</p>
+
+<p>Cara paling cepat untuk mengatasi masalah di atas adalah dengan Find/Change. Caranya? Terlebih dahulu kita tentukan rumus/<em>pattern</em> dari teks yang 
+akan kita cari. Kalau kita perhatikan, naskah dari penulis tsb memiliki 
+pola yang <em>ajeg</em>, yaitu:<br />
+beberapa spasi diikuti huruf b, c, atau d, diikuti tanda baca titik, 
+diikuti spasi atau kadang tidak ada spasi, diikuti teks jawaban</p>
+
+<p>Pola di atas kalau kita terjemahkan ke dalam <em>pattern</em> regexp adalah sbb:</p>
+
+<p><code>\s+([bcd])\.\s*</code></p>
+
+<p>Penjelasan dari rumus di atas adalah:</p>
 
 <ul>
-  <li>Jika angka tahun itu habis dibagi 400, maka tahun itu sudah pasti tahun kabisat.</li>
-  <li>Jika angka tahun itu tidak habis dibagi 400 tetapi habis dibagi 100, maka tahun itu sudah pasti <strong>bukan</strong> merupakan tahun kabisat.</li>
-  <li>Jika angka tahun itu tidak habis dibagi 400, tidak habis dibagi 100 akan tetapi habis dibagi 4, maka tahun itu merupakan tahun kabisat.</li>
-  <li>Jika angka tahun tidak habis dibagi 400, tidak habis dibagi 100, dan tidak habis dibagi 4, maka tahun tersebut bukan merupakan tahun kabisat.</li>
+  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
+  <li><code>+</code> artinya ‘satu atau lebih’</li>
+  <li><code>[bcd]</code> artinya huruf b, c, atau d</li>
+  <li>tanda kurung ‘()’ maksudnya simpan teks yg ditemukan ke dalam variabel.
+Nantinya, nilai variabel ini dapat diakses dengan simbol $1</li>
+  <li><code>\.</code> artinya karakter titik ‘.’</li>
+  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
+  <li><code>*</code> artinya ‘nol atau lebih’</li>
 </ul>
 
-<p>Berdasarkan algoritma di atas, kita dapat membuat sebuah fungsi pada aplikasi MS Excel sebagai berikut.</p>
+<p>Rumus di atas kira-kira dibaca seperti ini: <em>temukan satu spasi atau lebih yang 
+diikuti huruf b, c, atau d yang diikuti titik yang diikuti atau tidak diikuti beberapa spasi.</em></p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">Public Function CEKKABISAT(myRange As Range) As String
-</span><span class="line">    Dim tahun As Variant
-</span><span class="line">    Dim kabisat As Boolean
-</span><span class="line">    
-</span><span class="line">    tahun = myRange.Value
-</span><span class="line">    If tahun Mod 4 = 0 Then
-</span><span class="line">        If tahun Mod 100 = 0 Then
-</span><span class="line">            If tahun Mod 400 = 0 Then
-</span><span class="line">                kabisat = True
-</span><span class="line">            Else
-</span><span class="line">                kabisat = False
-</span><span class="line">            End If
-</span><span class="line">        Else
-</span><span class="line">            kabisat = True
-</span><span class="line">        End If
-</span><span class="line">    Else
-</span><span class="line">        kabisat = False
-</span><span class="line">    End If
-</span><span class="line">    
-</span><span class="line">    If kabisat Then
-</span><span class="line">        CEKKABISAT = "Kabisat"
-</span><span class="line">    Else
-</span><span class="line">        CEKKABISAT = "Bukan Kabisat"
-</span><span class="line">    End If
-</span><span class="line">End Function</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>Rumus sudah, sekarang tekan tombol Ctrl+F untuk membuka dialog Find/Change. Klik pada tab GREP. Pada kolom ‘Find what:’ tuliskan rumus regexp di atas,
+sedangkan pada kolom ‘Change to:’ tulislah rumus berikut ini:</p>
 
-<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+<p><code>\r$1.\t</code></p>
 
-<p><code>=CEKKABISAT(A1)</code></p>
+<p>Keterangan:</p>
 
-<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+<ul>
+  <li><code>\r</code> artinya baris baru (sama seperti kita menekan Enter)</li>
+  <li><code>$1</code> teks yang ditemukan, dalam hal ini bisa b, c, atau d</li>
+  <li><code>.</code>  tanda titik</li>
+  <li><code>\t</code> tab</li>
+</ul>
 
-<p><code>=IF(MOD(A1,4)=0,IF(MOD(A1,100)=0,IF(MOD(A1,400)=0,"Kabisat","Bukan Kabisat"),"Kabisat"),"Bukan Kabisat")</code></p>
+<p>rumus di atas kira-kira dibaca: <em>ganti dengan baris baru diikuti huruf b, c, 
+atau d diikuti titik diikuti tab.</em></p>
 
-<p>Sumber: <a href="http://id.wikipedia.org/wiki/Tahun_Kabisat">id.wikipedia.org</a></p>
+<p>Ok, kalau semua sudah, terakhir adalah tekan tombol ‘Change All’. Mudah bukan?</p>
 
+<p>Semoga bermanfaat..</p>
 </div>
 
 
@@ -198,12 +177,12 @@
   
 
 
-<time datetime="2013-02-04T10:51:00+07:00" pubdate data-updated="true">04 Februari 2013</time>
+<time datetime="2013-02-20T08:03:00+07:00" pubdate data-updated="true">20 Februari 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ms-excel/'>MS Excel</a>, <a class='category' href='/blog/categories/vba/'>VBA</a>
+    <a class='category' href='/blog/categories/tutorial/'>Tutorial</a>, <a class='category' href='/blog/categories/indesign/'>inDesign</a>
   
 </span>
 
@@ -227,10 +206,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/es-lolipop/" title="Previous Post: Es Lolipop Buah Semangka">&laquo; Es Lolipop Buah Semangka</a>
+        <a class="basic-alignment left" href="/blog/2013/02/kekuatan-dahsyat-otak-kanan/" title="Previous Post: Kekuatan Dahsyat Tersembunyi di Otak Kanan">&laquo; Kekuatan Dahsyat Tersembunyi di Otak Kanan</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/02/5-cara-gila/" title="Next Post: 5 Cara Gila Menjadi Wirausahawan Sukses">5 Cara Gila Menjadi Wirausahawan Sukses &raquo;</a>
       
     </p>
   </footer>
@@ -365,8 +342,8 @@
         
         // var disqus_developer = 1;
         var disqus_config = function(){this.language="id";};
-        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/02/tahun-kabisat/';
-        var disqus_url = 'http://nurulhuda.github.com/blog/2013/02/tahun-kabisat/';
+        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/02/indesign-regexp/';
+        var disqus_url = 'http://nurulhuda.github.com/blog/2013/02/indesign-regexp/';
         var disqus_script = 'embed.js';
       
     (function () {
