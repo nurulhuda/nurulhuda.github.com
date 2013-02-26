@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Daftar Isi - Pandu van Java</title>
+  <title>Tutorial Pengembangan Script Indesign CS3 - Pandu van Java</title>
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Daftar Isi geometricBounds dan visibleBounds, Persamaan dan Perbedaannya Menggambar persegi dan oval Mohon maaf, halaman ini masih dalam tahap &hellip;">
+  <meta name="description" content="Tutorial Pengembangan Script Indesign CS3 بسم الله الرحمن الرحيم Dengan memohon ridho dari Allah SWT aku akan menulis sebuah tutorial mengenai &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,24 +69,77 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Daftar Isi</h1>
+    <h1 class="entry-title">Tutorial Pengembangan Script Indesign CS3</h1>
     
   </header>
   
-  <ul>
-  <li><a href="vboundx.html">geometricBounds dan visibleBounds, Persamaan dan Perbedaannya</a></li>
-  <li><a href="lessonx-01.html">Menggambar persegi dan oval</a></li>
+  <p><img src="/images/logo-indesign-cs3.png" /></p>
+
+<p class="arab" style="text-align: center;">
+بسم الله الرحمن الرحيم
+</p>
+
+<p>Dengan memohon ridho dari Allah SWT aku akan menulis sebuah tutorial mengenai pengembangan script indesign. Walaupun tulisan ku ini barangkali masih teramat sederhana, mudah-mudahan ada manfaatnya buat yang ingin belajar membuat script sendiri.</p>
+
+<p>Adapun pembahasan mengenai script inDesign ini aku batasi pada <em>scope</em> berikut:</p>
+
+<ul>
+  <li>Versi Indesign: CS3</li>
+  <li>Editor: Adobe ExtendScript Toolkit 2 atau editor yang lain, sebaiknya gunakan editor yang mendukung <em>syntax highlighting</em> misalnya <a href="http://notepad-plus-plus.org/">Notepad++</a>.</li>
+  <li>Bahasa yang digunakan: Javascript</li>
 </ul>
 
-<p>Mohon maaf, halaman ini masih dalam tahap pengembangan….</p>
+<p>Saya juga berasumsi bahwa anda telah menguasai (atau paling tidak pernah mempelajari) bahasa JavaScript. Saya tidak akan banyak membahas mengenai syntax-syntax javascript. Namun begitu, anda tidak perlu takut. Pembahasan script akan saya buat sesimpel mungkin sehingga anda dapat mengikuti.</p>
+
+<p>Selamat belajar!</p>
+
+<h2 id="daftar-isi">Daftar Isi</h2>
+
+<ul>
+  <li>Pelajaran 1. Model Objek Indesign CS3
+    <ul>
+      <li>document</li>
+      <li>spread dan page</li>
+      <li>pageItem</li>
+    </ul>
+  </li>
+  <li>Pelajaran 2. Menggambar objek</li>
+  <li>Pelajaran 3. Posisi dan Ukuran Objek</li>
+  <li>Pelajaran 4. Atribut Objek</li>
+  <li>Pelajaran 5. Posisi Statis vs Relatif</li>
+  <li>Pelajaran 6. Grouping</li>
+  <li>Pelajaran 7. Dialog</li>
+</ul>
+
 
   
     <footer>
       
       
+        <div class="sharing">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+      
     </footer>
   
 </article>
+
+  <section>
+    <h1>Komentar</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -95,6 +148,10 @@
     <section>
   <h1>Artikel Terbaru</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/doa-dijauhkan-dari-malas/">Doa Dijauhkan dari Kesedihan, Malas, dan Hutang</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/02/indesign-regexp/">Tutorial InDesign CS3: Find/Change dengan GREP</a>
@@ -122,10 +179,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/tahun-kabisat/">Tahun Kabisat</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/01/es-lolipop/">Es Lolipop Buah Semangka</a>
       </li>
     
   </ul>
@@ -204,6 +257,23 @@
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'panduvanjava';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_config = function(){this.language="id";};
+        var disqus_identifier = 'http://nurulhuda.github.com/script-indesign/index.html';
+        var disqus_url = 'http://nurulhuda.github.com/script-indesign/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
