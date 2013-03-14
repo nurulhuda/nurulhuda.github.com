@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Tentang Aku - Pandu van Java</title>
+  <title>Tutorial Script InDesign CS3 - Pandu van Java</title>
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Tentang Aku السلام عليكم ورحمة الله وبركاته Namaku Nurul Huda. Aku tertarik mempelajari berbagai macam bahasa pemrograman.
-Diantara yang pernah aku &hellip;">
+  <meta name="description" content="Sebelum kita mempelajari cara menggambar garis dengan script, terlabih dahulu marilah kita mengingat sejenak pelajaran Matematika SD, yaitu mengenai &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Diantara yang pernah aku &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nurulhuda.github.com/about/">
+  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -71,53 +70,125 @@ Diantara yang pernah aku &hellip;">
   <div id="body"   >
     <div id="main">
       <div id="content">
-	<div class="page-content">
-<article role="article">
+	<div>
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Tentang Aku</h1>
+    
+      <h1 class="entry-title">Tutorial Script InDesign CS3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-14T12:26:00+07:00" pubdate data-updated="true">14 Maret 2013</time>
+        
+         | <a href="#disqus_thread">Komentar</a>
+        
+      </p>
     
   </header>
+
+
+<div class="entry-content"><h1 id="menggambar-garis">Menggambar Garis</h1>
+
+<p>Sebelum kita mempelajari cara menggambar garis dengan script, terlabih dahulu marilah kita mengingat sejenak pelajaran Matematika SD, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
+
+<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas (<em>default</em>). Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yg digunakan adalah mm).</p>
+
+<p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
+
+<!-- more -->
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (graphicline.jsx)</span> <a href="/downloads/code/graphicline.jsx">download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myLine</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">graphicLines</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
+</span><span class="line"><span class="nx">myLine</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">150</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="penjelasan">Penjelasan:</h3>
+
+<ul>
+  <li>Pada baris 1, variabel myDoc mengacu pada dokumen Indesign yang sedang aktif.</li>
+  <li>Pada baris 2, variabel myPage mengacu pada halaman pertama dokumen yang sedang aktif tersebut. Angka 0 pada pernyataan <code>myDoc.pages[0]</code> berarti halaman pertama. Jika diganti dengan angka 1 berarti halaman kedua, dan seterusnya.</li>
+  <li>Pada baris 3, pernyataan <code>myPage.graphicLines.add()</code> bisa diartikan: tambahkan sebuah garis <em>(graphicLine)</em> pada halaman <em>myPage</em> kemudian berikan hasilnya pada variabel myLine. Sampai disini, sebuah garis telah tergambar pada pojok kiri atas halaman Indesign. Namun posisi dan ukurannya belum sesuai dengan yang kita harapkan.</li>
+  <li>Pada baris 4, properti <em>geometricBounds</em> dari objek myline kita beri nilai berupa array dari koordinat titik awal dan titik akhir. Perhatikan bahwa koordinat ditulis dalam format (y1, x1, y2, x2).</li>
+  <li>Sebelum menjalankan script ini, pastikan dokumen telah menggunakan satuan milimeter.</li>
+</ul>
+
+<p>Sampai disini dulu…. Jangan lupa komentarnya ya….<br />
+Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan garis, dll.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <p class="arab" style="text-align: center;">السلام عليكم ورحمة الله وبركاته</p>
 
-<p><img src="/images/nurul_huda.jpg" class="left" width="112px" height="146px" />Namaku Nurul Huda. Aku tertarik mempelajari berbagai macam bahasa pemrograman.
-Diantara yang pernah aku pelajari antara lain Basica (DOS), Turbo Pascal,
-Visual Basic, JavaScript, PHP, Python, dan belakangan ini Ruby. Dari sekian
-banyak bahasa, yang paling sering aku geluti adalah Visual Basic (dalam hal 
-ini VBA) dan JavaScript. Kedua bahasa ini benar-benar mendukung pekerjaanku
-di bidang design grafis.</p>
+<span class="byline author vcard">Oleh <span class="fn">Nurul Huda</span></span>
 
-<p>Walaupun aku senang dengan bahasa pemrograman bukan berarti aku seorang 
-programmer. Karena secara akademik aku tidak pernah mempelajari ilmu komputer,
-apalagi pemrograman. Aku belajar secara otodidak dari ebook dan fasilitas <em>help</em>
-yang disertakan pada program aplikasi yang aku gunakan. Singkatnya, program
-yang aku buat hanyalah program kecil yang aku buat untuk menunjang pekerjaanku. 
-Insya Allah nanti program-program (lebih tepatnya adalah <em>script</em>) yang aku buat
-akan aku ulas di blog ini. Mudah-mudahan ada manfaatnya buat pembaca.</p>
+      
 
-<h3 id="tentang-blog-ini">Tentang blog ini</h3>
 
-<p>Sebetulnya aku bisa dibilang sudah tidak muda lagi. Aku mengenal ilmu komputer
-juga ketika usiaku sudah tidak muda lagi. Aku membuat blog ini juga bisa dibilang
-terlambat. Ketika yang muda-muda sudah sampai di puncak, aku baru memulai
-sekarang. Tapi tak apalah.. Bukankah lebih baik terlambat daripada tidak
-berbuat sama sekali?</p>
 
-<p>Blog ini lahir sebagai sarana belajar buat aku. Dan aku tidak membatasi isi blog ini pada tema tertentu. Artikel apapun yang menarik buat aku, akan aku <em>share</em> di sini.</p>
 
-<p>Blog ini aku beri nama <em>Pandu van Java</em>. Nama ini kuambil dari nama kedua
-anakku, <strong>Pandu</strong> dan <strong>Java</strong>. Dengan motto “Belajar, berbakti, dan berjuang”
-sebagai pengingat agar terus belajar, berbakti kepada orang tua, dan terus 
-berjuang demi kemaslahatan umat manusia.</p>
+
+
 
 
   
-    <footer>
+
+
+<time datetime="2013-03-14T12:26:00+07:00" pubdate data-updated="true">14 Maret 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tutorial-script-indesign/'>Tutorial Script InDesign</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/03/sedekah-luar-biasa/" title="Previous Post: Sedekah Luar Biasa">&laquo; Sedekah Luar Biasa</a>
       
       
-    </footer>
-  
+    </p>
+  </footer>
 </article>
 
   <section>
@@ -253,8 +324,8 @@ berjuang demi kemaslahatan umat manusia.</p>
         
         // var disqus_developer = 1;
         var disqus_config = function(){this.language="id";};
-        var disqus_identifier = 'http://nurulhuda.github.com/about/index.html';
-        var disqus_url = 'http://nurulhuda.github.com/about/index.html';
+        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/03/menggambar-garis/';
+        var disqus_url = 'http://nurulhuda.github.com/blog/2013/03/menggambar-garis/';
         var disqus_script = 'embed.js';
       
     (function () {

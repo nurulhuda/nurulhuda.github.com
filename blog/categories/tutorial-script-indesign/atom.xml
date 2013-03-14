@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategori: Tutorial Script InDesign | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.com/blog/categories/tutorial-script-indesign/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-03-14T12:42:32+07:00</updated>
+  <id>http://nurulhuda.github.com/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/"/>
+    <updated>2013-03-14T12:26:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
+    <content type="html"><![CDATA[<h1 id="menggambar-garis">Menggambar Garis</h1>
+
+<p>Sebelum kita mempelajari cara menggambar garis dengan script, terlabih dahulu marilah kita mengingat sejenak pelajaran Matematika SD, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
+
+<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas (<em>default</em>). Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yg digunakan adalah mm).</p>
+
+<p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
+
+<!-- more -->
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (graphicline.jsx)</span> <a href='/downloads/code/graphicline.jsx'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">myLine</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">graphicLines</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
+</span><span class='line'><span class="nx">myLine</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">150</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3 id="penjelasan">Penjelasan:</h3>
+
+<ul>
+  <li>Pada baris 1, variabel myDoc mengacu pada dokumen Indesign yang sedang aktif.</li>
+  <li>Pada baris 2, variabel myPage mengacu pada halaman pertama dokumen yang sedang aktif tersebut. Angka 0 pada pernyataan <code>myDoc.pages[0]</code> berarti halaman pertama. Jika diganti dengan angka 1 berarti halaman kedua, dan seterusnya.</li>
+  <li>Pada baris 3, pernyataan <code>myPage.graphicLines.add()</code> bisa diartikan: tambahkan sebuah garis <em>(graphicLine)</em> pada halaman <em>myPage</em> kemudian berikan hasilnya pada variabel myLine. Sampai disini, sebuah garis telah tergambar pada pojok kiri atas halaman Indesign. Namun posisi dan ukurannya belum sesuai dengan yang kita harapkan.</li>
+  <li>Pada baris 4, properti <em>geometricBounds</em> dari objek myline kita beri nilai berupa array dari koordinat titik awal dan titik akhir. Perhatikan bahwa koordinat ditulis dalam format (y1, x1, y2, x2).</li>
+  <li>Sebelum menjalankan script ini, pastikan dokumen telah menggunakan satuan milimeter.</li>
+</ul>
+
+<p>Sampai disini dulu…. Jangan lupa komentarnya ya….<br />
+Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan garis, dll.</p>
+]]></content>
+  </entry>
+  
+</feed>
