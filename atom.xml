@@ -4,7 +4,7 @@
   <title><![CDATA[Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-03-14T12:42:32+07:00</updated>
+  <updated>2013-03-23T17:48:46+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -14,15 +14,31 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Menggambar Spirograf di Indesign CS3]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/03/spirograph/"/>
+    <updated>2013-03-23T16:06:00+07:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/03/spirograph</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/spirograf.png" alt="spirograph" /></p>
+
+<p>Sebaik apapun sebuah aplikasi dibuat, sudah pasti tidak akan bisa memenuhi semua kebutuhan penggunanya yang berbeda-beda latar belakang dan kebutuhannya. Untuk itulah aplikasi-aplikasi besar semacam Adobe Indesign menyediakan sarana berupa <em>script engine</em>. Dengan adanya sarana tersebut pengguna bisa membuat program kecil sesuai dengan kebutuhannya. Program kecil inilah yg disebut dengan script.</p>
+
+<p>Script akan sangat berguna ketika 1) kita harus melakukan suatu pekerjaan yang berulang-ulang dan 2) ketika kita tidak mungkin melakukan pekerjaan tsb secara manual. Sebagai contoh, untuk membuat gambar spirograf seperti gambar di atas bisa dibilang tidak mungkin jika dilakukan secara manual.
+<!-- more --></p>
+
+<p>Kali ini aku mempersembahkan sebuah script untuk menggambar spirograf di Indesign CS3. Sebetulnya script ini adalah karya saudara saya, Peter Kahrel. Hehehe… Aku hanya membuat <em>interface</em>-nya saja supaya lebih mudah digunakan. Kamu bisa mengunduh script tsb <a href="http://nurulhuda.github.com/downloads/code/spirograph.jsx">di sini</a>. Caranya: klik kanan pada link tsb lalu pilih “Save link as…”. Jangan lupa komentarnya ya….</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
     <link href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/"/>
     <updated>2013-03-14T12:26:00+07:00</updated>
     <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
     <content type="html"><![CDATA[<h1 id="menggambar-garis">Menggambar Garis</h1>
 
-<p>Sebelum kita mempelajari cara menggambar garis dengan script, terlabih dahulu marilah kita mengingat sejenak pelajaran Matematika SD, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
+<p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
 
-<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas (<em>default</em>). Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yg digunakan adalah mm).</p>
+<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas <em>(default)</em>. Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yang digunakan adalah milimeter).</p>
 
 <p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
 

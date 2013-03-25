@@ -4,7 +4,7 @@
   <title><![CDATA[Kategori: Tutorial Script InDesign | Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/blog/categories/tutorial-script-indesign/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-03-14T12:42:32+07:00</updated>
+  <updated>2013-03-23T17:48:46+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -20,9 +20,9 @@
     <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
     <content type="html"><![CDATA[<h1 id="menggambar-garis">Menggambar Garis</h1>
 
-<p>Sebelum kita mempelajari cara menggambar garis dengan script, terlabih dahulu marilah kita mengingat sejenak pelajaran Matematika SD, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
+<p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
 
-<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas (<em>default</em>). Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yg digunakan adalah mm).</p>
+<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas <em>(default)</em>. Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yang digunakan adalah milimeter).</p>
 
 <p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
 
