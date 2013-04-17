@@ -4,7 +4,7 @@
   <title><![CDATA[Kategori: Tutorial Script InDesign | Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/blog/categories/tutorial-script-indesign/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-04-09T17:13:19+07:00</updated>
+  <updated>2013-04-17T08:58:31+07:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -18,7 +18,7 @@
     <link href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/"/>
     <updated>2013-03-14T12:26:00+07:00</updated>
     <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
-    <content type="html"><![CDATA[<h1 id="menggambar-garis">Menggambar Garis</h1>
+    <content type="html"><![CDATA[<h2 id="menggambar-garis">Menggambar Garis</h2>
 
 <p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
 
