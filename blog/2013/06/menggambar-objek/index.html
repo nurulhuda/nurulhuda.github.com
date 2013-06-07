@@ -9,7 +9,9 @@
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI &hellip;">
+  <meta name="description" content="Menggambar Segiempat dan Lingkaran Sintaks:
+menggambar segi empat: obj.rectangles.add();
+menggambar lingkaran: obj.ovals.add(); obj merupakan objek &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/">
+  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/06/menggambar-objek/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Pandu van Java" type="application/atom+xml">
@@ -77,7 +79,7 @@
   
 
 
-<time datetime="2013-03-14T12:26:00+07:00" pubdate data-updated="true">14 Maret 2013</time>
+<time datetime="2013-06-06T04:41:00+07:00" pubdate data-updated="true">06 Juni 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -86,39 +88,50 @@
   </header>
 
 
-<div class="entry-content"><h2 id="menggambar-garis">Menggambar Garis</h2>
+<div class="entry-content"><h2 id="menggambar-segiempat-dan-lingkaran">Menggambar Segiempat dan Lingkaran</h2>
 
-<p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
+<p><em>Sintaks:</em><br />
+menggambar segi empat: <code>obj.rectangles.add();</code><br />
+menggambar lingkaran: <code>obj.ovals.add();</code></p>
 
-<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas <em>(default)</em>. Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yang digunakan adalah milimeter).</p>
+<p><code>obj</code> merupakan objek dimana kita akan meletakkan gambar, biasanya bertipe <em>Page</em> atau <em>Spread</em>.</p>
 
-<p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
+<p>Menggambar segiempat dan lingkaran pada dasarnya sama seperti menggambar garis. Untuk lebih jelasnya, perhatikan contoh berikut ini.</p>
 
-<!-- more -->
+<p><em>Contoh:</em></p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (graphicline.jsx)</span> <a href="/downloads/code/graphicline.jsx">download</a></figcaption>
+<p>Gambarlah sebuah persegi yg memiliki ukuran 50 mm x 50 mm jika diketahui koordinat titik kiri-atas persegi tersebut adalah (30, 150)!</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (rectangle.jsx)</span> <a href="/downloads/code/rectangle.jsx">download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myLine</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">graphicLines</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-</span><span class="line"><span class="nx">myLine</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">150</span><span class="p">);</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// x2 = x1 + panjang</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// y2 = y1 + lebar</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>     <span class="c1">// halaman pertama pd dokumen yg aktif</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">myRect</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
+</span><span class="line"><span class="nx">myRect</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">y1</span><span class="p">,</span> <span class="nx">x1</span><span class="p">,</span> <span class="nx">y2</span><span class="p">,</span> <span class="nx">x2</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h3 id="penjelasan">Penjelasan:</h3>
+<p>Untuk menggambar lingkaran (oval), pernyataan pada baris 9 harus diubah menjadi: <code>var myOval = myPage.ovals.add();</code>. Sedangkan pada baris 10, variabel <code>myRect</code> harus disesuaikan/diganti dg <code>myOval</code>. Sebagai catatan: <em>myRect</em> dan <em>myOval</em> hanyalah sebuah variabel. Anda boleh menggantinya dg nama variabel yg lain.</p>
 
-<ul>
-  <li>Pada baris 1, variabel myDoc mengacu pada dokumen Indesign yang sedang aktif.</li>
-  <li>Pada baris 2, variabel myPage mengacu pada halaman pertama dokumen yang sedang aktif tersebut. Angka 0 pada pernyataan <code>myDoc.pages[0]</code> berarti halaman pertama. Jika diganti dengan angka 1 berarti halaman kedua, dan seterusnya.</li>
-  <li>Pada baris 3, pernyataan <code>myPage.graphicLines.add()</code> bisa diartikan: tambahkan sebuah garis <em>(graphicLine)</em> pada halaman <em>myPage</em> kemudian berikan hasilnya pada variabel myLine. Sampai disini, sebuah garis telah tergambar pada pojok kiri atas halaman Indesign. Namun posisi dan ukurannya belum sesuai dengan yang kita harapkan.</li>
-  <li>Pada baris 4, properti <em>geometricBounds</em> dari objek myline kita beri nilai berupa array dari koordinat titik awal dan titik akhir. Perhatikan bahwa koordinat ditulis dalam format (y1, x1, y2, x2).</li>
-  <li>Sebelum menjalankan script ini, pastikan dokumen telah menggunakan satuan milimeter.</li>
-</ul>
+<p>Perlu juga diketahui bahwa menggambar objek lingkaran di InDesign pada dasarnya adalah menggambar segi empat yang merupakan <em>bounding box</em> bagi lingkaran tsb. Jadi, dimensi yg digunakan adalah panjang x lebar, bukan jari-jari, diameter, atau sudut.</p>
 
-<p>Sampai disini dulu…. Jangan lupa komentarnya ya….<br />
-Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan garis, dll.</p>
+<h3 id="latihan">Latihan</h3>
+
+<p>Gambarlah sebuah lingkaran (oval) dengan ketentuan sbb: panjang 150mm, lebar 150mm, dan koordinat titik sudut kiri-atas (30, 73)!</p>
 </div>
 
 
@@ -141,7 +154,7 @@ Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan 
   
 
 
-<time datetime="2013-03-14T12:26:00+07:00" pubdate data-updated="true">14 Maret 2013</time>
+<time datetime="2013-06-06T04:41:00+07:00" pubdate data-updated="true">06 Juni 2013</time>
       
 
 <span class="categories">
@@ -155,7 +168,7 @@ Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan 
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.com/blog/2013/06/menggambar-objek/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.com/blog/2013/06/menggambar-objek/" >Tweet</a>
   
   
   
@@ -166,10 +179,8 @@ Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan 
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/03/sedekah-luar-biasa/" title="Previous Post: Sedekah Luar Biasa">&laquo; Sedekah Luar Biasa</a>
+        <a class="basic-alignment left" href="/blog/2013/05/curhat-setan/" title="Previous Post: Curhat Setan: Al-Quran yang Dibakar!">&laquo; Curhat Setan: Al-Quran yang Dibakar!</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/03/spirograph/" title="Next Post: Menggambar Spirograf di Indesign CS3">Menggambar Spirograf di Indesign CS3 &raquo;</a>
       
     </p>
   </footer>
@@ -322,8 +333,8 @@ Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan 
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/03/menggambar-garis/';
-        var disqus_url = 'http://nurulhuda.github.com/blog/2013/03/menggambar-garis/';
+        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/06/menggambar-objek/';
+        var disqus_url = 'http://nurulhuda.github.com/blog/2013/06/menggambar-objek/';
         var disqus_script = 'embed.js';
       
     (function () {

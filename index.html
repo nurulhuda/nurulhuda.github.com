@@ -9,7 +9,9 @@
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Pembatalan pembakaran Al-Quran hanya omong kosong belaka. Faktanya, dua pendeta justru melakukannya. Yang melakukan bukan Pendeta Terry Jones, tapi &hellip;">
+  <meta name="description" content="Menggambar Segiempat dan Lingkaran Sintaks:
+menggambar segi empat: obj.rectangles.add();
+menggambar lingkaran: obj.ovals.add(); obj merupakan objek &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -58,6 +60,87 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/menggambar-objek/">Tutorial Script InDesign CS3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-06T04:41:00+07:00" pubdate data-updated="true">06 Juni 2013</time>
+        
+         | <a href="/blog/2013/06/menggambar-objek/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2 id="menggambar-segiempat-dan-lingkaran">Menggambar Segiempat dan Lingkaran</h2>
+
+<p><em>Sintaks:</em><br />
+menggambar segi empat: <code>obj.rectangles.add();</code><br />
+menggambar lingkaran: <code>obj.ovals.add();</code></p>
+
+<p><code>obj</code> merupakan objek dimana kita akan meletakkan gambar, biasanya bertipe <em>Page</em> atau <em>Spread</em>.</p>
+
+<p>Menggambar segiempat dan lingkaran pada dasarnya sama seperti menggambar garis. Untuk lebih jelasnya, perhatikan contoh berikut ini.</p>
+
+<p><em>Contoh:</em></p>
+
+<p>Gambarlah sebuah persegi yg memiliki ukuran 50 mm x 50 mm jika diketahui koordinat titik kiri-atas persegi tersebut adalah (30, 150)!</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (rectangle.jsx)</span> <a href="/downloads/code/rectangle.jsx">download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// x2 = x1 + panjang</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// y2 = y1 + lebar</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>     <span class="c1">// halaman pertama pd dokumen yg aktif</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">myRect</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
+</span><span class="line"><span class="nx">myRect</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">y1</span><span class="p">,</span> <span class="nx">x1</span><span class="p">,</span> <span class="nx">y2</span><span class="p">,</span> <span class="nx">x2</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Untuk menggambar lingkaran (oval), pernyataan pada baris 9 harus diubah menjadi: <code>var myOval = myPage.ovals.add();</code>. Sedangkan pada baris 10, variabel <code>myRect</code> harus disesuaikan/diganti dg <code>myOval</code>. Sebagai catatan: <em>myRect</em> dan <em>myOval</em> hanyalah sebuah variabel. Anda boleh menggantinya dg nama variabel yg lain.</p>
+
+<p>Perlu juga diketahui bahwa menggambar objek lingkaran di InDesign pada dasarnya adalah menggambar segi empat yang merupakan <em>bounding box</em> bagi lingkaran tsb. Jadi, dimensi yg digunakan adalah panjang x lebar, bukan jari-jari, diameter, atau sudut.</p>
+
+<h3 id="latihan">Latihan</h3>
+
+<p>Gambarlah sebuah lingkaran (oval) dengan ketentuan sbb: panjang 150mm, lebar 150mm, dan koordinat titik sudut kiri-atas (30, 73)!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -532,55 +615,6 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/menggambar-garis/">Tutorial Script InDesign CS3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-14T12:26:00+07:00" pubdate data-updated="true">14 Maret 2013</time>
-        
-         | <a href="/blog/2013/03/menggambar-garis/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2 id="menggambar-garis">Menggambar Garis</h2>
-
-<p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
-
-<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas <em>(default)</em>. Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yang digunakan adalah milimeter).</p>
-
-<p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/03/menggambar-garis/">Selengkapnya &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -610,6 +644,10 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/menggambar-objek/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/curhat-setan/">Curhat Setan: Al-Quran yang Dibakar!</a>
       </li>
     
@@ -637,16 +675,12 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
         <a href="/blog/2013/04/cintailah-profesimu/">Cintailah Profesimu</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/04/besar-pasak-drpd-tiang/">7 Tanda Besar Pasak daripada Tiang</a>
-      </li>
-    
   </ul>
 </section>
 <section class="catlist">
   <h1>Kategori</h1>
   <ul id="cat_list">
-    <li><a href='/blog/categories/doa'>Doa</a> (2)</li><li><a href='/blog/categories/indesign'>inDesign</a> (1)</li><li><a href='/blog/categories/islam'>Islam</a> (3)</li><li><a href='/blog/categories/keuangan'>Keuangan</a> (1)</li><li><a href='/blog/categories/linux'>Linux</a> (1)</li><li><a href='/blog/categories/motivasi'>Motivasi</a> (9)</li><li><a href='/blog/categories/ms-excel'>MS Excel</a> (1)</li><li><a href='/blog/categories/resep'>Resep</a> (1)</li><li><a href='/blog/categories/script-indesign'>Script Indesign</a> (1)</li><li><a href='/blog/categories/tips'>Tips</a> (2)</li><li><a href='/blog/categories/tutorial'>Tutorial</a> (1)</li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign</a> (1)</li><li><a href='/blog/categories/ubuntu'>Ubuntu</a> (1)</li><li><a href='/blog/categories/umum'>Umum</a> (6)</li><li><a href='/blog/categories/vba'>VBA</a> (1)</li>
+    <li><a href='/blog/categories/doa'>Doa</a> (2)</li><li><a href='/blog/categories/indesign'>inDesign</a> (1)</li><li><a href='/blog/categories/islam'>Islam</a> (3)</li><li><a href='/blog/categories/keuangan'>Keuangan</a> (1)</li><li><a href='/blog/categories/linux'>Linux</a> (1)</li><li><a href='/blog/categories/motivasi'>Motivasi</a> (9)</li><li><a href='/blog/categories/ms-excel'>MS Excel</a> (1)</li><li><a href='/blog/categories/resep'>Resep</a> (1)</li><li><a href='/blog/categories/script-indesign'>Script Indesign</a> (1)</li><li><a href='/blog/categories/tips'>Tips</a> (2)</li><li><a href='/blog/categories/tutorial'>Tutorial</a> (1)</li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign</a> (2)</li><li><a href='/blog/categories/ubuntu'>Ubuntu</a> (1)</li><li><a href='/blog/categories/umum'>Umum</a> (6)</li><li><a href='/blog/categories/vba'>VBA</a> (1)</li>
   </ul>
 </section>
 
