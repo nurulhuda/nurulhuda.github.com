@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Tiga Investasi Wajib - Pandu van Java</title>
+  <title>Tutorial Script InDesign CS3 - Pandu van Java</title>
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Kehidupan kita di dunia ini terbatas padahal aktivitas kebaikan di depan kita begitu berlimpah. Walau setiap hari kita berbuat kebaikan, belum tentu &hellip;">
+  <meta name="description" content="Menggambar poligon beraturan tidak jauh berbeda dengan menggambar objek segiempat (rectangle) atau lingkaran (oval). Bedanya, method add pada objek &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/">
+  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Pandu van Java" type="application/atom+xml">
@@ -61,7 +61,7 @@
   
   <header>
     
-      <h1 class="entry-title">Tiga Investasi Wajib</h1>
+      <h1 class="entry-title">Tutorial Script InDesign CS3</h1>
     
     
       <p class="meta">
@@ -77,7 +77,7 @@
   
 
 
-<time datetime="2013-05-10T11:26:00-04:00" pubdate data-updated="true">10 Mei 2013</time>
+<time datetime="2013-07-18T01:33:00-04:00" pubdate data-updated="true">18 Juli 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -86,25 +86,43 @@
   </header>
 
 
-<div class="entry-content"><p>Kehidupan kita di dunia ini terbatas padahal aktivitas kebaikan di depan kita begitu berlimpah. Walau setiap hari kita berbuat kebaikan, belum tentu itu cukup menjadi bekal kita untuk kehidupan yang kekal. Oleh karena itulah kita perlu melakukan kebaikan yang “pahalanya” terus mengalir walau kita sudah tiada.</p>
+<div class="entry-content"><h2 id="menggambar-poligon-beraturan">Menggambar Poligon Beraturan</h2>
 
-<p>Ternyata ada tiga kebaikan yang pahalanya terus mengalir walau kita sudah tiada. Nabi bersabda, <em>“Apabila seorang anak Adam meninggal putuslah amalnya kecuali tiga perkara: sedekah jariah, ilmu yang memberi manfaat kepada orang lain, anak yang soleh yang berdoa untuknya.”</em> (Hadist Sahih – Riwayat Muslim dan lain-lainnya)</p>
+<p>Poligon beraturan adalah bangun segi banyak yang memiliki bentuk yang teratur, misalnya segitiga, segiempat, segilima, dst. Dengan menambahkan inset, kita bisa membuat poligon yang berbentuk bintang segitiga, segilima, segidelapan, dst.</p>
 
-<p>Orang yang cerdas pasti tidak akan mengabaikan tiga hal tersebut. Dari setiap penghasilannya, orang cerdas pasti akan menginvestasikannya untuk sedekah. Ia sangat sadar bahwa harta yang menyelamatkannya bukanlah yang dimakan atau disimpan tetapi justru yang disedekahkan.</p>
+<p>Menggambar poligon beraturan tidak jauh berbeda dengan menggambar objek segiempat <em>(rectangle)</em> atau lingkaran <em>(oval)</em>. Bedanya, method <em>add</em> pada objek <em>polygons</em> membutuhkan 3 buah parameter, yaitu layer, banyak sisi, dan inset. Untk lebih jelasnya perhatikan contoh di bawah ini.</p>
 
-<!-- more -->
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>polygon.js </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myLayer</span><span class="p">;</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">poly1</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">polygons</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">myLayer</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span><span class="line"><span class="nx">poly1</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mf">39.333</span><span class="p">,</span> <span class="mf">54.179</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mf">155.821</span><span class="p">);</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">poly2</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">polygons</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">myLayer</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+</span><span class="line"><span class="nx">poly2</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mf">46.833</span><span class="p">,</span> <span class="mf">62.065</span><span class="p">,</span> <span class="mf">128.5</span><span class="p">,</span> <span class="mf">147.935</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>Ia senang memperbesar jumlah sedekah daripada saldo tabungan. Apakah tabungan tidak penting? Tentu penting, tetapi sebatas berjaga-jaga untuk keperluan mendadak dan mendesak. Ia tak akan menabung untuk keperluan kuliah S-2 anaknya. Itu terlalu jauh dan berlebihan. Selain itu, sungguh tak pantas kuliah S-2 masih dibiayai orang tua. Dimana letak kemandirian anak kita?</p>
+<p>Kode pada baris 5 akan menghasilkan poligon dengan jumlah sisi = 5 dan inset = 0. Sedangkan baris 8 menghasilkan poligon dengan jumlah sisi 5 dan inset sebesar 50%.</p>
 
-<p>Orang cerdas juga tidak pelit ilmu. Ia akan dengan senang hati menyebarluaskannya. Ia tak akan pernah khawatir kalah pintar dibandingkan orang yang diberi ilmu. Uniknya, semakin banyak ilmu yang dibagi justru ilmu orang yang membagi semakin bertambah. Manfaat dunia ia dapatkan, pahala terus mengalir kepada yang membagi ilmu hingga kiamat tiba, asyik kan? Sungguh amat bodoh orang yang tidak tertarik dengan investasi seperti ini.</p>
+<p>Sama halnya dengan objek lingkaran, nilai pada properti <em>visibleBounds</em> adalah posisi segiempat yang merupakan <em>bounding box</em> untuk objek poligon.</p>
 
-<p>Orang cerdas juga tidak akan mengejar karir dan memajukan bisnisnya dengan melupakan anak-anaknya. Sehebat-hebatnya atau sekuat-kuatnya bisnis tak akan bertahan hingga ribuan tahun. Sementara doa dan amal sholeh anak cucu akan terus mengalir hingga dunia ini musnah.</p>
+<p>Script di atas akan menghasilkan gambar di bawah ini.</p>
 
-<p>Pendidikan kepada anak tak akan dibebankan hanya kepada sekolah, baby sitter, kakek dan neneknya atau pihak lain. Ia akan kerahkan semua sumberdaya agar mental, karakter dan spiritualitas serta masa depan anak ada sentuhan dan peran besar yang dilakukannya. Ia tak akan tega meninggalkan atau menitipkan anak dalam waktu yang lama hanya demi mengejar karir.</p>
+<p><img class="center" src="/images/polygon1.png" /></p>
 
-<p>Anda tak perlu menyesal bila tak punya investasi usaha atau bisnis di akhir kehidupan Anda. Tetapi Anda akan benar-benar menyesal di dunia dan akhirat apabila tidak memiliki tiga investasi di atas. Ayo mulai investasi tiga hal tersebut dari sekarang. Semakin cepat semakin berlipat hasilnya dan di akhirat kita berpeluang ada di tempat terhormat. Mau, kan?</p>
+<p>Baca juga: <a href="/blog/2013/07/menggambar-poligon-2/">Menggambar poligon tidak beraturan</a></p>
 
-<p>sumber: <a href="http://www.jamilazzaini.com/tiga-investasi-wajib/">jamilazzaini.com</a></p>
 </div>
 
 
@@ -127,12 +145,12 @@
   
 
 
-<time datetime="2013-05-10T11:26:00-04:00" pubdate data-updated="true">10 Mei 2013</time>
+<time datetime="2013-07-18T01:33:00-04:00" pubdate data-updated="true">18 Juli 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/motivasi/'>Motivasi</a>
+    <a class='category' href='/blog/categories/tutorial-script-indesign/'>Tutorial Script InDesign</a>
   
 </span>
 
@@ -141,7 +159,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/" >Tweet</a>
   
   
   
@@ -152,10 +170,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/05/sedekah-ala-orang-kaya/" title="Previous Post: Sedekah ala Orang Kaya">&laquo; Sedekah ala Orang Kaya</a>
+        <a class="basic-alignment left" href="/blog/2013/06/berjamaah/" title="Previous Post: Berjamaah">&laquo; Berjamaah</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/05/curhat-setan/" title="Next Post: Curhat Setan: Al-Quran yang Dibakar!">Curhat Setan: Al-Quran yang Dibakar! &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/07/menggambar-poligon-2/" title="Next Post: Tutorial Script InDesign CS3">Tutorial Script InDesign CS3 &raquo;</a>
       
     </p>
   </footer>
@@ -308,8 +326,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/';
-        var disqus_url = 'http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/';
+        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/';
+        var disqus_url = 'http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[Kategori: Tutorial | Pandu van Java]]></title>
   <link href="http://nurulhuda.github.com/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-06-19T12:02:10+07:00</updated>
+  <updated>2013-07-18T04:49:36-04:00</updated>
   <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Tutorial InDesign CS3: Find/Change dengan GREP]]></title>
     <link href="http://nurulhuda.github.com/blog/2013/02/indesign-regexp/"/>
-    <updated>2013-02-20T08:03:00+07:00</updated>
+    <updated>2013-02-20T08:03:00-05:00</updated>
     <id>http://nurulhuda.github.com/blog/2013/02/indesign-regexp</id>
     <content type="html"><![CDATA[<p>GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression (regexp)</a>. Dengan GREP, pencarian dan penggantian teks dapat dilakukan dengan sangat efektif. Sebagai contoh, saya pernah menerima naskah dari penulis dengan format seperti ini:
 <!-- more --></p>

@@ -9,7 +9,7 @@
   <meta name="author" content="Nurul Huda">
 
   
-  <meta name="description" content="Islam memerintahkan pemeluknya untuk berjamaah. Tidak hanya dalam shalat. Tapi juga dalam ekonomi dan lain-lain hal, termasuk makan. Innal barakata &hellip;">
+  <meta name="description" content="Menggambar Poligon Tidak Beraturan Gambar di atas adalah frame atau border yang terdiri atas dua buah poligon tidak beraturan. Menggambar poligon &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,131 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/07/menggambar-poligon-2/">Tutorial Script InDesign CS3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T03:05:00-04:00" pubdate data-updated="true">18 Juli 2013</time>
+        
+         | <a href="/blog/2013/07/menggambar-poligon-2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2 id="menggambar-poligon-tidak-beraturan">Menggambar Poligon Tidak Beraturan</h2>
+
+<p><img class="center" src="/images/innovations.png" /></p>
+
+<p>Gambar di atas adalah frame atau border yang terdiri atas dua buah poligon tidak beraturan. Menggambar poligon tidak beraturan memang tidak semudah menggambar segiempat, lingkaran, atau poligon beraturan. Untuk menggambar poligon tidak beraturan kita harus menentukan koordinat tiap-tiap <em>path point</em>, <em>left direction</em>, dan <em>right direction</em>-nya (perhatikan gambar di bawah ini).</p>
+
+<p><img class="center" src="/images/pathpoint.png" /></p>
+
+<p>Script di bawah ini saya ‘sedekahkan’ untuk anda (hehehe.. mumpung masih bulan Ramadhan mudah2an pahalanya berlipat ganda. Amin..). Silakan diunduh, dipelajari, atau disebarluaskan (jika perlu).</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/07/menggambar-poligon-2/">Selengkapnya &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/menggambar-poligon-1/">Tutorial Script InDesign CS3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T01:33:00-04:00" pubdate data-updated="true">18 Juli 2013</time>
+        
+         | <a href="/blog/2013/07/menggambar-poligon-1/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2 id="menggambar-poligon-beraturan">Menggambar Poligon Beraturan</h2>
+
+<p>Poligon beraturan adalah bangun segi banyak yang memiliki bentuk yang teratur, misalnya segitiga, segiempat, segilima, dst. Dengan menambahkan inset, kita bisa membuat poligon yang berbentuk bintang segitiga, segilima, segidelapan, dst.</p>
+
+<p>Menggambar poligon beraturan tidak jauh berbeda dengan menggambar objek segiempat <em>(rectangle)</em> atau lingkaran <em>(oval)</em>. Bedanya, method <em>add</em> pada objek <em>polygons</em> membutuhkan 3 buah parameter, yaitu layer, banyak sisi, dan inset. Untk lebih jelasnya perhatikan contoh di bawah ini.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>polygon.js </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myLayer</span><span class="p">;</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">poly1</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">polygons</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">myLayer</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span><span class="line"><span class="nx">poly1</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mf">39.333</span><span class="p">,</span> <span class="mf">54.179</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mf">155.821</span><span class="p">);</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">poly2</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">polygons</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">myLayer</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+</span><span class="line"><span class="nx">poly2</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mf">46.833</span><span class="p">,</span> <span class="mf">62.065</span><span class="p">,</span> <span class="mf">128.5</span><span class="p">,</span> <span class="mf">147.935</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Kode pada baris 5 akan menghasilkan poligon dengan jumlah sisi = 5 dan inset = 0. Sedangkan baris 8 menghasilkan poligon dengan jumlah sisi 5 dan inset sebesar 50%.</p>
+
+<p>Sama halnya dengan objek lingkaran, nilai pada properti <em>visibleBounds</em> adalah posisi segiempat yang merupakan <em>bounding box</em> untuk objek poligon.</p>
+
+<p>Script di atas akan menghasilkan gambar di bawah ini.</p>
+
+<p><img class="center" src="/images/polygon1.png" /></p>
+
+<p>Baca juga: <a href="/blog/2013/07/menggambar-poligon-2/">Menggambar poligon tidak beraturan</a></p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/06/berjamaah/">Berjamaah</a></h1>
     
     
@@ -80,7 +205,7 @@
   
 
 
-<time datetime="2013-06-19T11:51:00+07:00" pubdate data-updated="true">19 Juni 2013</time>
+<time datetime="2013-06-19T11:51:00-04:00" pubdate data-updated="true">19 Juni 2013</time>
         
          | <a href="/blog/2013/06/berjamaah/#disqus_thread">Comments</a>
         
@@ -127,7 +252,7 @@
   
 
 
-<time datetime="2013-06-06T04:41:00+07:00" pubdate data-updated="true">06 Juni 2013</time>
+<time datetime="2013-06-06T04:41:00-04:00" pubdate data-updated="true">06 Juni 2013</time>
         
          | <a href="/blog/2013/06/menggambar-objek/#disqus_thread">Comments</a>
         
@@ -208,7 +333,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
 
 
-<time datetime="2013-05-30T08:28:00+07:00" pubdate data-updated="true">30 Mei 2013</time>
+<time datetime="2013-05-30T08:28:00-04:00" pubdate data-updated="true">30 Mei 2013</time>
         
          | <a href="/blog/2013/05/curhat-setan/#disqus_thread">Comments</a>
         
@@ -271,7 +396,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
 
 
-<time datetime="2013-05-10T11:26:00+07:00" pubdate data-updated="true">10 Mei 2013</time>
+<time datetime="2013-05-10T11:26:00-04:00" pubdate data-updated="true">10 Mei 2013</time>
         
          | <a href="/blog/2013/05/tiga-investasi-wajib/#disqus_thread">Comments</a>
         
@@ -318,7 +443,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
 
 
-<time datetime="2013-05-03T09:01:00+07:00" pubdate data-updated="true">03 Mei 2013</time>
+<time datetime="2013-05-03T09:01:00-04:00" pubdate data-updated="true">03 Mei 2013</time>
         
          | <a href="/blog/2013/05/sedekah-ala-orang-kaya/#disqus_thread">Comments</a>
         
@@ -327,9 +452,9 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   </header>
 
 
-  <div class="entry-content"><p><img class="left" src="/images/ForbesMECoverE.jpg" width="168" /> Majalah Forbes menyatakan bhw kekayaan &#8220;Sulaiman Ar-Rajhi&#8221; sekitar 5.9 Milyar Dollar. Orang Terkaya dg nomer urut 120 di dunia. Meskipun begitu penampilan &#8220;Sulaiman Ar-Rajhi&#8221; tetap sederhana, jauh dari kesan glamour. Ia memulai usaha dr nol, bahkan pernah jd kuli panggul. Dg ketekunan, kerja keras, terkenal hemat tapi tekun bersedekah &amp; berkah Allah SWT beliau akhirnya memiliki Kerajaan Bisnis di KSA. Salah satu bisnisnya adalah Bank Ar-Rajhi, Bank Syariah terbesar di Dunia. </p>
+  <div class="entry-content"><p><img class="left" src="/images/ForbesMECoverE.jpg" width="168" /> Majalah Forbes menyatakan bhw kekayaan &ldquo;Sulaiman Ar-Rajhi&rdquo; sekitar 5.9 Milyar Dollar. Orang Terkaya dg nomer urut 120 di dunia. Meskipun begitu penampilan &ldquo;Sulaiman Ar-Rajhi&rdquo; tetap sederhana, jauh dari kesan glamour. Ia memulai usaha dr nol, bahkan pernah jd kuli panggul. Dg ketekunan, kerja keras, terkenal hemat tapi tekun bersedekah &amp; berkah Allah SWT beliau akhirnya memiliki Kerajaan Bisnis di KSA. Salah satu bisnisnya adalah Bank Ar-Rajhi, Bank Syariah terbesar di Dunia. </p>
 
-<p>Berikut ini adalah catatan sedekah &#8220;Sulaiman Ar-Rajhi&#8221; yg luar biasa:</p>
+<p>Berikut ini adalah catatan sedekah &ldquo;Sulaiman Ar-Rajhi&rdquo; yg luar biasa:</p>
 
 </div>
   
@@ -363,7 +488,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
 
 
-<time datetime="2013-04-29T16:32:00+07:00" pubdate data-updated="true">29 April 2013</time>
+<time datetime="2013-04-29T16:32:00-04:00" pubdate data-updated="true">29 April 2013</time>
         
          | <a href="/blog/2013/04/menulis-itu-menyenangkan/#disqus_thread">Comments</a>
         
@@ -412,7 +537,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
 
 
-<time datetime="2013-04-25T11:59:00+07:00" pubdate data-updated="true">25 April 2013</time>
+<time datetime="2013-04-25T11:59:00-04:00" pubdate data-updated="true">25 April 2013</time>
         
          | <a href="/blog/2013/04/kiat-ajarkan-anak-ngeblog/#disqus_thread">Comments</a>
         
@@ -459,7 +584,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
 
 
-<time datetime="2013-04-23T13:09:00+07:00" pubdate data-updated="true">23 April 2013</time>
+<time datetime="2013-04-23T13:09:00-04:00" pubdate data-updated="true">23 April 2013</time>
         
          | <a href="/blog/2013/04/menulislah/#disqus_thread">Comments</a>
         
@@ -509,111 +634,6 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/cintailah-profesimu/">Cintailah Profesimu</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-17T13:01:00+07:00" pubdate data-updated="true">17 April 2013</time>
-        
-         | <a href="/blog/2013/04/cintailah-profesimu/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Setiap muslim wajib bekerja untuk mencari karunia Allah. Pekerjaan apapun asalkan halal adalah mulia di sisi Allah swt. Jangan pernah berfikir pekerjaanmu lebih hebat dari pekerjaan orang lain. Karena itu akan membuatmu takabur. Sebaliknya, jangan pernah kamu merasa pekerjaanmu lebih hina dari pekerjaan orang lain. Karena itu akan membuatmu rendah diri.</p>
-
-<p>Alkisah, ada seorang pemuda terpelajar dari Surabaya sedang berpergian naik pesawat ke Jakarta. Disampingnya duduk seorang ibu yang sudah berumur. Si pemuda menyapa, dan tak lama mereka terlarut dalam obrolan ringan. “Ibu, ada acara apa pergi ke Jakarta?” tanya si pemuda. “Oh… saya mau ke Jakarta terus <em>connecting flight</em> ke Singapura nengokin anak saya yang kedua”, jawab ibu itu.” “Wouw… hebat sekali putra ibu,” pemuda itu menyahut dan terdiam sejenak.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/04/cintailah-profesimu/">Selengkapnya &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/besar-pasak-drpd-tiang/">7 Tanda Besar Pasak daripada Tiang</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-17T08:40:00+07:00" pubdate data-updated="true">17 April 2013</time>
-        
-         | <a href="/blog/2013/04/besar-pasak-drpd-tiang/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Banyak dari kita yang menerapkan cara hidup “besar pasak daripada tiang”, atau lebih banyak pengeluaran daripada pemasukan. Kalaupun kemudian bisa menabung, ternyata masih tidak stabil di bulan berikutnya. Bagaimana dengan Anda? Apakah Anda tipe orang yang pengelolaan uangnya “besar pasak daripada tiang”?</p>
-
-<p>Untuk mengetahuinya, ada sejumlah tanda yang bisa dijadikan acuan:</p>
-
-<ol>
-  <li>Keuangan Anda tidak bisa membuat Anda survive sampai enam bulan ke depan
-Adalah menarik mengetahui sebesar apa tabungan kita sampai bisa dibilang stabil dari segi keuangan. Sejumlah pakar keuangan, di antaranya Sheryl Garrett, menyebutkan ada baiknya simpanan hari tua, uang darurat, atau apapun sebutannya, dapat membuat Anda bertahan sampai setidaknya selama enam bulan. Itu sudah hitungan biaya makan, transportasi, cicilan, dan sebagainya. Kenapa demikian?<br />
-Bayangkan sekiranya Anda diberhentikan atau berhenti dari pekerjaan sekarang, setidaknya Anda masih punya simpanan sampai Anda mendapatkan pekerjaan baru dengan standar gaji yang sama.</li>
-  <li>Hanya menyisihkan 10 persen dari gaji setiap bulannya<br />
-Idealnya seseorang dianjurkan untuk menyisihkan gaji yang diperoleh setiap bulannya sebesar 10 persen untuk hari tua mulai sejak usia 25. Beranjak dari laporan tahun 2011, Center for Retirement Research at Boston College menghitung bahwa jika seseorang menabung sejak usia 25 dan pensiun di usia 70 tahun, ia perlu menyisihkan pendapatan minimal 7 persen supaya mencapai keuangan yang stabil. Kalau mau pensiun lebih awal di usia 65, maka sisihkanlah 15 persen dari gaji Anda setiap bulan.</li>
-  <li>Cicilan rumah Anda lebih dari satu minggu hitungan gaji<br />
-Hal ini berkaitan dengan kemampuan Anda membeli rumah dengan harga sesuai dengan penghasilan Anda. Satu minggu hitungan gaji adalah gambaran kasar saja. “Artinya bahwa pembayaran cicilan Anda tidak boleh lebih dari seperempat dari pendapatan Anda,” ujar Harold Evensky, perencana keuangan bersertifikasi, dan Presiden Evensky &amp; Katz Wealth Management di Coral Gables, Fla. Dengan kata lain, usahakan cicilan rumah Anda kira-kira seperempat saja dari gaji Anda.</li>
-  <li>Tagihan kartu kredit sama seperti tahun-tahun yang lalu<br />
-Hanya dengan mengetahui bahwa tagihan kartu kredit selalu sama, sudah merupakan tanda bahwa Anda lebih banyak mengeluarkan daripada memasukkan uang. Apalagi jika pemakaian kartu kredit justru lebih besar setiap tahun atau setiap bulannya. Karena, utang kartu kredit biasanya tidak membiayai aset yang berkembang, melainkan hanya membiayai gaya hidup. Jika Anda bisa mengontrol diri dan setiap kali mampu mengurangi jumlah tagihan, akan baik untuk kondisi keuangan Anda.</li>
-  <li>Mudah terayu oleh barang atau cicilan tanpa bunga<br />
-Seringkali ada penawaran menarik yang datang menghampiri, di mana Anda bisa membeli barang impian Anda dengan cara mencicil namun Anda bisa membayar cicilannya tanpa bunga, dan sebagainya. Ada juga yang menawarkan pembayaran tanpa bunga dalam periode tertentu, misalnya sampai setahun yang akan datang. Lebih baik tidak ambil resiko, hanya dengan membayangkan apakah Anda mampu membayarnya belakangan. Karena jika sekarang saja Anda tidak mampu, bagaimana nanti?</li>
-  <li>Membayar tagihan kartu kredit dengan kartu kredit lainnya<br />
-Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari kartu kredit baru untuk memindahkan tagihan dari kartu kredit yang lama. Menurut Erin Baehr, perencana keuangan di Stroudsburg, Pa, jika Anda menumpuk utang dalam kartu kredit yang menerapkan bunga tinggi, memindahkan tagihan kartu yang satu ke kartu lain yang bunganya lebih rendah memang akan menguntungkan. Tetapi kalau Anda mentransfer tagihan ke kartu lain yang bunganya tinggi untuk meningkatkan limit kartu kredit, itu bukanlah keputusan yang bijak.</li>
-  <li>Sebelum membeli sesuatu Anda sering berpikir, “Saya tahu, tidak seharusnya saya membelinya, tapi….”<br />
-“Saya sudah bekerja keras, jadi saya berhak atas TV layar datar ini,” atau, “Pekerjaan saya berat, jadi saya butuh liburan untuk kesehatan mental saya,” begitu kata Anda. Kedengarannya familiar, bukan? Seringkali kita mencari alasan atau pembenaran untuk memperoleh sesuatu yang nilainya jauh di atas kemampuan kita membelinya. Boleh percaya boleh tidak, menurut Baehr, kata-kata seperti ini justru sering datang dari orang yang kesulitan keuangan. Kalau Anda stabil secara finansial, biasanya Anda tidak akan mengungkapkan demikian.</li>
-</ol>
-
-<p>Sumber: <a href="http://www.kompas.com/">Kompas</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -639,8 +659,16 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
   <p><a href="/about-me/"><img src="/images/nurul_huda.jpg" width="73" height="93" style="float:left; margin-right:10px; margin-bottom:1.5em;" /></a>Aku adalah aku dengan segala kelebihan dan kekurangannya</p>
 </section>
 <section>
-  <h1>Artikel Terakhir</h1>
+  <h1>Tulisan Terakhir</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-2/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-1/">Tutorial Script InDesign CS3</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/06/berjamaah/">Berjamaah</a>
@@ -666,20 +694,12 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
         <a href="/blog/2013/04/menulis-itu-menyenangkan/">Menulis Itu Menyenangkan</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/04/kiat-ajarkan-anak-ngeblog/">5 Kiat Ajarkan Anak Mulai Ngeblog</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/menulislah/">Menulislah</a>
-      </li>
-    
   </ul>
 </section>
 <section class="catlist">
   <h1>Kategori</h1>
   <ul id="cat_list">
-    <li><a href='/blog/categories/doa'>Doa</a> (2)</li><li><a href='/blog/categories/indesign'>inDesign</a> (1)</li><li><a href='/blog/categories/islam'>Islam</a> (4)</li><li><a href='/blog/categories/keuangan'>Keuangan</a> (1)</li><li><a href='/blog/categories/linux'>Linux</a> (1)</li><li><a href='/blog/categories/motivasi'>Motivasi</a> (9)</li><li><a href='/blog/categories/ms-excel'>MS Excel</a> (1)</li><li><a href='/blog/categories/resep'>Resep</a> (1)</li><li><a href='/blog/categories/script-indesign'>Script Indesign</a> (1)</li><li><a href='/blog/categories/tips'>Tips</a> (2)</li><li><a href='/blog/categories/tutorial'>Tutorial</a> (1)</li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign</a> (2)</li><li><a href='/blog/categories/ubuntu'>Ubuntu</a> (1)</li><li><a href='/blog/categories/umum'>Umum</a> (6)</li><li><a href='/blog/categories/vba'>VBA</a> (1)</li>
+    <li><a href='/blog/categories/doa'>Doa</a> (2)</li><li><a href='/blog/categories/indesign'>inDesign</a> (1)</li><li><a href='/blog/categories/islam'>Islam</a> (4)</li><li><a href='/blog/categories/keuangan'>Keuangan</a> (1)</li><li><a href='/blog/categories/linux'>Linux</a> (1)</li><li><a href='/blog/categories/motivasi'>Motivasi</a> (9)</li><li><a href='/blog/categories/ms-excel'>MS Excel</a> (1)</li><li><a href='/blog/categories/resep'>Resep</a> (1)</li><li><a href='/blog/categories/script-indesign'>Script Indesign</a> (1)</li><li><a href='/blog/categories/tips'>Tips</a> (2)</li><li><a href='/blog/categories/tutorial'>Tutorial</a> (1)</li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign</a> (4)</li><li><a href='/blog/categories/ubuntu'>Ubuntu</a> (1)</li><li><a href='/blog/categories/umum'>Umum</a> (6)</li><li><a href='/blog/categories/vba'>VBA</a> (1)</li>
   </ul>
 </section>
 

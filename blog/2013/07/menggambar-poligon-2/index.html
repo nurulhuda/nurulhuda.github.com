@@ -1,36 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pandu van Java]]></title>
-  <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
-  <link href="http://nurulhuda.github.com/"/>
-  <updated>2013-07-18T04:49:36-04:00</updated>
-  <id>http://nurulhuda.github.com/</id>
-  <author>
-    <name><![CDATA[Nurul Huda]]></name>
-    <email><![CDATA[elhuda34@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tutorial Script InDesign CS3 - Pandu van Java</title>
+  <meta name="author" content="Nurul Huda">
 
   
-  <entry>
-    <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/"/>
-    <updated>2013-07-18T03:05:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2</id>
-    <content type="html"><![CDATA[<h2 id="menggambar-poligon-tidak-beraturan">Menggambar Poligon Tidak Beraturan</h2>
+  <meta name="description" content="Menggambar poligon tidak beraturan memang tidak semudah menggambar segiempat, lingkaran, atau poligon beraturan. Untuk menggambar poligon tidak &hellip;">
+  
 
-<p><img class="center" src="http://nurulhuda.github.com/images/innovations.png" /></p>
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pandu van Java" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+
+</head>
+
+<body   >
+  <script type="text/javascript" src="/javascripts/link_pelangi.js"></script>
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pandu van Java</a></h1>
+  
+    <h2>Belajar, Berbakti, dan Berjuang</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/">Beranda</a></li>
+  <li><a href="/blog/archives">Arsip</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Tutorial Script InDesign CS3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T03:05:00-04:00" pubdate data-updated="true">18 Juli 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2 id="menggambar-poligon-tidak-beraturan">Menggambar Poligon Tidak Beraturan</h2>
+
+<p><img class="center" src="/images/innovations.png" /></p>
 
 <p>Gambar di atas adalah frame atau border yang terdiri atas dua buah poligon tidak beraturan. Menggambar poligon tidak beraturan memang tidak semudah menggambar segiempat, lingkaran, atau poligon beraturan. Untuk menggambar poligon tidak beraturan kita harus menentukan koordinat tiap-tiap <em>path point</em>, <em>left direction</em>, dan <em>right direction</em>-nya (perhatikan gambar di bawah ini).</p>
 
-<p><img class="center" src="http://nurulhuda.github.com/images/pathpoint.png" /></p>
+<p><img class="center" src="/images/pathpoint.png" /></p>
 
 <p>Script di bawah ini saya ‘sedekahkan’ untuk anda (hehehe.. mumpung masih bulan Ramadhan mudah2an pahalanya berlipat ganda. Amin..). Silakan diunduh, dipelajari, atau disebarluaskan (jika perlu).</p>
 
 <!-- more -->
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (innovation.jsx)</span> <a href="http://nurulhuda.github.com/downloads/code/innovation.jsx">download</a></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (innovation.jsx)</span> <a href="/downloads/code/innovation.jsx">download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -471,744 +539,248 @@ Baris 51-194 adalah koordinat titik-titik pada poligon-2 relatif terhadap posisi
 
 <p>Semoga bermanfaat</p>
 
-<p>Baca juga: <a href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/">Menggambar poligon beraturan</a></p>
+<p>Baca juga: <a href="/blog/2013/07/menggambar-poligon-1/">Menggambar poligon beraturan</a></p>
 
-]]></content>
-  </entry>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <entry>
-    <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/"/>
-    <updated>2013-07-18T01:33:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1</id>
-    <content type="html"><![CDATA[<h2 id="menggambar-poligon-beraturan">Menggambar Poligon Beraturan</h2>
 
-<p>Poligon beraturan adalah bangun segi banyak yang memiliki bentuk yang teratur, misalnya segitiga, segiempat, segilima, dst. Dengan menambahkan inset, kita bisa membuat poligon yang berbentuk bintang segitiga, segilima, segidelapan, dst.</p>
+<span class="byline author vcard">Posted by <span class="fn">Nurul Huda</span></span>
 
-<p>Menggambar poligon beraturan tidak jauh berbeda dengan menggambar objek segiempat <em>(rectangle)</em> atau lingkaran <em>(oval)</em>. Bedanya, method <em>add</em> pada objek <em>polygons</em> membutuhkan 3 buah parameter, yaitu layer, banyak sisi, dan inset. Untk lebih jelasnya perhatikan contoh di bawah ini.</p>
+      
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>polygon.js </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myLayer</span><span class="p">;</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">poly1</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">polygons</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">myLayer</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span><span class="line"><span class="nx">poly1</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mf">39.333</span><span class="p">,</span> <span class="mf">54.179</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mf">155.821</span><span class="p">);</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">poly2</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">polygons</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">myLayer</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
-</span><span class="line"><span class="nx">poly2</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mf">46.833</span><span class="p">,</span> <span class="mf">62.065</span><span class="p">,</span> <span class="mf">128.5</span><span class="p">,</span> <span class="mf">147.935</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>Kode pada baris 5 akan menghasilkan poligon dengan jumlah sisi = 5 dan inset = 0. Sedangkan baris 8 menghasilkan poligon dengan jumlah sisi 5 dan inset sebesar 50%.</p>
 
-<p>Sama halnya dengan objek lingkaran, nilai pada properti <em>visibleBounds</em> adalah posisi segiempat yang merupakan <em>bounding box</em> untuk objek poligon.</p>
 
-<p>Script di atas akan menghasilkan gambar di bawah ini.</p>
 
-<p><img class="center" src="http://nurulhuda.github.com/images/polygon1.png" /></p>
 
-<p>Baca juga: <a href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/">Menggambar poligon tidak beraturan</a></p>
 
-]]></content>
-  </entry>
+
   
-  <entry>
-    <title type="html"><![CDATA[Berjamaah]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/06/berjamaah/"/>
-    <updated>2013-06-19T11:51:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/06/berjamaah</id>
-    <content type="html"><![CDATA[<p>Islam memerintahkan pemeluknya untuk berjamaah. Tidak hanya dalam shalat. Tapi juga dalam ekonomi dan lain-lain hal, termasuk makan. <em>Innal barakata ma’al jamaa’ah</em>, sesungguhnya keberkahan itu ada di dalam kebersamaan. </p>
 
-<p>Shalat sendiri, beda dengan shalat berjamaah. Jika berjamaah, beda 27 derajat. 27 kali lipat dapatnya. Bahkan istimewanya, siapa yang shalatnya lebih bagus, baik dalam ilmu, rasa, keikhlasan, maka derajat dia yang dipakaikan ke semua yang ada di dalam shalat berjamaah tersebut. </p>
 
-<p>Dapat pula pahala ikutan lain-lainnya sebab shalat berjamaah. 40 orang yang berdoa, maka dikabulkan itu doa. Berapa kalo kita kemudian berjamaah dalam masjid yang jamaahnya mencapai lipatan 40? </p>
+<time datetime="2013-07-18T03:05:00-04:00" pubdate data-updated="true">18 Juli 2013</time>
+      
 
-<!-- more -->
-
-<p>Sebab berjamaah, maka dapat pahala melangkah ke masjid, dapat pahala jika datang ke masjid udah dalam keadaan berwudhu, bisa dapat pahala tahiyyatul masjid, qobliyah ba’diyah, zikir, sesuatu yang mungkin tidak dapat kita laksanakan manakala gak berjamaah dan tidak ke masjid.</p>
-
-<p>Bersedekah juga begitu. Begitu berjamaah, maka Rp 20 ribu, Rp 50 ribu, Rp 100 ribu jadi sesuatu yang besar. Jika sebelumnya 20 ribu, bisa dapat dua bungkus nasi plus lauk sederhana, 50 ribu dapat lima bungkus nasi plus lauk sederhana, 100 ribu bisa dapat 10 nasi bungkus plus lauk sederhana. </p>
-
-<p>Maka bila satu juta orang berkumpul, bersedekah Rp 20 ribu, Rp 50 ribu, Rp 100 ribu? Dapat berapa? Dapat apa? Dapat ribuan hektar sawah, yang bisa kemudian sedekahnya bisa bergulir dan bergulir. </p>
-
-<p>Bisa punya peternakan sapi yang gak bergantung sama import, bisa membeli perahu dan membangun pasar ikannya sendiri, bisa membuka perkebunan yang tidak dikontrol harganya oleh pasar.</p>
-
-<p>Sayang, ummat kita belum dimaksimalkan potensi berjamaahnya. Potensi ummat, terutama dari sisi berjamaah ini, baru dimanfaatkan oleh segelintir orang. </p>
-
-<p>Misal, kebutuhan orang untuk makan, udah kemudian dimanfaatkan oleh segelintir orang untuk berjualan. Bukan kemudian pasarnya yang dimiliki oleh masyarakat. </p>
-
-<p>Salah satu atau mungkin banyak properti besar, dikucurkan dana hingga ratusan milyar, dari sebuah bank. Itu juga pemanfaatan yang boleh jadi positif, boleh jadi tetap negatif, untuk ekonomi jangka pendek dan panjang.
-Ulasannya bukan di sini tentunya. Seperti satu berita bahwa satu bank memberi Rp 600 milyar untuk satu kelompok properti besar. Apa yang saya baca? </p>
-
-<p>Jutaan ummat berkumpul, menabung. Lalu tabungan mereka digunakan untuk membiayai properti tersebut, yang kelak properti ini justru menggusur masyarakat penabung yang notabene rakyat kecil, yang justru tidak akan mampu membeli properti mereka. Duit mereka membunuh mereka sendiri. </p>
-
-<p>Tapi saya gak mau jadi <em>the loser</em>. Sisi positifnya jelas banyak. Pasti ada keuntungannya. Jangka pendeknya, bisa membuka lapangan pekerjaan lebih banyak.
-Kemudian bila pajaknya cakep pengelolaannya, bisa dipakai untuk ummat yang lebih banyak. Tappiii… Entahlah. </p>
-
-<p>Berjamaah, sungguh Allah dan Rasul-Nya menyeru, bukan hanya di urusan shalat. Ayo dong, di semua urusan. Bahkan di dalam urusan politik. Ummat bercerai berai gak keruan. </p>
-
-<p>Visi misi yang udah gak sama lagi, hingga kemudian noda perilaku dan karakter, menyempurnakan ketidaksolidan suara. Akhirnya suara banyak dipegang sama yang tidak lagi membela Allah dan Rasul-Nya, agama-Nya, dan ummat Islam. </p>
-
-<p>Di urusan ekonomi, saya mengingatkan diri saya, dan sebanyak-banyaknya orang, sesungguhnya kita masih teramat kuat.
-Sebab kita ini banyak. Sungguh, kita ini banyak. Banyak banget. Bener-bener banyak. Mudah-mudahan kita ini sadar. </p>
-
-<p>Saya mencoba mengumpulkan baru 15 ribu orang saja, dan itupun baru tiga ribu orang kurang lebihnya, tapi sudah bisa mentake-over hotel Siti, yang didedikasikan buat hotel haji dan umrah sebagai pasar utamanya. </p>
-
-<p>Dua tower, masing-masing 12 lantai, 300 kamar. Baru 15 ribu orang, dan sekali lagi, itu pun baru tiga ribu orang. Gimana jutaan ummat? Perusahaan apa yang tidak bisa dibeli ulang? </p>
-
-<p>Bahkan perusahaan asing sekalipun, di negara mereka langsung, bisa dibeli oleh kita. Semoga kita semua diizinkan Allah bersatu, berjamaah. Diberi-Nya ilmu, kesempatan, kekuatan, termasuk juga ridha-Nya. Salam.</p>
-
-<p>Penulis: Yusuf Mansur<br />
-Sumber: <a href="http://www.republika.co.id/berita/dunia-islam/hikmah/13/06/16/mohi9f-berjamaah">republika.co.id</a></p>
-]]></content>
-  </entry>
+<span class="categories">
   
-  <entry>
-    <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/06/menggambar-objek/"/>
-    <updated>2013-06-06T04:41:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/06/menggambar-objek</id>
-    <content type="html"><![CDATA[<h2 id="menggambar-segiempat-dan-lingkaran">Menggambar Segiempat dan Lingkaran</h2>
-
-<p><em>Sintaks:</em><br />
-menggambar segi empat: <code>obj.rectangles.add();</code><br />
-menggambar lingkaran: <code>obj.ovals.add();</code></p>
-
-<p><code>obj</code> merupakan objek dimana kita akan meletakkan gambar, biasanya bertipe <em>Page</em> atau <em>Spread</em>.</p>
-
-<p>Menggambar segiempat dan lingkaran pada dasarnya sama seperti menggambar garis. Untuk lebih jelasnya, perhatikan contoh berikut ini.</p>
-
-<p><em>Contoh:</em></p>
-
-<p>Gambarlah sebuah persegi yg memiliki ukuran 50 mm x 50 mm jika diketahui koordinat titik kiri-atas persegi tersebut adalah (30, 150)!</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (rectangle.jsx)</span> <a href="http://nurulhuda.github.com/downloads/code/rectangle.jsx">download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// x2 = x1 + panjang</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// y2 = y1 + lebar</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>     <span class="c1">// halaman pertama pd dokumen yg aktif</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="nx">myRect</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-</span><span class="line"><span class="nx">myRect</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">y1</span><span class="p">,</span> <span class="nx">x1</span><span class="p">,</span> <span class="nx">y2</span><span class="p">,</span> <span class="nx">x2</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Untuk menggambar lingkaran (oval), pernyataan pada baris 9 harus diubah menjadi: <code>var myOval = myPage.ovals.add();</code>. Sedangkan pada baris 10, variabel <code>myRect</code> harus disesuaikan/diganti dg <code>myOval</code>. Sebagai catatan: <em>myRect</em> dan <em>myOval</em> hanyalah sebuah variabel. Anda boleh menggantinya dg nama variabel yg lain.</p>
-
-<p>Perlu juga diketahui bahwa menggambar objek lingkaran di InDesign pada dasarnya adalah menggambar segi empat yang merupakan <em>bounding box</em> bagi lingkaran tsb. Jadi, dimensi yg digunakan adalah panjang x lebar, bukan jari-jari, diameter, atau sudut.</p>
-
-<h3 id="latihan">Latihan</h3>
-
-<p>Gambarlah sebuah lingkaran (oval) dengan ketentuan sbb: panjang 150mm, lebar 150mm, dan koordinat titik sudut kiri-atas (30, 73)!</p>
-]]></content>
-  </entry>
+    <a class='category' href='/blog/categories/tutorial-script-indesign/'>Tutorial Script InDesign</a>
   
-  <entry>
-    <title type="html"><![CDATA[Curhat Setan: Al-Quran yang Dibakar!]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/05/curhat-setan/"/>
-    <updated>2013-05-30T08:28:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/05/curhat-setan</id>
-    <content type="html"><![CDATA[<blockquote>
-  <p>Pembatalan pembakaran Al-Quran hanya omong kosong belaka. Faktanya, dua pendeta justru melakukannya. Yang melakukan bukan Pendeta Terry Jones, tapi kedua pengikutnya. Pendeta Bob Old bersumpah melaksanakan aksinya membakar Al-Quran. Bersama Pendeta Danny Allen, Old melakukan aksinya di hadapan sekelompok orang yang sebagiannya merupakan awak media, Sabtu (11/9) lalu, sama persis pada hari yang dideklarasikan Terry Jones.</p>
+</span>
 
-  <p>Kedua pendeta itu menyiram dua buah mushaf dan sebuah teks Islam lainnya dengan cairan pembakar, lalu menyulutnya dengan api. Mereka menyaksikan bersama-sama kitab suci umat Islam itu menjadi abu.</p>
 
-  <p>Aksi dua pendeta itu dilakukan di pekarangan belakang kediaman Old. Mereka mengatakan aksinya merupakan pesan dari Tuhan. Old mengatakan gereja telah mengecewakan banyak orang karena tidak mendukung aksinya. “Saya yakin bahwa sebagai negara kita berada dalam bahaya,” ujarnya sebagaimana dikutip media online Tennessean (12/10).</p>
-
-  <p>“Ini adalah buku berisi kebencian, bukan cinta,” katanya sambil memegang Al-Quran sebelum kemudian membakarnya. “Ini adalah kitab palsu, Nabi Muhammad adalah nabi palsu dan itu merupakan wahyu palsu,” tambahnya.</p>
-
-  <p>Kedua pendeta itu lantas melakukan apa yang disebutnya sebagai “demonstrasi damai” dengan sedikit gegap gempita. Delapan orang wartawan ikut menyaksikan aksi kedua rohaniwan gereja itu. [Gila, Al-Quran Ternyata Jadi Dibakar, metrotvnews.com]</p>
-</blockquote>
-
-<p>“Anjing!” rutuk saya sesaat setelah membaca berita itu, “Ini gila! Kita harus perang! Terkutuklah mereka!” Umpatan-umpatan dan caci-maki saya keluar tanpa kontrol.</p>
-
-<p>“Setan!” teriak saya sekali lagi.</p>
-
-<p>Tiba-tiba Tuan Setan muncul di hadapan saya! Wajahnya penuh kemarahan. “Bakarlah Al-Quranmu!” kata Tuan Setan tiba-tiba.</p>
-
-<p>Jelas saya berang mendengar ucapannya. Emosi saya naik pitam. Dada saya turun naik. Dan seketika kutuk dan serapah membrudal dari mulut saya. “Percuma selama ini aku mulai menaruh rasa simpati kepadamu! Kau ternyata memang pantas dilaknat dan dimusuhi! Terkutuklah kau!”</p>
-
-<p>“Bakarlah Al-Quranmu!” katanya sekali lagi, dengan nada yang lebih tegas. Matanya nyalang. Gigi-giginya gemertak. Lalu telunjuknya mengarah tepat ke wajah saya. “Bakar!” ia berteriak, “Bakarlah kalau memang selama ini ia hanya menjadi kertas, bakarlah! Bakarlah!”</p>
-
-<!-- more -->
-
-<p>Napas saya turun naik, mata saya memerah, tangan saya mengepal. “Terkutuklah kau!” teriak saya.</p>
-
-<p>“Mana Al-Quranmu!?” bentak Tuan Setan.</p>
-
-<p>Tiba-tiba saya tersintak. Tiba-tiba saya merasa harus menemukan Al-Quran milik saya yang entah saya simpan di mana, sementara Tuan Setan terus menerus berteriak “Bakar! Bakarlah Al-Quranmu!” Saya terus mencari.  Di manakah saya menyimpan Al-Quran saya? Saya membongkar isi lemari, mengeluarkan buku-buku, berkas-berkas, tumpukan kliping koran, dan kertas-kertas apa saja dari dalam lemari. Di manakah Al-Quran saya? Saya mulai resah mencari di mana Al-Quran saya. Saya ke ruang tamu, ke ruang tengah, ke dapur, ke seluruh penjuru rumah. Saya memeriksa ke belakang lemari, ke sela-sela tumpukan kaset dan CD-CD, ke mana-mana. Tetapi, saya tak menemukan Al-Quran saya! Di manakah saya menyimpan Al-Quran saya?</p>
-
-<p>“Bakarlah Al-Quranmu!” sementara Tuan Setan terus-menerus berteriak, “Bakar!”</p>
-
-<p>Saya mulai panik dan resah, kemarahan saya mulai pudar, ternyata saya tak bisa menemukan Al-Quran saya sendiri.</p>
-
-<p>“Bakarlah Al-Quranmu kalau itu hanya menjadi kertas usang yang kausia-siakan!” kata Tuan Setan tiba-tiba.</p>
-
-<p>Dada saya berguncang hebat. Pelan-pelan tapi pasti saya mulai menangis—tetapi saya belum menyerah untuk terus mencari Al-Quran saya. Di mana Al-Quran saya? Ada sebuah buku tebal berwarna hijau di atas lemari tua di kamar belakang, saya kira itulah Al-Quran saya, setelah saya ambil ternyata bukan: Life of Mao. Saya kecewa. Saya terus mencari sambil diam-diam air mata saya mulai meluncur di tebing pipi.</p>
-
-<p>“Bakarlah Al-Quranmu!” suara Tuan Setan kembali memenuhi ruang kesadaran saya. Tetapi kini saya tak bisa marah lagi, ada perasaan sedih dan kecewa mengaduk-aduk dada saya. Ada sesak yang tertahan, semantara isak tangis tak sanggup saya tahan.</p>
-
-<p>Akhirnya saya menyerah. Saya tak menemukan Al-Quran saya di mana-mana di setiap sudut rumah saya!</p>
-
-<p>Kemudian Tuan Setan tersenyum menang, ia menyeringai dan menatap saya dengan sinis. “Jadi, kenapa kau mesti marah saat ada orang yang membakar dan menginjak-injak Al-Quran?” kemudian ia tertawa. “Lucu! Ini lucu! Mengapa kau mesti marah sedangkan kau sendiri tak memperdulikannya selama ini?”</p>
-
-<p>Saya terus menangis. Dada saya berguncang. Tuan Setan tertawa. “Jadi, mengapa kau mesti mengutuk mereka yang menyia-nyiakan dan merendahkan Al-Quran sementara kau sendiri melakukannya—diam-diam?” katanya sekali lagi. Ada perih yang mengaliri dada saya, mendesir gamang ke seluruh persendian saya.</p>
-
-<p>Tiba-tiba saya ingat sebuah tempat: gudang belakang rumah. Barangkali Al-Quran saya ada di situ!</p>
-
-<p>Saya bergegas bangkit dari tubuh saya yang tersungkur, saya berlari menuju gudang belakang, membuka pintunya, lalu menyaksikan tumpukan barang-barang bekas yang usang dan berdebu. Sebuah kotak tersimpan di sudut ruang gudang, saya segera ingat di situlah saya menaruh buku-buku bekas yang sudah tua dan tak terbaca. Seketika saya hamburkan isi kotak itu, membersihkannya dari debu, dan akhirnya… saya mendapatkannya: Al-Quran saya!</p>
-
-<p>Saya menatap Al-Quran saya dengan tatap mata rasa bersalah. Saya mengusap-usapnya, meniupnya, membersihkannya dari debu yang melekat di mushaf tua itu. Kemudian Saya mendekapnya erat-erat—mengingat masa kecil saya belajar mengeja huruf hijaiyyah, menghafal surat Al-Fatihah… “Astagfirullahaladzhim…” tiba-tiba dada saya bergemuruh, air mata saya menderas.</p>
-
-<p>Tuan Setan tertawa lepas. “Bakar saja Al-Quranmu!” katanya sekali lagi, “Bukankah ia tak berguna lagi bagimu?” nada bicaranya mengejek.</p>
-
-<p>Saya masih mendekap Al-Quran saya, tergugu dengan dada seolah tersayat sembilu.</p>
-
-<p>“Jika pendeta yang membakar Al-Quran itu mengatakan bahwa Al-Quran adalah buku yang penuh kebencian, bukankah mereka hanya menilainya dari perilaku yang kalian tunjukkan? Bila mereka mengira Al-Quran hanyalah kitab omong kosong dan Muhammad yang membawanya hanya nabi palsu yang berbohong tentang firman, bukankah itu karena kau—kalian semua—tak pernah sanggup menunjukkan keagungan dan keindahannya? Kau, kalian semua, harus menjelaskannya!</p>
-
-<p>“Jangankan menunjukkan keindahan dan keagungan Al-Quran, membacanya pun kau tak! Jangankan menaklukkan musuh Tuhan sementara menaklukkan dirimu sendiri pun kau tak sanggup! Apa sih maumu? Al-Quran tak pernah mengajarkan permusuhan dan kebencian, Al-Quran tak pernah mengajarkan hal-hal yang buruk, lalu kenapa kau terus-menerus melakukannya? Al-Quran selalu mengajarimu kebaikan, mengapa kau tak pernah mau mengikutinya? Heh, ya, aku baru ingat, jangankan mengikuti petunjuknya, memahami dan membacanya pun kau tak!</p>
-
-<p>“Lalu kenapa kau harus marah ketika Al-Quran dibakar? Mengapa kau tak memarahi dirimu sendiri saat kau menyia-nyiakan Al-Quranmu? Ini bukan semata-mata soal pendeta yang membakar Al-Quran, ini bukan semata-mata soal pelecehan terhadap institusi agamamu, ini bukan semata-mata soal permulaan dari sebuah peperangan antar-agama, ini semua tentang kau yang selama ini menyia-nyiakan Al-Quran, tentang kau yang secara laten dan sistematis menyiapkan api dan bensin dari perilaku burukmu untuk menunggu Al-Quran dibakar lidah waktu yang meminjam tangan orang-orang yang membenci agamamu! Mereka tak akan berani membakar Al-Quran, kitab sucimu itu, kalau saja selama ini kau sanggup menunjukkan nilai-nilai agung yang dibawa Nabimu, nilai-nilai kebaikan yang termaktub dalam teks suci kitab yang difirmankan Tuhanmu! Maka bila kau tak sanggup menggemakan Quran amanat nabimu ke segala penjuru, tak sanggup menerima cahayanya dengan hatimu, bakarlah Al-Quranmu! “</p>
-
-<p>Lalu seketika terbayang, Al-Quran yang teronggok sia-sia di rak-rak buku tak terbaca, Al-Quran yang diletakkan di paling bawah tumpukkan buku-buku dan majalah, Al-Quran yang kesepian tak tersentuh di masjid dan langgar-langgar, Al-Quran yang tak terbaca dan (di)sia-sia(kan)!</p>
-
-<p>Saya menangis; memanggil kembali hapalan yang entah hilang kemana, mengeja kembali satu-satu alif-ba-ta yang semakin asing dari kosakata hidup saya. Saya melacaknya dalam ingatan saya yang terlanjur dijejali kebohongan, kebebalan, penipuan, dan pengkhiatan-pengkhiantan. Di manakah Al-Quran dalam diri saya?</p>
-
-<p>“Maka, bakarlah Al-Quran oleh tanganmu sendiri!” kata Tuan Setan, “Hentikan airmata sinetronmu, hentikan amarah palsumu, hentikan aksi solidaritas penuh kepentinganmu, hentikan rutuk-serapah politismu, sebab kenyataannya kau tak pernah mencintai Al-Quran! Bakarlah!”</p>
-
-<p>Tuan Setan tertawa lepas.</p>
-
-<p>“Maafkan…” suara saya tiba-tiba pecah menjelma tangis, “Maafkan…,” lalu saya bergegas pergi dengan Al-Quran yang kugamit di lengan kananku.</p>
-
-<p>“Bakar saja Al-Quranmu!” teriak Tuan Setan yang kutinggalkan di gelap ruangan gudang. Lamat-lamat tawanya masih ku dengar di ujung jalan.</p>
-
-<p>Saya mencari masjid, saya ke mal, saya ke pasar, saya ke terminal, saya ke sekolah, saya ke mana-mana… Saya ingin mencari mushaf-mushaf Al-Quran yang disia-siakan. Saya ingin membersihkannya dari debu dan mengajak sebanyak mungkin orang membacanya. Saya masih bergegas dengan langkah yang galau. Saya ingin mengabarkan keagungan dan keindahan Al-Quran, tapi bagaimana caranya? Sedangkan saya sendiri tak memahaminya? Saya ingin menggaungkannya di mana-mana, tapi bagaimana caranya?</p>
-
-<p>Saya terus bertanya-tanya bagaimana agar Al-Quran tak dibakar? Bagaimana agar Al-Quran tak terbakar? Bagaimana?</p>
-
-<blockquote>
-  <p>Ya, Tuhan akukah insan yang bertanya-tanya?</p>
-
-  <p>Ataukah aku Mukmin yang sudah tahu jawabnya?</p>
-
-  <p>Kulihat tetes diriku dalam muntahan isi bumi</p>
-
-  <p>Aduhai, akan kemanakah kiranya aku bergulir</p>
-
-  <p>Di antara tumpukan maksiat yang kutimbun saat demi saat</p>
-
-  <p>Akankah kulihat sezarah saja kebaikan yang pernah kubuat?</p>
-
-  <p>Ya Tuhan, nafasku gemuruh, diburu firmanmu!</p>
-
-  <p>[KH. Mustafa Bisri, Tadarus]</p>
-</blockquote>
-
-<p>Saya terus menangis dalam langkah-langkah gelisah yang bergegas, haruskan saya melawan semua ini dengan amarah dan kebencian? Ataukah saya harus menunjukkan kepada mereka semua yang membenci Al-Quran bahwa sungguh mereka telah keliru? Haruskah saya kembali marah dan membakar kitab suci mereka di mana-mana, atau akan lebih baikkah jika saya jawab mereka dengan cinta dan kasih sayang—meneladani Muhammad dengan menunjukkan kepada mereka kebaikan cahaya Al-Quran karena sesungguhnya mereka hanya belum tahu!?</p>
-
-<p>“Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Bacalah!” tiba-tiba suara Tuan Setan datang lagi, “Biarkanlah mereka membakar mushaf sebab Al-Quran bukanlah kertas yang bisa mereka bakar. Bacalah Al-Quran hingga suaranya terdengar oleh hatimu, bergema di seluruh ruang kesadaranmu, maka kau tak akan kecewa mendapati mushaf-mushaf yang terbakar atau ayat-ayat yang teronggok di ruangan-ruangan tua berdebu buku. Sebab Al-Quran bukanlah mushaf, Al-Quran adalah semesta, nama di luar kata! Maha benar Allah dengan segala firman-Nya.”</p>
-
-<p>Saya terdiam mendengar kata-kata Tuang Setan yang terakhir, “Tuan Setan, sebenarnya siapakah kamu? Apa agamamu?”</p>
-
-<p>Ia terkekeh, bahunya berguncang, “Akulah yang kau lihat dalam tidurmu: berlarian atau terbang atau tertawa tanpa suara, sesuatu yang lama kau idamkan tetapi lupa kau sapa. Akulah yang membakar Al-Quranmu!”</p>
-
-<p>Ia terus terkekeh, terbatuk, lalu menghilang.</p>
-
-<p>sumber: <a href="http://kenduricinta.com/v3/?p=618">kenduricinta.com</a></p>
-]]></content>
-  </entry>
+    </p>
+    
+      <div class="sharing">
   
-  <entry>
-    <title type="html"><![CDATA[Tiga Investasi Wajib]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/"/>
-    <updated>2013-05-10T11:26:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib</id>
-    <content type="html"><![CDATA[<p>Kehidupan kita di dunia ini terbatas padahal aktivitas kebaikan di depan kita begitu berlimpah. Walau setiap hari kita berbuat kebaikan, belum tentu itu cukup menjadi bekal kita untuk kehidupan yang kekal. Oleh karena itulah kita perlu melakukan kebaikan yang “pahalanya” terus mengalir walau kita sudah tiada.</p>
-
-<p>Ternyata ada tiga kebaikan yang pahalanya terus mengalir walau kita sudah tiada. Nabi bersabda, <em>“Apabila seorang anak Adam meninggal putuslah amalnya kecuali tiga perkara: sedekah jariah, ilmu yang memberi manfaat kepada orang lain, anak yang soleh yang berdoa untuknya.”</em> (Hadist Sahih – Riwayat Muslim dan lain-lainnya)</p>
-
-<p>Orang yang cerdas pasti tidak akan mengabaikan tiga hal tersebut. Dari setiap penghasilannya, orang cerdas pasti akan menginvestasikannya untuk sedekah. Ia sangat sadar bahwa harta yang menyelamatkannya bukanlah yang dimakan atau disimpan tetapi justru yang disedekahkan.</p>
-
-<!-- more -->
-
-<p>Ia senang memperbesar jumlah sedekah daripada saldo tabungan. Apakah tabungan tidak penting? Tentu penting, tetapi sebatas berjaga-jaga untuk keperluan mendadak dan mendesak. Ia tak akan menabung untuk keperluan kuliah S-2 anaknya. Itu terlalu jauh dan berlebihan. Selain itu, sungguh tak pantas kuliah S-2 masih dibiayai orang tua. Dimana letak kemandirian anak kita?</p>
-
-<p>Orang cerdas juga tidak pelit ilmu. Ia akan dengan senang hati menyebarluaskannya. Ia tak akan pernah khawatir kalah pintar dibandingkan orang yang diberi ilmu. Uniknya, semakin banyak ilmu yang dibagi justru ilmu orang yang membagi semakin bertambah. Manfaat dunia ia dapatkan, pahala terus mengalir kepada yang membagi ilmu hingga kiamat tiba, asyik kan? Sungguh amat bodoh orang yang tidak tertarik dengan investasi seperti ini.</p>
-
-<p>Orang cerdas juga tidak akan mengejar karir dan memajukan bisnisnya dengan melupakan anak-anaknya. Sehebat-hebatnya atau sekuat-kuatnya bisnis tak akan bertahan hingga ribuan tahun. Sementara doa dan amal sholeh anak cucu akan terus mengalir hingga dunia ini musnah.</p>
-
-<p>Pendidikan kepada anak tak akan dibebankan hanya kepada sekolah, baby sitter, kakek dan neneknya atau pihak lain. Ia akan kerahkan semua sumberdaya agar mental, karakter dan spiritualitas serta masa depan anak ada sentuhan dan peran besar yang dilakukannya. Ia tak akan tega meninggalkan atau menitipkan anak dalam waktu yang lama hanya demi mengejar karir.</p>
-
-<p>Anda tak perlu menyesal bila tak punya investasi usaha atau bisnis di akhir kehidupan Anda. Tetapi Anda akan benar-benar menyesal di dunia dan akhirat apabila tidak memiliki tiga investasi di atas. Ayo mulai investasi tiga hal tersebut dari sekarang. Semakin cepat semakin berlipat hasilnya dan di akhirat kita berpeluang ada di tempat terhormat. Mau, kan?</p>
-
-<p>sumber: <a href="http://www.jamilazzaini.com/tiga-investasi-wajib/">jamilazzaini.com</a></p>
-]]></content>
-  </entry>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/" >Tweet</a>
   
-  <entry>
-    <title type="html"><![CDATA[Sedekah ala Orang Kaya]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/05/sedekah-ala-orang-kaya/"/>
-    <updated>2013-05-03T09:01:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/05/sedekah-ala-orang-kaya</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.com/images/ForbesMECoverE.jpg" width="168" /> Majalah Forbes menyatakan bhw kekayaan &ldquo;Sulaiman Ar-Rajhi&rdquo; sekitar 5.9 Milyar Dollar. Orang Terkaya dg nomer urut 120 di dunia. Meskipun begitu penampilan &ldquo;Sulaiman Ar-Rajhi&rdquo; tetap sederhana, jauh dari kesan glamour. Ia memulai usaha dr nol, bahkan pernah jd kuli panggul. Dg ketekunan, kerja keras, terkenal hemat tapi tekun bersedekah &amp; berkah Allah SWT beliau akhirnya memiliki Kerajaan Bisnis di KSA. Salah satu bisnisnya adalah Bank Ar-Rajhi, Bank Syariah terbesar di Dunia. </p>
-
-<p>Berikut ini adalah catatan sedekah &ldquo;Sulaiman Ar-Rajhi&rdquo; yg luar biasa:</p>
-
-<!-- more -->
-
-<ol>
-  <li>Melalui yayasan amalnya, &ldquo;Sulaiman Ar-Rajhi&rdquo; mberikan waqaf untuk membangun masjid, fokus berdonasi u/ amal dakwah &amp; penyebaran ilmu islam</li>
-  <li>&ldquo;Sulaiman Ar-Rajhi&rdquo; termasuk orang yg punya kebiasaan datang paling awal ke masjid untuk sholat 5 waktu berjamaah. Subhanallah..</li>
-  <li>Bahkan jk muadzin Masjid terlambat datang, maka &ldquo;Sulaiman Ar-Rajhi&rdquo; lah yang melakukan Adzan..</li>
-  <li>Salah satu Masjid yg dibangunnya adlh Masjid Ar-Rajhi di Rabwah merupakan Masjid terbesar ke-3 stlh Masjidil Haram Mekah &amp; Madinah</li>
-  <li>
-    <p>Masjid Ar-Rajhi di Rabwah dpt menampung 18.000 Jamaah unt Sholat. Masjid tersebut mempunyai berbagai fasilitas luar biasa, antara lain:</p>
-
-    <ul>
-      <li>Pusat pemandian &amp; pengurusan jenazah terbesar di Riyadh; </li>
-      <li>Auditorium u/ Seminar &amp; Ceramah Agama</li>
-      <li>Perpustakaan berisi 40.000 jenis buku, tinggal dikali sj ada berapa jumlah nya dlm setiap jenis</li>
-      <li>Tempat tinggal bagi para penuntut ilmu yg datang dr luarkota u/ mengikuti berbagai kajian Islam</li>
-      <li>Menyediakan air zamzam gratis sbg minuman jamaah dg kuota 400 galon per minggu..</li>
-      <li>Setiap Jumat di lantai dasar disiapkan khusus u/ Orang Asing &amp; khutbahnya dterjemahkan ke bbagai bahasa, termasuk bahasa isyarat dan tentu saja ada bahasa Indonesia :)</li>
-    </ul>
-  </li>
-  <li>&ldquo;Sulaiman Ar-Rajhi&rdquo; di masa tuanya saat ini telah membagikan hampir semua hartanya kpd ahli waris, kerabat &amp; fakir miskin..</li>
-  <li>Asset bisnis &ldquo;Sulaiman Ar-Rajhi&rdquo; saat ini dikelola para professional yg hasilnya u/ amal sosial dakwah Islam</li>
-  <li>&ldquo;Sulaiman Ar-Rajhi&rdquo; melalui masa kecil tak berharta, akhirnya berlimpah harta di hari tua, dg berbekal Sedekah yg Berlimpah..</li>
-</ol>
-
-<p>Banyak jalan menuju Roma, Banyak cara menjadi Kaya. Ternyata salah satu rahasianya adalah bersedekah :) Tapi ingat! Sedekah hanyalah slh satu cara menjadi kaya, selebihnya ya tetap harus diiringi ibadah, ikhtiar, kerja Keras &amp; cara-cara cerdas lainnya! Jika kita hanya duduk termangu, tak melakukan usaha/ikhtiar/dhuha/silaturahim, apalagi tidak bersedekah - Jangan Heran bila susah kaya :)</p>
-
-<p>Content from <a href="http://chirpstory.com/li/60888">chirpstory.com</a> by <a href="http://chirpstory.com/id/fahiraidris">fahiraidris</a></p>
-]]></content>
-  </entry>
   
-  <entry>
-    <title type="html"><![CDATA[Menulis Itu Menyenangkan]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/04/menulis-itu-menyenangkan/"/>
-    <updated>2013-04-29T16:32:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/04/menulis-itu-menyenangkan</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/writing.jpg" alt="Writing" /></p>
-
-<p>Michael Crichton, penulis novel “Jurassic Park” memberikan motivasi tentang menulis dengan kalimat-kalimat ini: “Sebuah karya akan memicu inspirasi. Teruslah berkarya. Jika Anda berhasil, teruslah berkarya. Jika Anda gagal, teruslah berkarya. Jika Anda tertarik, teruslah berkarya. Jika Anda bosan, teruslah berkarya.”</p>
-
-<p>Menurut saya, menulis itu sangat menyenangkan. Karena apa? Karena kita bisa menuangkan banyak ide yang menumpuk di benak kita menjadi sebuah tulisan yang bisa dibaca banyak orang. Kita tidak menikmatinya sendiri. Kita bisa berbagi cerita. Cerita sedih dan bahagia sama nikmatnya untuk dibagikan. Bukankah itu sesuatu yang menyenangkan?</p>
-
-<p>Bagi saya sendiri, menulis adalah bagian dari menyampaikan dakwah. Sungguh sangat menyenangkan bisa memberikan yang terbaik buat orang lain. Saya menikmati setiap kata dan kalimat untuk disampaikan kepada orang lain. Saya menulis tanpa beban berat. Itu sebabnya, saya ingin berbagi dengan teman-teman bagaimana sih agar menulis terasa menyenangkan. Nggak jadi beban, gitu lho.</p>
-
-<!-- more -->
-
-<p>Nah, ada beberapa alasan mengapa menulis adalah pekerjaan yang menyenangkan, setidak-tidaknya menulis memiliki beberapa kelebihan ketimbang berbicara, yakni sebagai berikut:</p>
-
-<p><strong>Pertama</strong>, dengan menulis kita bisa menyampaikan gagasan secara teratur dan dengan pilihan kata yang pas. Coba deh bikin surat untuk ijin nggak bisa sekolah karena sakit buat wali kelasmu. Pastinya ketika menuliskan surat itu nggak sembarangan. Kita akan merunut permasalahan. Nggak tiba-tiba bin <em>ujug-ujug</em> nulis, “Hanya satu kata: Sakit!”. Wah, nggak mungkin kan. Kita akan menuliskan dulu ungkapan penghormatan kepada wali kelas kita. Terus kita mulai menuliskan alasan tidak bisa masuk sekolah pada hari tersebut, sambil disertai permohonan maaf. Nah, di sini pasti menggunakan kata yang enak untuk dibaca. Bayangin deh kalo kita langsung bicara, selain nggak memungkinkan karena sakit, juga belum tentu pas ngomong selancar ketika kita nulis. Karena ada “gangguan psikologis”. Malu en takut, misalnya. Betul nggak?</p>
-
-<p><strong>Kedua</strong>, menulis memberikan kesempatan kepada pembaca untuk menilai pendapat kita secara lebih leluasa dan mungkin secermat mungkin. Sehingga didapat persepsi yang utuh. Saya pikir ini salah satu kelebihan dalam menulis. Contohnya adalah ketika kita bertukar pendapat dengan orang lain dalam sebuah diskusi via e-mail dalam grup mailing list atau menjawab komentar pengunjung blog kita. Kita akan menuliskan argumentasi tanpa perlu merasa terbebani akan disanggah atau dicela di saat kita sedang menulis pendapat kita. Kita akan kerahkan semua kemampuan yang kita miliki untuk menjelaskan topik yang sedang didiskusikan. Bila perlu sedetil-detilnya biar apa yang kita sampaikan diserap dengan utuh oleh lawan diskusi kita. Bayangin deh kalo kita ngobrol langsung. Pastinya “ubun-ubun” kita ngebul terus kalo pas lagi omongan sering dipotong lawan bicara kita. Kalo sama-sama ngotot, diskusi bisa mengarah kepada “debat kusir”. Aduh, tadinya mau ngasih penjelasan malah jadi “berantem”. Nggak asyik banget kan? Eh, sebenarnya diskusi di mailing list atau blog pun bisa jadi debat kusir kalo sama-sama nggak mau ngalah dan mengakui kesalahannya dan ogah mengikuti kebenaran yang diajukan lawan diskusinya. Tetapi setidaknya dengan menulis, akan lebih ditata terlebih dahulu agar lebih baik penyampaiannya.</p>
-
-<p><strong>Ketiga</strong>, menulis akan membuat kita lebih efektif dalam mengopinikan gagasan kita kepada khalayak. Betul. Ini sangat saya sadari banget. Ketika menuliskan sebuah gagasan kadang perlu “bunga-bunga” alias “bumbu-bumbu” informasi yang bagus. Sementara, informasi bagus itu adakalanya tersimpan dalam sebuah buku atau kitab tertentu, sehingga perlu digali. Biar orang yakin dengan apa yang kita sampaikan, maka kita kudu mencantumkan sumber informasi tersebut. Pada saat seperti inilah kita dituntut untuk lebih kreatif dalam mengkomunikasikannya. Supaya data-data itu nggak “mati”, maka butuh teknik untuk menyampaikannya. Bisa saja dengan gaya bahasa yang asyik dan nggak kaku sehingga membuat kesan tak menggurui pembaca kita. Tentu saja, kalo kita bicara rasa-rasanya sangat lucu jika disampaikan, “Menurut keterangan dalam sebuah kitab, halaman sekian, cetakan kesekian, karya sia anu”. Waduh, menurut saya sih itu nggak pada tempatnya. Kurang gereget.</p>
-
-<p><strong>Keempat</strong>, tentu saja menulis adalah sebagai alat bantu yang cukup ampuh bagi yang kurang terbiasa berbicara. Saya pernah mendapati seseorang yang sangat lihai dalam menulis. Kalo doi udah menulis, lancar banget tuh mengalirkan ide-idenya lewat jalinan informasi yang berhasil dirangkainya dalam kata dan kalimat yang enak dibaca. Tapi mohon maaf saja, ketika doi diminta untuk mengisi sebuah kajian, saya sampe nggak sabar menunggu informasi keluar dari mulutnya. Lama banget. Entah mikir, entah bingung mau ngeluarin infonya. Tapi yang jelas, ini kian mengukuhkan keyakinan bahwa menulis sangat ampuh bagi yang tak terbiasa bicara. Jujur saja, saya sendiri sejak kecil tak terbiasa untuk menyampaikan pendapat dengan berbicara. Saya lebih banyak menulis untuk menyampaikan pendapat saya, untuk menyampaikan segala keinginan saya, untuk mengungkapkan rasa kesal, marah, sedih, kecewa, dan gembira dengan menulis.  Emang sih, ada juga orang yang menulis sama baiknya dengan bicara, tapi itu nggak banyak. Setahu saya, Prof Hamka adalah orang yang lidahnya setajam penanya. Bicaranya oke, nulisnya pun mantep. Semoga kita pun bisa memiliki keahlian seperti beliau. Insya Allah.</p>
-
-<p>Sumber: <a href="http://osolihin.wordpress.com/2013/04/29/menulis-itu-menyenangkan-2/">O. Solihin</a></p>
-]]></content>
-  </entry>
   
-  <entry>
-    <title type="html"><![CDATA[5 Kiat Ajarkan Anak Mulai Ngeblog]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/04/kiat-ajarkan-anak-ngeblog/"/>
-    <updated>2013-04-25T11:59:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/04/kiat-ajarkan-anak-ngeblog</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/kidblog.jpg" alt="kidblog" /></p>
-
-<p>Ingin anak-anak kita tertarik ngeblog? Bagus sekali, sebab menulis blog membantu anak terbiasa menulis, berbagi cerita, dan terampil untuk bersosialisasi di dunia maya. Kini ada banyak situs penyedia layanan blog yang mudah dioperasikan.</p>
-
-<p>Bagaimana ya caranya agar anak-anak senang ngeblog sejak usia dini? Berikut ada 5 panduan yang bagi para orang tua.</p>
-
-<!-- more -->
-
-<ol>
-  <li>Mulai ngeblog sendiri<br />
-Sulit mengajarkan anak ngeblog jika ortunya sendiri tidak ngeblog. Tentu anak akan dengan mudah meniru kebiasaan ortunya ngeblog. Jadi lebih dulu ortu harus mempunyai blog, dan memperlihatkan ke anak betapa menyenangkan menulis blog itu. Pastinya blog itu harus mewakili bagaimana berperilaku baik di dunia online, seperti berisi konten positif, mudah dipahami, menarik, mengundang interaksi dengan banyak orang. Layanan blog untuk umum bagi para ortu bisa mencoba <a href="http://wordpress.com/">WordPress</a> atau <a href="http://www.blogger.com/">Blogger</a>.</li>
-  <li>Pilih platform yang pas untuk anak-anak<br />
-Anak-anak akan sulit tertarik dengan platform blog yang tidak sesuai dengan usianya. Kini ada beberapa situs penyedia layanan blog untuk anak-anak yang desainnya menarik, dengan komunitas blog yang memang anak-anak juga. Sebut saja <a href="www.edmodo.com">Edmodo</a>, <a href="kidblog.org">Kidblog</a>, atau <a href="www.kidzworld.com">Kidzworld</a>. Di sana anak-anak akan bertemu dengan sesama blogger seusianya.</li>
-  <li>Ajarkan anak tentang keamanan<br />
-Banyak ortu yang masih mengkawatirkan pergaulan anak-anaknya di dunia maya. Apalagi dalam blog, anak bebas memosting apa saja. Daripada melarang anak ini itu, lebih baik ceritakan mengenai bagaimana kita menjaga keamanan diri di internet. Ini berarti anak harus paham mengapa ia tidak boleh mengunggah nama lengkap, alamat rumah, dan nomor telepon, atau identitas pribadi lain ke blog. Kemukakan alasan juga bahaya yang mengancam jika anak-anak mengunggah foto diri dalam pakaian minim. Lalu bagaimana mereka harus bersikap jika berinteraksi dengan teman dunia maya.</li>
-  <li>Tingkatkan kemampuan teknis<br />
-Secara tak langsung, ngeblog membuat kita harus meningkatkan beberapa kemampuan teknis berinternet. Tidak harus yang rumit-rumit. Misalnya saja, bagaimana sih mendesain logo blog agar menaik, atau memodifikasi desain blog. Selain hal teknis, juga tingkatkan skill anak bagaimana menulis blog yang menarik, yaitu diperkaya dengan informasi melalui browsing. Tidak kalah penting adalah anak dan ortu sama-sama merasakan penambahan pengalaman berinteraksi dengan orang-orang di dunia maya.</li>
-  <li>Pantau apa yang diposting anak kita<br />
-Memberi kebebasan bukan berarti kita tidak peduli dengan apa yang diposting anak kita di blognya. Letakkan komputer di ruang terbuka, dimana ortu bisa melihat apa yang mereka tulis di blognya. Jika tidak sempat, bukalah blognya setelah ia tidak online. Dari apa yang mereka tulis di blog, bisa diketahui apa yang ia pikirkan dan rasakan. Jika ada postingan yang membahayakan dirinya, bisa segera kita tegur baik-baik.</li>
-</ol>
-
-<p>Ayo, mulai ajak anak-anak ngeblog yuk.</p>
-
-<p>Sumber artikel: <a href="http://technewsdaily.com/">technewsdaily.com</a> / Sumber foto: <a href="http://myfundoo-blog.blogspot.com/">myfundoo-blog</a></p>
-]]></content>
-  </entry>
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
   
-  <entry>
-    <title type="html"><![CDATA[Menulislah]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/04/menulislah/"/>
-    <updated>2013-04-23T13:09:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/04/menulislah</id>
-    <content type="html"><![CDATA[<ul>
-  <li>Menulislah, maka kau tak akan tertimbun oleh <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a> buku bacaan. Buku2 itu akan tertata menjadi pondasi bagi bangunan pikiranmu sendiri</li>
-  <li>Tanpa menulis, <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a> buku bacaanmu tak akan menjadi tongkat penuntun, malah membuatmu berjalan sempoyongan tak tentu kiblat</li>
-  <li>Menulislah, karena menulis tak harus menulis buku, artikel di jurnal/koran. Bisa catatan harian, bisa blog atau apa saja ¦ Re: Hari <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, krn dgn menulis kau akan sanggup menisik perca2 dari berbagai <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a> bacaan menjadi utuh, jadi kainmu dalam perhelatan hidup</li>
-  <li>Setidaknya ahli warismu akan membacanya <a href="https://twitter.com/ilmaassidqi">@ilmaassidqi</a>: apa catatan harian bsa dsebut karya?kan cma qta aja yang baca? <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, jika malas kemana2 bawa buku catatan, menulislah di twitter, krn suatu hari itu bisa kamu kumpulkan <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, karena salah satu latihan berdialog yang baik adalah menulis. Kamu maunya A, tapi setelah kau tulis, tulisan maunya B <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, rasakan bhw setiap akhir alinea yg kau tulis punya kehendak sendiri utk alinea selanjutnya, padahal kamu maunya lain <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Itulah yg kumaksud latihan dialog dgn diri sendiri. Kau maunya A, tapi tiap akhir aliena punya mau sendiri utk alinea selanjutnya <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, maka yg kau rasakan sebenarnya dalam satu tulisan saja kamu udah terengah2 menyintesakan kemauanmu n kemauan tulisan <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, maka kau akan mulai dapat menghargai penulis lain. Itu knp Bung Hatta selalu mandi dulu bahkan pakai sepatu sblm baca <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Tulisan yg baik adalah tulisan utk diri sendiri..tp saking jujurnya maka org lain yg baca akan mengira itu utk mereka jg <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, krn dgn terbiasa menulis kita akan selalu punya tema dan topik di kepala shg tahu <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a> buku apa saja yang kamu butuhkan</li>
-  <li>Menulislah, karena dgn menulis, jika kau punya bakat bicara, maka bicaramu akan lebih padat dan ndak klise <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, agar kau makin berlatih sabar ketika rapat, arisan, kumpul2 dll, bahwa ternyata banyak org ngomongnya bertele2 <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, krn dengan menulis yg harus padat, omonganmu pun akan padat walau tetap tak kehilangan nuansa dan kebasahan <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, agar sambutan2 kalau kau menerima piala FFI, sepadat dan semenarik sambutan2 aktor penerima Oscar, padat, nyentuh <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Bukan mau ngunggulin bule, tp harus diakui mereka punya kegemaran mencatat, menulis ¦ maka pidato2 penerimaan Oscar asyik <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Menulislah, tempat latihan menulis kini makin banyak. Twitter bagi aku adalah tantangan nulis secara singkat dan bernuansa <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Tapi twitter menjadi lahan buang waktu percuma, kalau yang kau tulis cuma “status”..tidak melatih kepenulisanmu at all <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Sebagai tambahan, aku ingatkan lagi soal beda tema dan topik. Banyak yang masih blm tahu beda keduanya. Sehingga tulisan macet <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Topik tuh biasanya kata benda..baik kata benda tunggal maupun berupa kalimat ¦ Rokok, itu topik ¦ Musim hujan di Bandung..itu topik <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Dgn topik, yang kita miliki adalah pokok bahasan. Tapi kita ndak tahu mau ngapain dengan pokok bahasan. Itulah tema <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Dr topik yg sama, bs muncul tema macem2 Misal topik: Ayam Kampus. Temanya bisa membasmi ayam kampus, melokasikan ayam kampus dll <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Seringkali kita macet nulis apapun karena merasa sudah punya tema, padahal yg kau punyai baru topik <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Katakanlah topik itu kiblat, dan tema adalah dengan cara apa dan dari mana kita menuju kiblat ¦ <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Utk penulis pemula, saranku jangan belajar nulis pada <a href="https://twitter.com/IwanPiliang">@IwanPiliang</a>, nanti kamu pusing, karena syarat rukunnya banyak banget <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Pemula belajarlah pada Arswendo Atmowiloto, “Menulis itu Gampang”, pokoknya tulis aja ¦ Saranku asal ud punya tema dan topik <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Nah, nanti kalau kamu ud canggih nulis, baru belajarlah pada <a href="https://twitter.com/IwanPiliang">@IwanPiliang</a> <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-  <li>Ada baiknya mendoakan penulis sebelum kamu baca bukunya, kau akan dapat energi yg tak terkira ¦ Trust me ¦ <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a></li>
-</ul>
+</div>
 
-<p>Dari <em>ocehannya</em> mbah <a href="https://twitter.com/sudjiwotedjo">@sudjiwotedjo</a></p>
-]]></content>
-  </entry>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/menggambar-poligon-1/" title="Previous Post: Tutorial Script InDesign CS3">&laquo; Tutorial Script InDesign CS3</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Komentar</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
   
-  <entry>
-    <title type="html"><![CDATA[Cintailah Profesimu]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/04/cintailah-profesimu/"/>
-    <updated>2013-04-17T13:01:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/04/cintailah-profesimu</id>
-    <content type="html"><![CDATA[<p>Setiap muslim wajib bekerja untuk mencari karunia Allah. Pekerjaan apapun asalkan halal adalah mulia di sisi Allah swt. Jangan pernah berfikir pekerjaanmu lebih hebat dari pekerjaan orang lain. Karena itu akan membuatmu takabur. Sebaliknya, jangan pernah kamu merasa pekerjaanmu lebih hina dari pekerjaan orang lain. Karena itu akan membuatmu rendah diri.</p>
+    
+<section class="search-section">
+  <form action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:nurulhuda.github.com" />
+      <input class="search" type="text" name="q" results="0" placeholder="Cari..."/>
+    </fieldset>
+  </form>
+</section>
 
-<p>Alkisah, ada seorang pemuda terpelajar dari Surabaya sedang berpergian naik pesawat ke Jakarta. Disampingnya duduk seorang ibu yang sudah berumur. Si pemuda menyapa, dan tak lama mereka terlarut dalam obrolan ringan. “Ibu, ada acara apa pergi ke Jakarta?” tanya si pemuda. “Oh… saya mau ke Jakarta terus <em>connecting flight</em> ke Singapura nengokin anak saya yang kedua”, jawab ibu itu.” “Wouw… hebat sekali putra ibu,” pemuda itu menyahut dan terdiam sejenak.</p>
+<section>
+  <h1>Profil</h1>
+  <p><a href="/about-me/"><img src="/images/nurul_huda.jpg" width="73" height="93" style="float:left; margin-right:10px; margin-bottom:1.5em;" /></a>Aku adalah aku dengan segala kelebihan dan kekurangannya</p>
+</section>
+<section>
+  <h1>Tulisan Terakhir</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-2/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-1/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/berjamaah/">Berjamaah</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/menggambar-objek/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/curhat-setan/">Curhat Setan: Al-Quran yang Dibakar!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/tiga-investasi-wajib/">Tiga Investasi Wajib</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/sedekah-ala-orang-kaya/">Sedekah ala Orang Kaya</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/menulis-itu-menyenangkan/">Menulis Itu Menyenangkan</a>
+      </li>
+    
+  </ul>
+</section>
+<section class="catlist">
+  <h1>Kategori</h1>
+  <ul id="cat_list">
+    <li><a href='/blog/categories/doa'>Doa</a> (2)</li><li><a href='/blog/categories/indesign'>inDesign</a> (1)</li><li><a href='/blog/categories/islam'>Islam</a> (4)</li><li><a href='/blog/categories/keuangan'>Keuangan</a> (1)</li><li><a href='/blog/categories/linux'>Linux</a> (1)</li><li><a href='/blog/categories/motivasi'>Motivasi</a> (9)</li><li><a href='/blog/categories/ms-excel'>MS Excel</a> (1)</li><li><a href='/blog/categories/resep'>Resep</a> (1)</li><li><a href='/blog/categories/script-indesign'>Script Indesign</a> (1)</li><li><a href='/blog/categories/tips'>Tips</a> (2)</li><li><a href='/blog/categories/tutorial'>Tutorial</a> (1)</li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign</a> (4)</li><li><a href='/blog/categories/ubuntu'>Ubuntu</a> (1)</li><li><a href='/blog/categories/umum'>Umum</a> (6)</li><li><a href='/blog/categories/vba'>VBA</a> (1)</li>
+  </ul>
+</section>
 
-<!-- more -->
-
-<p>Pemuda itu merenung. Dengan keberanian yang didasari rasa ingin tahu pemuda itu melanjutkan pertanyaannya. “Kalau saya tidak salah, anak yang di Singapore tadi putra yang kedua ya bu? Bagaimana dengan kakak dan adik-adiknya?” Si Ibu bercerita, “Anak saya yang ketiga seorang dokter di Malang, yang keempat kerja di perkebunan di Lampung, yang kelima menjadi arsitek di Jakarta, yang keenam menjadi kepala cabang sebuah bank di Purwokerto, yang ketujuh menjadi dosen di Semarang.”</p>
-
-<p>Pemuda tadi diam. Hebat ibu ini, bisa mendidik anak-anaknya dengan sangat baik, dari anak kedua sampai ke tujuh. “Terus bagaimana dengan anak yang pertama ibu?” Sambil menghela napas panjang ibu itu menjawab, “Anak saya yang pertama menjadi petani di Godean Jogja Nak. Dia menggarap sawahnya sendiri yang tidak terlalu luas.”</p>
-
-<p>Pemuda itu segera menyahut, “Maaf ya Bu… ibu pasti kecewa ya dengan anak pertama ibu, adik-adiknya berpendidikan tinggi dan sukses di pekerjaannya, sedang dia cuma menjadi petani?”</p>
-
-<p>Apakah kamu mau tahu jawabannya?</p>
-
-<p>Dengan tersenyum ibu itu menjawab, “Ooo… tidak.. Ibu sama sekali tidak kecewa nak… Justru ibu sangat bangga dengan anak pertama ibu, karena dialah yang membiayai sekolah semua adik-adiknya dari hasil dia bertani.”</p>
-
-]]></content>
-  </entry>
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
   
-  <entry>
-    <title type="html"><![CDATA[7 Tanda Besar Pasak daripada Tiang]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/04/besar-pasak-drpd-tiang/"/>
-    <updated>2013-04-17T08:40:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/04/besar-pasak-drpd-tiang</id>
-    <content type="html"><![CDATA[<p>Banyak dari kita yang menerapkan cara hidup “besar pasak daripada tiang”, atau lebih banyak pengeluaran daripada pemasukan. Kalaupun kemudian bisa menabung, ternyata masih tidak stabil di bulan berikutnya. Bagaimana dengan Anda? Apakah Anda tipe orang yang pengelolaan uangnya “besar pasak daripada tiang”?</p>
-
-<p>Untuk mengetahuinya, ada sejumlah tanda yang bisa dijadikan acuan:</p>
-
-<ol>
-  <li>Keuangan Anda tidak bisa membuat Anda survive sampai enam bulan ke depan
-Adalah menarik mengetahui sebesar apa tabungan kita sampai bisa dibilang stabil dari segi keuangan. Sejumlah pakar keuangan, di antaranya Sheryl Garrett, menyebutkan ada baiknya simpanan hari tua, uang darurat, atau apapun sebutannya, dapat membuat Anda bertahan sampai setidaknya selama enam bulan. Itu sudah hitungan biaya makan, transportasi, cicilan, dan sebagainya. Kenapa demikian?<br />
-Bayangkan sekiranya Anda diberhentikan atau berhenti dari pekerjaan sekarang, setidaknya Anda masih punya simpanan sampai Anda mendapatkan pekerjaan baru dengan standar gaji yang sama.</li>
-  <li>Hanya menyisihkan 10 persen dari gaji setiap bulannya<br />
-Idealnya seseorang dianjurkan untuk menyisihkan gaji yang diperoleh setiap bulannya sebesar 10 persen untuk hari tua mulai sejak usia 25. Beranjak dari laporan tahun 2011, Center for Retirement Research at Boston College menghitung bahwa jika seseorang menabung sejak usia 25 dan pensiun di usia 70 tahun, ia perlu menyisihkan pendapatan minimal 7 persen supaya mencapai keuangan yang stabil. Kalau mau pensiun lebih awal di usia 65, maka sisihkanlah 15 persen dari gaji Anda setiap bulan.</li>
-  <li>Cicilan rumah Anda lebih dari satu minggu hitungan gaji<br />
-Hal ini berkaitan dengan kemampuan Anda membeli rumah dengan harga sesuai dengan penghasilan Anda. Satu minggu hitungan gaji adalah gambaran kasar saja. “Artinya bahwa pembayaran cicilan Anda tidak boleh lebih dari seperempat dari pendapatan Anda,” ujar Harold Evensky, perencana keuangan bersertifikasi, dan Presiden Evensky &amp; Katz Wealth Management di Coral Gables, Fla. Dengan kata lain, usahakan cicilan rumah Anda kira-kira seperempat saja dari gaji Anda.</li>
-  <li>Tagihan kartu kredit sama seperti tahun-tahun yang lalu<br />
-Hanya dengan mengetahui bahwa tagihan kartu kredit selalu sama, sudah merupakan tanda bahwa Anda lebih banyak mengeluarkan daripada memasukkan uang. Apalagi jika pemakaian kartu kredit justru lebih besar setiap tahun atau setiap bulannya. Karena, utang kartu kredit biasanya tidak membiayai aset yang berkembang, melainkan hanya membiayai gaya hidup. Jika Anda bisa mengontrol diri dan setiap kali mampu mengurangi jumlah tagihan, akan baik untuk kondisi keuangan Anda.</li>
-  <li>Mudah terayu oleh barang atau cicilan tanpa bunga<br />
-Seringkali ada penawaran menarik yang datang menghampiri, di mana Anda bisa membeli barang impian Anda dengan cara mencicil namun Anda bisa membayar cicilannya tanpa bunga, dan sebagainya. Ada juga yang menawarkan pembayaran tanpa bunga dalam periode tertentu, misalnya sampai setahun yang akan datang. Lebih baik tidak ambil resiko, hanya dengan membayangkan apakah Anda mampu membayarnya belakangan. Karena jika sekarang saja Anda tidak mampu, bagaimana nanti?</li>
-  <li>Membayar tagihan kartu kredit dengan kartu kredit lainnya<br />
-Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari kartu kredit baru untuk memindahkan tagihan dari kartu kredit yang lama. Menurut Erin Baehr, perencana keuangan di Stroudsburg, Pa, jika Anda menumpuk utang dalam kartu kredit yang menerapkan bunga tinggi, memindahkan tagihan kartu yang satu ke kartu lain yang bunganya lebih rendah memang akan menguntungkan. Tetapi kalau Anda mentransfer tagihan ke kartu lain yang bunganya tinggi untuk meningkatkan limit kartu kredit, itu bukanlah keputusan yang bijak.</li>
-  <li>Sebelum membeli sesuatu Anda sering berpikir, “Saya tahu, tidak seharusnya saya membelinya, tapi….”<br />
-“Saya sudah bekerja keras, jadi saya berhak atas TV layar datar ini,” atau, “Pekerjaan saya berat, jadi saya butuh liburan untuk kesehatan mental saya,” begitu kata Anda. Kedengarannya familiar, bukan? Seringkali kita mencari alasan atau pembenaran untuk memperoleh sesuatu yang nilainya jauh di atas kemampuan kita membelinya. Boleh percaya boleh tidak, menurut Baehr, kata-kata seperti ini justru sering datang dari orang yang kesulitan keuangan. Kalau Anda stabil secara finansial, biasanya Anda tidak akan mengungkapkan demikian.</li>
-</ol>
-
-<p>Sumber: <a href="http://www.kompas.com/">Kompas</a></p>
-]]></content>
-  </entry>
+  <a href="https://github.com/nurulhuda">@nurulhuda</a> on GitHub
   
-  <entry>
-    <title type="html"><![CDATA[Menggambar Spirograf di Indesign CS3]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/03/spirograph/"/>
-    <updated>2013-03-23T16:06:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/03/spirograph</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/spirograf.png" alt="spirograph" /></p>
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
-<p>Sebaik apapun sebuah aplikasi dibuat, sudah pasti tidak akan bisa memenuhi semua kebutuhan penggunanya yang berbeda-beda latar belakang dan kebutuhannya. Untuk itulah aplikasi-aplikasi besar semacam Adobe Indesign menyediakan sarana berupa <em>script engine</em>. Dengan adanya sarana tersebut pengguna bisa membuat program kecil sesuai dengan kebutuhannya. Program kecil inilah yg disebut dengan script.</p>
+        github.showRepos({
+            user: 'nurulhuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
-<p>Script akan sangat berguna ketika 1) kita harus melakukan suatu pekerjaan yang berulang-ulang dan 2) ketika kita tidak mungkin melakukan pekerjaan tsb secara manual. Sebagai contoh, untuk membuat gambar spirograf seperti gambar di atas bisa dibilang tidak mungkin jika dilakukan secara manual.
-<!-- more --></p>
 
-<p>Kali ini aku mempersembahkan sebuah script untuk menggambar spirograf di Indesign CS3. Sebetulnya script ini adalah karya saudara saya, Peter Kahrel. Hehehe… Aku hanya membuat <em>interface</em>-nya saja supaya lebih mudah digunakan. Kamu bisa mengunduh script tsb <a href="http://nurulhuda.github.com/downloads/code/spirograph.jsx">di sini</a>. Caranya: klik kanan pada link tsb lalu pilih “Save link as…”. Jangan lupa komentarnya ya….</p>
-]]></content>
-  </entry>
+<section>
+  <h1>Tweet</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("NurhudaVanJava", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
   
-  <entry>
-    <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/"/>
-    <updated>2013-03-14T12:26:00-04:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
-    <content type="html"><![CDATA[<h2 id="menggambar-garis">Menggambar Garis</h2>
-
-<p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
-
-<p>Halaman Indesign pada dasarnya adalah sebuah bidang koordinat dimana titik (0, 0) terletak pada sudut kiri atas <em>(default)</em>. Jika koordinat titik A adalah (25, 30) itu artinya titik A berada 25 mm dari sisi kiri dan 30 mm dari sisi atas (dengan asumsi <em>measurement unit</em> yang digunakan adalah milimeter).</p>
-
-<p>Sekarang kita akan menggambar garis dengan script. Sebagai contoh, saya akan menggambar garis yang menghubungkan titik (25, 30) dan titik (150, 60). Berikut kodenya:</p>
-
-<!-- more -->
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (graphicline.jsx)</span> <a href="http://nurulhuda.github.com/downloads/code/graphicline.jsx">download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">myLine</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">graphicLines</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-</span><span class="line"><span class="nx">myLine</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">150</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="penjelasan">Penjelasan:</h3>
-
-<ul>
-  <li>Pada baris 1, variabel myDoc mengacu pada dokumen Indesign yang sedang aktif.</li>
-  <li>Pada baris 2, variabel myPage mengacu pada halaman pertama dokumen yang sedang aktif tersebut. Angka 0 pada pernyataan <code>myDoc.pages[0]</code> berarti halaman pertama. Jika diganti dengan angka 1 berarti halaman kedua, dan seterusnya.</li>
-  <li>Pada baris 3, pernyataan <code>myPage.graphicLines.add()</code> bisa diartikan: tambahkan sebuah garis <em>(graphicLine)</em> pada halaman <em>myPage</em> kemudian berikan hasilnya pada variabel myLine. Sampai disini, sebuah garis telah tergambar pada pojok kiri atas halaman Indesign. Namun posisi dan ukurannya belum sesuai dengan yang kita harapkan.</li>
-  <li>Pada baris 4, properti <em>geometricBounds</em> dari objek myline kita beri nilai berupa array dari koordinat titik awal dan titik akhir. Perhatikan bahwa koordinat ditulis dalam format (y1, x1, y2, x2).</li>
-  <li>Sebelum menjalankan script ini, pastikan dokumen telah menggunakan satuan milimeter.</li>
-</ul>
-
-<p>Sampai disini dulu…. Jangan lupa komentarnya ya….<br />
-Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan garis, dll.</p>
-]]></content>
-  </entry>
+    <a href="http://twitter.com/NurhudaVanJava" class="twitter-follow-button" data-show-count="false">Ikuti @NurhudaVanJava</a>
   
-  <entry>
-    <title type="html"><![CDATA[Sedekah Luar Biasa]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/03/sedekah-luar-biasa/"/>
-    <updated>2013-03-09T13:45:00-05:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/03/sedekah-luar-biasa</id>
-    <content type="html"><![CDATA[<p>Sebagian kita selalu merasa khawatir ketika menginfakkan harta kita ke jalan yang benar. Infak di sini bisa jadi merupakan nafkah wajib untuk anak dan istri, menunaikan zakat maal (harta) atau mengeluarkan harta untuk sedekah sunnah. Selalu khawatir dalam hati kalau-kalau harta itu berkurang. Secara kuantitas bisa jadi berkurang, namun ingatlah bahwa bisa jadi dengan harta yang kita keluarkan tadi akan membuat harta kita semakin barokah, bahkan boleh jadi Allah ganti di dunia dengan harta yang melimpah, atau kita dianugerahi sifat qona’ah (merasa cukup). Lebih dari itu, Allah memberi janji akan menggandakan amalan kebaikan kita di akhirat. Yang terakhir tentu kenikmatan yang luar biasa dibanding dengan nikmat dunia.</p>
+</section>
 
-<p>Allah Ta’ala berfirman:</p>
 
-<blockquote>
-  <p>“Barangsiapa memberi pinjaman kepada Allah dengan pinjaman yang baik, maka Allah akan melipatgandakan balasan pinjaman itu untuknya dan dia akan memperoleh pahala yang banyak” (QS. Al Hadid: 11). </p>
-</blockquote>
 
-<!-- more -->
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/pruls34?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
-<p>‘Umar bin Khottob mengatakan bahwa yang dimaksud dengan ayat ini adalah berinfaq di jalan Allah. Ada pula yang mengatakan bahwa maksud ayat ini adalah memberi nafkah pada keluarga. Yang tepat sebagaimana yang dikatakan oleh Ibnu Katsir bahwa yg dimaksudkan dengan ayat ini adalah berinfaq di jalan Allah secara umum (baik itu di jalan Allah atau menafkahi keluarga) dengan niat yg ikhlas dan tekad yg jujur, ini semua tercakup dalam ayat di atas.</p>
 
-<p>Ayat di atas semisal dengan firman Allah Ta’ala:</p>
 
-<blockquote>
-  <p>“Siapakah yang mau memberi pinjaman kepada Allah, pinjaman yang baik (menafkahkan hartanya di jalan Allah), maka Allah akan melipatgandakan pembayaran kepadanya dengan lipat ganda yang banyak. Dan Allah menyempitkan dan melapangkan (rezki) dan kepada-Nya-lah kamu dikembalikan” (QS. Al Baqarah: 245)</p>
-</blockquote>
-
-<p>Suatu kisah yang bisa jadi pelajaran bagi kita seorang pengusaha agar jangan pernah khawatir mengeluarkan harta untuk nafkah wajib, zakat atau pun sedekah yang sunnah. Lihatlah kisah tentang sahabat Abud Dahdaa Al Anshori berikut.</p>
-
-<p>‘Abdullah bin Mas’ud menceritakan bahwa tatkala turun ayat di atas (surat Al Hadid ayat 11), Abud Dahdaa Al Anshori mengatakan, “Wahai Rasulullah, apakah Allah menginginkan pinjaman dari kami?” Rasulullah shallallahu ‘alaihi wa sallammenjawab, “Betul, wahai Abud Dahdaa.”</p>
-
-<p>Kemudian Abud Dahdaa pun berkata, “Wahai Rasulullah, tunjukkanlah tanganmu.”</p>
-
-<p>Rasulullah shallallahu ‘alaihi wa sallam pun menyodorkan tangannya. Abud Dahdaa pun mengatakan, “Aku telah memberi pinjaman pada Rabbku kebunku. Kebun tersebut memiliki 600 pohon kurma.”</p>
-
-<p>Ummud Dahda, istri dari Abud Dahdaa bersama keluarganya berada di kebun tersebut, lalu Abud Dahdaa datang dan berkata, “Wahai Ummud Dahdaa!” “Iya,” jawab istrinya. Abud Dahdaa berkata, “Keluarlah dari kebun ini. Aku baru saja memberi pinjaman kebun ini pada Rabbku.” Dalam riwayat lain, Ummud Dahdaa menjawab, “Engkau telah beruntung dengan penjualanmu, wahai Abud Dahdaa.”</p>
-
-<p>Ummu Dahda pun pergi dari kebun tadi, begitu pula anak-anaknya. Rasulullah shallallahu ‘alaihi wa sallam pun terkagum dengan Abud Dahdaa. Beliau shallallahu ‘alaihi wa sallam mengatakan, “Begitu banyak tandan anggur dan harum-haruman untuk Abud Dahdaa di surga.” Dalam lafazh yang lain dikatakan, “Begitu banyak pohon kurma untuk Abu Dahdaa di surga. Akar dari tanaman tersebut adalah mutiara dan yaqut (sejenis batu mulia).” (Riwayat ini adalah riwayat yang shahih, dikeluarkan oleh Abdu bin Humaid dalam Muntakhob dan Ibnu Hibban dalam Mawarid Zhoma’an. Lihat Tafsir Al Qur’an Al ‘Azhim, 13/414-415)</p>
-
-<p>Subhanallah… Adakah di antara kaum muslimin saat ini yang bisa memberi pinjaman di jalan Allah seperti ini?</p>
-
-<p>Lihatlah betapa banyak harta yang dikeluarkan oleh Abud Dahdaa. Itu bukanlah investasi yang sedikit. Iya benar-benar yakin bahwa harta yang ia keluarkan tidak akan sia-sia. Karena barangsiapa yang memberi pinjaman pada Allah (artinya bersedekah di jalan Allah), maka Allah akan melipatgandakan balasan dan ia akan memperoleh pahala yang banyak. Dan tentu kita masih ingat bersama bahwa Nabi shallallahu ‘alaihi wa sallam bersabda,</p>
-
-<blockquote>
-  <p>“Sedekah tidaklah mengurangi harta.” (HR. Muslim no. 2558, dari Abu Hurairah)</p>
-</blockquote>
-
-<p>Tidak perlu khawatir dengan infak Anda karena Allah-lah Yang Maha Pemberi Rizki. Allah Ta’ala berfirman,</p>
-
-<blockquote>
-  <p>“Dan barang apa saja yang kamu nafkahkan, maka Allah akan menggantinya dan Dia-lah Pemberi rezki yang sebaik-baiknya.” (QS. Saba’: 39) </p>
-</blockquote>
-
-<p>Lihatlah bagaimanakah penjelasan yang amat menarik dari Ibnu Katsir rahimahullah mengenai ayat ini. Beliau mengatakan, <em>“Selama engkau menginfakkan sebagian hartamu pada jalan yang Allah perintahkan dan jalan yang dibolehkan, maka Allah-lah yang akan memberi ganti pada kalian di dunia, juga akan memberi ganti berupa pahala dan balasan di akhirat kelak.”</em> (Tafsir Al Qur’an Al ‘Azhim, 11/293)</p>
-
-<p>Sumber: <a href="http://motivatweet.com/2013/02/sedekah-luar-biasa.php">motivatweet.com</a></p>
-]]></content>
-  </entry>
   
-  <entry>
-    <title type="html"><![CDATA[Doa Dijauhkan dari Kesedihan, Malas, dan Hutang]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/02/doa-dijauhkan-dari-malas/"/>
-    <updated>2013-02-26T18:01:00-05:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/02/doa-dijauhkan-dari-malas</id>
-    <content type="html"><![CDATA[<p class="arab">
-اَللهُمَّ اِنِّي اَعُوْذُبِكَ مِنَ الْهَمِّ وَالْحَزَنَ وَاَعُوْذُبِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَاَعُوْذُبِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَاَعُوْذُبِكَ مِن غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Nurul Huda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
-<p><em>Artinya:<br />
-Ya Allah, sesungguhnya aku berlindung kepadaMu dari kegundahan dan kesedihan, aku berlindung kepadaMu dari sifat lemah dan Malas, aku berlindung kepadaMu dari sifat penakut dan bakhil, aku berlindung kepadamu dari himpitan hutang dan penindasan orang.</em></p>
-
-]]></content>
-  </entry>
+</footer>
   
-  <entry>
-    <title type="html"><![CDATA[Tutorial InDesign CS3: Find/Change dengan GREP]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/02/indesign-regexp/"/>
-    <updated>2013-02-20T08:03:00-05:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/02/indesign-regexp</id>
-    <content type="html"><![CDATA[<p>GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression (regexp)</a>. Dengan GREP, pencarian dan penggantian teks dapat dilakukan dengan sangat efektif. Sebagai contoh, saya pernah menerima naskah dari penulis dengan format seperti ini:
-<!-- more --></p>
 
-<p><img src="http://nurulhuda.github.com/images/berantakan.jpg" /></p>
+<script type="text/javascript">
+      var disqus_shortname = 'panduvanjava';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/';
+        var disqus_url = 'http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
-<p>Berantakan ya? Padahal format yang benar seharusnya seperti ini.</p>
 
-<p><img src="http://nurulhuda.github.com/images/rapi.jpg" /></p>
 
-<p>Apa yang akan anda lakukan dengan naskah dari penulis tersebut? Cara paling
-mudah tentu saja dengan menekan tombol Enter pada setiap pilihan b, c, dan d. 
-Kalau jumlah soal ada 30, berapa kali anda harus menekan tombol Enter? 
-Berapa lama waktu yang anda butuhkan? Tidak efektif bukan? Capek deh…</p>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-<p>Cara paling cepat untuk mengatasi masalah di atas adalah dengan Find/Change. Caranya? Terlebih dahulu kita tentukan rumus/<em>pattern</em> dari teks yang 
-akan kita cari. Kalau kita perhatikan, naskah dari penulis tsb memiliki 
-pola yang <em>ajeg</em>, yaitu:<br />
-beberapa spasi diikuti huruf b, c, atau d, diikuti tanda baca titik, 
-diikuti spasi atau kadang tidak ada spasi, diikuti teks jawaban</p>
 
-<p>Pola di atas kalau kita terjemahkan ke dalam <em>pattern</em> regexp adalah sbb:</p>
 
-<p><code>\s+([bcd])\.\s*</code></p>
 
-<p>Penjelasan dari rumus di atas adalah:</p>
 
-<ul>
-  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
-  <li><code>+</code> artinya ‘satu atau lebih’</li>
-  <li><code>[bcd]</code> artinya huruf b, c, atau d</li>
-  <li>tanda kurung ‘()’ maksudnya simpan teks yg ditemukan ke dalam variabel.
-Nantinya, nilai variabel ini dapat diakses dengan simbol $1</li>
-  <li><code>\.</code> artinya karakter titik ‘.’</li>
-  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
-  <li><code>*</code> artinya ‘nol atau lebih’</li>
-</ul>
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
 
-<p>Rumus di atas kira-kira dibaca seperti ini: <em>temukan satu spasi atau lebih yang 
-diikuti huruf b, c, atau d yang diikuti titik yang diikuti atau tidak diikuti beberapa spasi.</em></p>
 
-<p>Rumus sudah, sekarang tekan tombol Ctrl+F untuk membuka dialog Find/Change. Klik pada tab GREP. Pada kolom ‘Find what:’ tuliskan rumus regexp di atas,
-sedangkan pada kolom ‘Change to:’ tulislah rumus berikut ini:</p>
 
-<p><code>\r$1.\t</code></p>
 
-<p>Keterangan:</p>
-
-<ul>
-  <li><code>\r</code> artinya baris baru (sama seperti kita menekan Enter)</li>
-  <li><code>$1</code> teks yang ditemukan, dalam hal ini bisa b, c, atau d</li>
-  <li><code>.</code>  tanda titik</li>
-  <li><code>\t</code> tab</li>
-</ul>
-
-<p>rumus di atas kira-kira dibaca: <em>ganti dengan baris baru diikuti huruf b, c, 
-atau d diikuti titik diikuti tab.</em></p>
-
-<p>Ok, kalau semua sudah, terakhir adalah tekan tombol ‘Change All’. Mudah bukan?</p>
-
-<p>Semoga bermanfaat..</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Kekuatan Dahsyat Tersembunyi di Otak Kanan]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/02/kekuatan-dahsyat-otak-kanan/"/>
-    <updated>2013-02-19T08:18:00-05:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/02/kekuatan-dahsyat-otak-kanan</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.com/images/right-brain.jpg" />Ada empat macam genius di muka bumi ini. <strong>Pertama</strong>, genius yang biasa lahir dengan otak normal dan melalui pendidikan formal. Genius seperti itu susah dihasilkan di Indonesia, karena kurikulum yang luar biasa padatnya, keseimbangan antara belajar dan bermain sama sekali timpang. Yang pasti, otak kanan anak sulit berkembang. Akibatnya, daya imaginasi, kreativitas, impian-impian dan karakter yang baik menjadi terhalang. </p>
-
-<p>Genius model <strong>kedua</strong>, yaitu <em>Born to be genius</em>. Ini adalah anak-anak yang memang dilahirkan sudah genius. Salah satu contohnya adalah Marc Yu dari Amerika Setikat. Dalam usia 6 tahun, dia sudah mampu memainkan komposisi-komposisi piano yang sulit, yang biasanya membutuhkan latihan belasan tahun. Dalam penelitian, ketika otak Marc Yu difoto dengan FMRI di Chicago School Of Medicine, lobo temporal otak kanan daerah seninya, ternyata jauh lebih tebal dan warnanya lebih tua daripada otak anak-anak yang normal. Selain Marc Yu, ada juga Chan Siauw Ming, 9 tahun pianis ajaib dari China, kemudian juga Alexender Prior 16 tahun dari AS, komponis / conductor termuda di dunia. Sejak usia 10 tahun, dia sudah membuat komposisi-komposisi musik untuk orkes simponi. Mozart, Chopin, Tchaikovsky, Michel Angelo diduga termasuk kategori di atas. 
-<!-- more --></p>
-
-<p>Genius yang <strong>ketiga</strong> yaitu <em>genius among us</em>. Adalah genius yang paling banyak dijumpai di sekitar kita. Genius ini pertama kali ditemukan oleh Dr J Langdon Down pada tahun 1887 dan dikategorikan sebagai <em>savant syndrome</em>. Yakni, suatu kondisi ketidakmampuan mental seseorang, yang diikuti secara kontras oleh kemampuannya yang hebat di bidang-bidang tertentu. </p>
-
-<p>Anak-anak yang menderita autis mempunyai handicap di otak kirinya <em>(Left Brain Injury)</em>, kompensasinya otak kanannya akan lepas dan aktif dengan sendirinya. Anak-anak autis, <em>asperger syndrome, down syndrome, cerebal palsy, dyslexia, F.T.D., william syndrome</em> ternyata banyak yang memiliki kemampuan luar biasa di bidang matematika, seni, astronomi, <em>calender calculating</em>, <em>photograph memory</em>, dan lain-lain. Penelitian dari Dr Darold A Treffet dari Wisconsin University, beserta teman-temannya sejak tahun 1970 menemukan, ribuan kasus mengenai kemampuan hebat anak-anak ini. Sebagai contoh adalah Trevor Tao berasal dari Australia. Dia seorang anak autis. Berkat perjuangan gigih ibunya, dia bisa belajar di sekolah umum. Ibunya berperan sekali dalam mendidik Trevor. Dari anak autis yang tak berdaya, sampai mendapat gelar doktor dalam bidang matematika di usianya yang ke 25 di Adelaide University. Stephen Wiltshire lahir di London 1974. Di usia 3 tahun sudah divonis sebagai anak autis. Ia mengalami kesulitan berbicara sampai usianya menginjak 9 tahun. Pada umur 12 tahun kemampuan <em>photograph memory</em> dan melukisnya ditemukan oleh Prof Margaret Hewson. Ia dididik dan berhasil menyelesaikan studi arsitekturnya. Pada usia 20 tahun ia terbang dengan helikopter di atas kota London selama 15 menit. Ia memotret <em>landmark</em> kota London seluas 16 miles persegi dengan otaknya. Setelah turun dari helikopter Stephen meminta disediakan kanvas ukuran 4 x 16 meter. Ia mulai melukis selama 1 minggu penuh ribuan gedung bertingkat di London itu dengan ketepatan dan tingkat akurasi yang tinggi. Kemampuan <em>photograph memory</em>-nya menghantar Stephen Wiltshire menjadi kaya raya. </p>
-
-<p>Banyak sekali penyandang autis mempunyai kemampuan <em>calender calculator</em>, yaitu menebak nama hari. Yang paling fenomenal adalah George Finn, remaja autis asal New York yang dalam hitungan detik dapat menebak dengan tepat, bahwa tanggal 6 Juni tahun 91.360 (abad ke 920) jatuh pada hari Jumat. Thomas Fuller lahir di Afrika Selatan, penyandang autis umur 15 tahun ini bisa menebak dengan tepat dalam waktu 30 detik saja, bahwa 70 tahun, 17 hari dan 12 jam sama dengan 2.210.500.800 detik. Daniel Tammet, lahir 1970 di London. Penyandang <em>Asperger Syndrome</em> sekaligus epilepsi ini, waktu menginjak usia remaja punya kemampuan memori dan menghitung yang luar biasa. Waktu dia diberi soal yang tidak dapat dibagi habis, yaitu 13 : 97, dia langsung menuliskan jawabannya sampai 100 desimal di belakang koma dalam waktu 30 detik saja. Leslie Lemke dari USA, penyandang <em>cerebal palsy</em> yang buta sejak lahir dan baru bisa berjalan pada usia 6 tahun. Ibunya memberikan sebuah piano waktu dia berusia 8 tahun. Tiba-tiba terjadi keajaiban, Leslie langsung bisa memainkan lagu Tchaikovsky’s Piano Concerto no 1 dengan sempurna, walau hanya baru sekali mendengar lagu tersebut lewat radio. Tanpa pernah belajar piano, Leslie Lemke kemudian berhasil menjadi pianis profesional yang hebat di jalur klasik maupun jazz. Zhou-Zhou adalah remaja <em>down syndrome</em> dari China yang IQ-nya cuma 30, jadi tergolong idiot. Walaupun tidak pernah belajar musik sepanjang hidupnya, tiba-tiba dia mampu menjadi konduktor hebat pada Orkes Simfoni Nasional China. Zhou-Zhou bersama orkes simfoninya berhasil mengguncang daratan China, Jepang, Amerika Utara dan Benua Eropa. Selama Zhou-Zhou memimpin orkestra, not-notnya betul-betul berterbangan di depan matanya.</p>
-
-<p><img src="http://nurulhuda.github.com/images/zhou-zhou.jpg" title="Zhou-Zhou" /></p>
-
-<p>Sumber: <a href="http://www.suaramerdeka.com/v1/index.php/read/cetak/2012/11/30/207121/Kekuatan-Dahsyat-Tersembunyi-di-Otak-Kanan">www.suaramerdeka.com</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sifat Setan yang Hebat]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/02/sifat-setan-yang-hebat/"/>
-    <updated>2013-02-16T08:36:00-05:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/02/sifat-setan-yang-hebat</id>
-    <content type="html"><![CDATA[<p>Setan pun punya sifat positif yang layak kita contoh.</p>
-
-<ol>
-  <li><strong>Pantang menyerah</strong> <img class="right" src="http://nurulhuda.github.com/images/setan.png" /> <br />Setan memiliki sifat pantang menyerah dalam menggoda manusia. Kita juga seharusnya pantang menyerah dalam menghadapi kesulitan hidup.</li>
-  <li><strong>Kreatif</strong> <br />Setan kreatif menciptakan godaan-godaan, selalu kreatif dan penuh ide, dalam menjebak manusia. Ketika setan gagal menggoda manusia dengan suatu cara, maka dia akan mencari cara yang lain. Begitu seterusnya sampai tujuannya berhasil. Begitu pun seharusnya seorang manusia, harus bisa sekreatif mungkin menciptakan suasana dan cara-cara untuk menuju sukses. Jika gagal dengan satu cara, jangan cepat putus asa. Masih ada cara-cara lain yang dapat kita gunakan.</li>
-  <li><strong>Konsisten</strong> <br />Setan dari mulai menciptakan pekerjaan tak pernah mengeluh dan putus asa selalu konsisten. Begitu juga manusia harus konsisten dalam berusaha dan menghadapi tantangan.</li>
-  <li><strong>Jenius</strong> <br />Setan paling pintar dalam mencari cara agar manusia tergoda. Kita harus pintar mencari celah agar usaha kita, apapun itu, bisa mengantarkan kita kepada keadaan yang kita impikan.</li>
-  <li><strong>Tanpa pamrih</strong> <br />Setan bekerja 24 jam sehari tanpa <em>overcharge</em>. Kita pun seharusnya bekerja dengan semangat tanpa memikirkan <em>overcharge</em> waktu karena kesuksesan adalah untuk kita sendiri.</li>
-  <li><strong>Kompak dengan team</strong> <br />Setan saja bisa sangat kompak dengan team, kita juga harus bisa bekerjasama dengan team, jangan bekerja saling sikut dan saling telikung.</li>
-</ol>
-
-<p>Tuh kan.. Ayo semangat, jangan sampai kalah sama setan!</p>
-
-<p>disadur dari: <a href="http://www.suksesseumurhidup.com/article-1">SuksesSeumurHidup.com</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Quote of The Day]]></title>
-    <link href="http://nurulhuda.github.com/blog/2013/02/doa-pagi/"/>
-    <updated>2013-02-13T08:29:00-05:00</updated>
-    <id>http://nurulhuda.github.com/blog/2013/02/doa-pagi</id>
-    <content type="html"><![CDATA[<blockquote><p>Tuhan yang terkasih,</p><p>Terima kasih atas kesempatan untuk memulai satu awal yang baik lagi hari ini.</p><p>Mohon bantulah aku untuk mengalahkan kecenderunganku untuk menunda, agar aku lebih bersegera melakukan yang baik bagiku, bagi keluargaku, dan bagi semua yang kulayani.</p><p>Jika aku cepat menyelesaikan pekerjaanku, akan banyak yang kuhasilkan, dan semoga itu adalah alasan bagi besarnya rezeki yang Kau limpahan kepadaku hari ini, esok, dan di masa depanku yang panjang.</p><p>Aku mohon Kau lembutkan hatiku dengan cintaMu, Kau anggunkan tutur dan tindakanku dengan kewibawaanMu, dan Kau besarkan pengaruhku dengan keperkasaanMu.</p><p>Jadikanlah aku jiwa bersahaja yang rendah hati, tapi yang besar nilainya bagi kebaikan hidup keluarga dan sesamaku.</p><p>Aamiin</p><footer><strong>Mario Teguh</strong></footer></blockquote>
-]]></content>
-  </entry>
-  
-</feed>
+<div id="bottom"></div>
+</body>
+</html>
