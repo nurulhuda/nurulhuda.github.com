@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/amiri-regular.eot?') format('eot'),
+         url('/assets/fonts/amiri-regular.woff') format('woff'),
+         url('/assets/fonts/amiri-regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: Amiri QuranWeb;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/amiri-quran.eot?') format('eot'),
+         url('/assets/fonts/amiri-quran.woff') format('woff'),
+         url('/assets/fonts/amiri-quran.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/amiri-bold.eot?') format('eot'),
+         url('/assets/fonts/amiri-bold.woff') format('woff'),
+         url('/assets/fonts/amiri-bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: oblique;
+    font-weight: 400;
+    src: url('/assets/fonts/amiri-slanted.eot?') format('eot'),
+         url('/assets/fonts/amiri-slanted.woff') format('woff'),
+         url('/assets/fonts/amiri-slanted.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: oblique;
+    font-weight: 700;
+    src: url('/assets/fonts/amiri-boldslanted.eot?') format('eot'),
+         url('/assets/fonts/amiri-boldslanted.woff') format('woff'),
+         url('/assets/fonts/amiri-boldslanted.ttf')  format('truetype');
+}
+
+article p.arab {
+    font-family: AmiriWeb, 'Traditional Arabic', Tahoma;
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 40pt;
+    direction: rtl;
+}
+

@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tutorial InDesign CS3: Find/Change dengan GREP - Pandu van Java</title>
+  <meta name="author" content="Nurul Huda">
+
+  
+  <meta name="description" content="GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus regular expression (regexp). Dengan GREP, pencarian dan penggantian &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nurulhuda.github.io/blog/2013/02/indesign-regexp/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pandu van Java" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+
+</head>
+
+<body   >
+  <script type="text/javascript" src="/javascripts/link_pelangi.js"></script>
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pandu van Java</a></h1>
+  
+    <h2>Belajar, Berbakti, dan Berjuang</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/">Beranda</a></li>
+  <li><a href="/blog/archives">Arsip</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Tutorial InDesign CS3: Find/Change dengan GREP</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-20T08:03:00-05:00" pubdate data-updated="true">20 February 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression (regexp)</a>. Dengan GREP, pencarian dan penggantian teks dapat dilakukan dengan sangat efektif. Sebagai contoh, saya pernah menerima naskah dari penulis dengan format seperti ini:
+<!-- more --></p>
+
+<p><img src="/images/berantakan.jpg" /></p>
+
+<p>Berantakan ya? Padahal format yang benar seharusnya seperti ini.</p>
+
+<p><img src="/images/rapi.jpg" /></p>
+
+<p>Apa yang akan anda lakukan dengan naskah dari penulis tersebut? Cara paling
+mudah tentu saja dengan menekan tombol Enter pada setiap pilihan b, c, dan d. 
+Kalau jumlah soal ada 30, berapa kali anda harus menekan tombol Enter? 
+Berapa lama waktu yang anda butuhkan? Tidak efektif bukan? Capek deh…</p>
+
+<p>Cara paling cepat untuk mengatasi masalah di atas adalah dengan Find/Change. Caranya? Terlebih dahulu kita tentukan rumus/<em>pattern</em> dari teks yang 
+akan kita cari. Kalau kita perhatikan, naskah dari penulis tsb memiliki 
+pola yang <em>ajeg</em>, yaitu:<br />
+beberapa spasi diikuti huruf b, c, atau d, diikuti tanda baca titik, 
+diikuti spasi atau kadang tidak ada spasi, diikuti teks jawaban</p>
+
+<p>Pola di atas kalau kita terjemahkan ke dalam <em>pattern</em> regexp adalah sbb:</p>
+
+<p><code>\s+([bcd])\.\s*</code></p>
+
+<p>Penjelasan dari rumus di atas adalah:</p>
+
+<ul>
+  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
+  <li><code>+</code> artinya ‘satu atau lebih’</li>
+  <li><code>[bcd]</code> artinya huruf b, c, atau d</li>
+  <li>tanda kurung ‘()’ maksudnya simpan teks yg ditemukan ke dalam variabel.
+Nantinya, nilai variabel ini dapat diakses dengan simbol $1</li>
+  <li><code>\.</code> artinya karakter titik ‘.’</li>
+  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
+  <li><code>*</code> artinya ‘nol atau lebih’</li>
+</ul>
+
+<p>Rumus di atas kira-kira dibaca seperti ini: <em>temukan satu spasi atau lebih yang 
+diikuti huruf b, c, atau d yang diikuti titik yang diikuti atau tidak diikuti beberapa spasi.</em></p>
+
+<p>Rumus sudah, sekarang tekan tombol Ctrl+F untuk membuka dialog Find/Change. Klik pada tab GREP. Pada kolom ‘Find what:’ tuliskan rumus regexp di atas,
+sedangkan pada kolom ‘Change to:’ tulislah rumus berikut ini:</p>
+
+<p><code>\r$1.\t</code></p>
+
+<p>Keterangan:</p>
+
+<ul>
+  <li><code>\r</code> artinya baris baru (sama seperti kita menekan Enter)</li>
+  <li><code>$1</code> teks yang ditemukan, dalam hal ini bisa b, c, atau d</li>
+  <li><code>.</code>  tanda titik</li>
+  <li><code>\t</code> tab</li>
+</ul>
+
+<p>rumus di atas kira-kira dibaca: <em>ganti dengan baris baru diikuti huruf b, c, 
+atau d diikuti titik diikuti tab.</em></p>
+
+<p>Ok, kalau semua sudah, terakhir adalah tekan tombol ‘Change All’. Mudah bukan?</p>
+
+<p>Semoga bermanfaat..</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nurul Huda</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-20T08:03:00-05:00" pubdate data-updated="true">20 February 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tutorial/'>Tutorial</a>, <a class='category' href='/blog/categories/indesign/'>inDesign</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.io/blog/2013/02/indesign-regexp/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.io/blog/2013/02/indesign-regexp/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/kekuatan-dahsyat-otak-kanan/" title="Previous Post: Kekuatan Dahsyat Tersembunyi di Otak Kanan">&laquo; Kekuatan Dahsyat Tersembunyi di Otak Kanan</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/doa-dijauhkan-dari-malas/" title="Next Post: Doa Dijauhkan dari Kesedihan, Malas, dan Hutang">Doa Dijauhkan dari Kesedihan, Malas, dan Hutang &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Komentar</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section class="search-section">
+  <form action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:nurulhuda.github.io" />
+      <input class="search" type="text" name="q" results="0" placeholder="Cari..."/>
+    </fieldset>
+  </form>
+</section>
+
+<section>
+  <h1>Profil</h1>
+  <p><a href="/about-me/"><img src="/images/nurul_huda.jpg" width="73" height="93" style="float:left; margin-right:10px; margin-bottom:1.5em;" /></a>Aku adalah aku dengan segala kelebihan dan kekurangannya</p>
+</section>
+<section>
+  <h1>Tulisan Terakhir</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/instalasi-octopres/">Instalasi Octopres di Debian Wheezy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-2/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-1/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/berjamaah/">Berjamaah</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/menggambar-objek/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/curhat-setan/">Curhat Setan: Al-Quran yang Dibakar!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/tiga-investasi-wajib/">Tiga Investasi Wajib</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/sedekah-ala-orang-kaya/">Sedekah ala Orang Kaya</a>
+      </li>
+    
+  </ul>
+</section>
+<section class="catlist">
+  <h1>Kategori</h1>
+  <ul id="cat_list">
+    <li><a href='/blog/categories/doa'>Doa (2)</a></li><li><a href='/blog/categories/indesign'>inDesign (1)</a></li><li><a href='/blog/categories/islam'>Islam (4)</a></li><li><a href='/blog/categories/keuangan'>Keuangan (1)</a></li><li><a href='/blog/categories/linux'>Linux (1)</a></li><li><a href='/blog/categories/motivasi'>Motivasi (9)</a></li><li><a href='/blog/categories/ms-excel'>MS Excel (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/resep'>Resep (1)</a></li><li><a href='/blog/categories/script-indesign'>Script Indesign (1)</a></li><li><a href='/blog/categories/tips'>Tips (2)</a></li><li><a href='/blog/categories/tutorial'>Tutorial (1)</a></li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (1)</a></li><li><a href='/blog/categories/umum'>Umum (6)</a></li><li><a href='/blog/categories/vba'>VBA (1)</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/nurulhuda">@nurulhuda</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nurulhuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Tweet</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("NurhudaVanJava", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/NurhudaVanJava" class="twitter-follow-button" data-show-count="false">Ikuti @NurhudaVanJava</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/pruls34?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Nurul Huda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'panduvanjava';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nurulhuda.github.io/blog/2013/02/indesign-regexp/';
+        var disqus_url = 'http://nurulhuda.github.io/blog/2013/02/indesign-regexp/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+<div id="bottom"></div>
+</body>
+</html>

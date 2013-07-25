@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategori: inDesign | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.io/blog/categories/indesign/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.io/"/>
+  <updated>2013-07-25T00:57:26-04:00</updated>
+  <id>http://nurulhuda.github.io/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tutorial InDesign CS3: Find/Change dengan GREP]]></title>
+    <link href="http://nurulhuda.github.io/blog/2013/02/indesign-regexp/"/>
+    <updated>2013-02-20T08:03:00-05:00</updated>
+    <id>http://nurulhuda.github.io/blog/2013/02/indesign-regexp</id>
+    <content type="html"><![CDATA[<p>GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression (regexp)</a>. Dengan GREP, pencarian dan penggantian teks dapat dilakukan dengan sangat efektif. Sebagai contoh, saya pernah menerima naskah dari penulis dengan format seperti ini:
+<!-- more --></p>
+
+<p><img src="/images/berantakan.jpg"></p>
+
+<p>Berantakan ya? Padahal format yang benar seharusnya seperti ini.</p>
+
+<p><img src="/images/rapi.jpg"></p>
+
+<p>Apa yang akan anda lakukan dengan naskah dari penulis tersebut? Cara paling
+mudah tentu saja dengan menekan tombol Enter pada setiap pilihan b, c, dan d. 
+Kalau jumlah soal ada 30, berapa kali anda harus menekan tombol Enter? 
+Berapa lama waktu yang anda butuhkan? Tidak efektif bukan? Capek deh…</p>
+
+<p>Cara paling cepat untuk mengatasi masalah di atas adalah dengan Find/Change. Caranya? Terlebih dahulu kita tentukan rumus/<em>pattern</em> dari teks yang 
+akan kita cari. Kalau kita perhatikan, naskah dari penulis tsb memiliki 
+pola yang <em>ajeg</em>, yaitu:<br />
+beberapa spasi diikuti huruf b, c, atau d, diikuti tanda baca titik, 
+diikuti spasi atau kadang tidak ada spasi, diikuti teks jawaban</p>
+
+<p>Pola di atas kalau kita terjemahkan ke dalam <em>pattern</em> regexp adalah sbb:</p>
+
+<p><code>\s+([bcd])\.\s*</code></p>
+
+<p>Penjelasan dari rumus di atas adalah:</p>
+
+<ul>
+  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
+  <li><code>+</code> artinya ‘satu atau lebih’</li>
+  <li><code>[bcd]</code> artinya huruf b, c, atau d</li>
+  <li>tanda kurung ‘()’ maksudnya simpan teks yg ditemukan ke dalam variabel.
+Nantinya, nilai variabel ini dapat diakses dengan simbol $1</li>
+  <li><code>\.</code> artinya karakter titik ‘.’</li>
+  <li><code>\s</code> artinya spasi (dapat berupa tab atau spasi)</li>
+  <li><code>*</code> artinya ‘nol atau lebih’</li>
+</ul>
+
+<p>Rumus di atas kira-kira dibaca seperti ini: <em>temukan satu spasi atau lebih yang 
+diikuti huruf b, c, atau d yang diikuti titik yang diikuti atau tidak diikuti beberapa spasi.</em></p>
+
+<p>Rumus sudah, sekarang tekan tombol Ctrl+F untuk membuka dialog Find/Change. Klik pada tab GREP. Pada kolom ‘Find what:’ tuliskan rumus regexp di atas,
+sedangkan pada kolom ‘Change to:’ tulislah rumus berikut ini:</p>
+
+<p><code>\r$1.\t</code></p>
+
+<p>Keterangan:</p>
+
+<ul>
+  <li><code>\r</code> artinya baris baru (sama seperti kita menekan Enter)</li>
+  <li><code>$1</code> teks yang ditemukan, dalam hal ini bisa b, c, atau d</li>
+  <li><code>.</code>  tanda titik</li>
+  <li><code>\t</code> tab</li>
+</ul>
+
+<p>rumus di atas kira-kira dibaca: <em>ganti dengan baris baru diikuti huruf b, c, 
+atau d diikuti titik diikuti tab.</em></p>
+
+<p>Ok, kalau semua sudah, terakhir adalah tekan tombol ‘Change All’. Mudah bukan?</p>
+
+<p>Semoga bermanfaat..</p>
+]]></content>
+  </entry>
+  
+</feed>

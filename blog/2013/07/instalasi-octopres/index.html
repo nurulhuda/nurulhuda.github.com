@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Instalasi Octopres di Debian Wheezy - Pandu van Java</title>
+  <meta name="author" content="Nurul Huda">
+
+  
+  <meta name="description" content="Octopress adalah sebuah kerangka kerja (framework) yang dirancang untuk Jekyll, yaitu mesin blog yang mengubah file teks menjadi halaman2 blog statis &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nurulhuda.github.io/blog/2013/07/instalasi-octopres/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pandu van Java" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+
+</head>
+
+<body   >
+  <script type="text/javascript" src="/javascripts/link_pelangi.js"></script>
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pandu van Java</a></h1>
+  
+    <h2>Belajar, Berbakti, dan Berjuang</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/">Beranda</a></li>
+  <li><a href="/blog/archives">Arsip</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Instalasi Octopres di Debian Wheezy</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-24T03:12:00-04:00" pubdate data-updated="true">24 July 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://octopress.org/">Octopress</a> adalah sebuah kerangka kerja <em>(framework)</em> yang dirancang untuk <a href="http://jekyllrb.com/">Jekyll</a>, yaitu mesin blog yang mengubah file teks menjadi halaman2 blog statis. Untuk mulai ngeblog dengan Jekyll kita harus bekerja extra keras karena harus membuat sendiri template, css, javascript, dan konfigurasi lainnya. Namun dengan Octopress semuanya jadi mudah.</p>
+
+<h2 id="instalasi-octopress">Instalasi Octopress</h2>
+
+<p>Sebelumnya, pastikan paket2 berikut ini telah terpasang dengan baik.</p>
+
+<ul>
+  <li>git</li>
+  <li>build-essential</li>
+  <li>libssl-dev</li>
+  <li>zlib1g-dev</li>
+</ul>
+
+<p>Unduh kode sumber Octopress dengan git</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nb">cd</span>
+</span><span class="line">git clone git://github.com/imathis/octopress.git octopress
+</span><span class="line">cat octopress/.rbenv-version
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Perintah di atas akan mengunduh kode sumber Octopress ke dalam folder <code>octopress</code>. Sedangkan perintah pada baris 3 untuk mengetahui versi ruby yang digunakan. Versi ruby ini akan diperlukan pada saat instalasi ruby.</p>
+
+<!-- more -->
+
+<p>Selanjutnya adalah instalasi ruby menggunakan rbenv.</p>
+
+<h3 id="instal-rbenv">Instal rbenv</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">git clone git://github.com/sstephenson/rbenv.git .rbenv
+</span><span class="line"><span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+</span><span class="line"><span class="nb">echo</span> <span class="s1">&#39;eval &quot;$(rbenv init -)&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+</span><span class="line">git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+</span><span class="line"><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="instal-ruby">Instal ruby</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">rbenv install 1.9.3-p0
+</span><span class="line">rbenv rehash
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>1.9.3-p0 adalah versi ruby yang akan diinstal. Sesuaikan versi ruby ini dengan isi file <code>octopress/.rbenv-version</code>. Butuh waktu agak lama untuk proses download dan kompilasi. Tunggu sampai proses kompilasi dan instalasi selesai.</p>
+
+<p>Setelah ruby terpasang dg baik, berikutnya adalah instalasi file-file dependensinya:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nb">cd </span>octopress
+</span><span class="line">gem install bundler
+</span><span class="line">rbenv rehash    <span class="c"># If you use rbenv, rehash to be able to run the bundle command</span>
+</span><span class="line">bundle install
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Terakhir adalah instalasi tema. Banyak tema buatan pihak ketiga yang dapat kita unduh di <a href="http://octopressthemes.com/">sini</a>.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">rake install <span class="o">[</span><span class="s1">&#39;nama tema&#39;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Octopress sudah siap digunakan.</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nurul Huda</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-24T03:12:00-04:00" pubdate data-updated="true">24 July 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.io/blog/2013/07/instalasi-octopres/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.io/blog/2013/07/instalasi-octopres/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/menggambar-poligon-2/" title="Previous Post: Tutorial Script InDesign CS3">&laquo; Tutorial Script InDesign CS3</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Komentar</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section class="search-section">
+  <form action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:nurulhuda.github.io" />
+      <input class="search" type="text" name="q" results="0" placeholder="Cari..."/>
+    </fieldset>
+  </form>
+</section>
+
+<section>
+  <h1>Profil</h1>
+  <p><a href="/about-me/"><img src="/images/nurul_huda.jpg" width="73" height="93" style="float:left; margin-right:10px; margin-bottom:1.5em;" /></a>Aku adalah aku dengan segala kelebihan dan kekurangannya</p>
+</section>
+<section>
+  <h1>Tulisan Terakhir</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/instalasi-octopres/">Instalasi Octopres di Debian Wheezy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-2/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-1/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/berjamaah/">Berjamaah</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/menggambar-objek/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/curhat-setan/">Curhat Setan: Al-Quran yang Dibakar!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/tiga-investasi-wajib/">Tiga Investasi Wajib</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/sedekah-ala-orang-kaya/">Sedekah ala Orang Kaya</a>
+      </li>
+    
+  </ul>
+</section>
+<section class="catlist">
+  <h1>Kategori</h1>
+  <ul id="cat_list">
+    <li><a href='/blog/categories/doa'>Doa (2)</a></li><li><a href='/blog/categories/indesign'>inDesign (1)</a></li><li><a href='/blog/categories/islam'>Islam (4)</a></li><li><a href='/blog/categories/keuangan'>Keuangan (1)</a></li><li><a href='/blog/categories/linux'>Linux (1)</a></li><li><a href='/blog/categories/motivasi'>Motivasi (9)</a></li><li><a href='/blog/categories/ms-excel'>MS Excel (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/resep'>Resep (1)</a></li><li><a href='/blog/categories/script-indesign'>Script Indesign (1)</a></li><li><a href='/blog/categories/tips'>Tips (2)</a></li><li><a href='/blog/categories/tutorial'>Tutorial (1)</a></li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (1)</a></li><li><a href='/blog/categories/umum'>Umum (6)</a></li><li><a href='/blog/categories/vba'>VBA (1)</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/nurulhuda">@nurulhuda</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nurulhuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Tweet</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("NurhudaVanJava", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/NurhudaVanJava" class="twitter-follow-button" data-show-count="false">Ikuti @NurhudaVanJava</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/pruls34?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Nurul Huda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'panduvanjava';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nurulhuda.github.io/blog/2013/07/instalasi-octopres/';
+        var disqus_url = 'http://nurulhuda.github.io/blog/2013/07/instalasi-octopres/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+<div id="bottom"></div>
+</body>
+</html>

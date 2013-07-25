@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tutorial Script InDesign CS3 - Pandu van Java</title>
+  <meta name="author" content="Nurul Huda">
+
+  
+  <meta name="description" content="Menggambar Segiempat dan Lingkaran Sintaks:
+menggambar segi empat: obj.rectangles.add();
+menggambar lingkaran: obj.ovals.add(); obj merupakan objek &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nurulhuda.github.io/blog/2013/06/menggambar-objek/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pandu van Java" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+
+</head>
+
+<body   >
+  <script type="text/javascript" src="/javascripts/link_pelangi.js"></script>
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pandu van Java</a></h1>
+  
+    <h2>Belajar, Berbakti, dan Berjuang</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/">Beranda</a></li>
+  <li><a href="/blog/archives">Arsip</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Tutorial Script InDesign CS3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-06T04:41:00-04:00" pubdate data-updated="true">06 June 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2 id="menggambar-segiempat-dan-lingkaran">Menggambar Segiempat dan Lingkaran</h2>
+
+<p><em>Sintaks:</em><br />
+menggambar segi empat: <code>obj.rectangles.add();</code><br />
+menggambar lingkaran: <code>obj.ovals.add();</code></p>
+
+<p><code>obj</code> merupakan objek dimana kita akan meletakkan gambar, biasanya bertipe <em>Page</em> atau <em>Spread</em>.</p>
+
+<p>Menggambar segiempat dan lingkaran pada dasarnya sama seperti menggambar garis. Untuk lebih jelasnya, perhatikan contoh berikut ini.</p>
+
+<p><em>Contoh:</em></p>
+
+<p>Gambarlah sebuah persegi yg memiliki ukuran 50 mm x 50 mm jika diketahui koordinat titik kiri-atas persegi tersebut adalah (30, 150)!</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (rectangle.jsx)</span> <a href="/downloads/code/rectangle.jsx">download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// x2 = x1 + panjang</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="mi">50</span><span class="p">;</span>    <span class="c1">// y2 = y1 + lebar</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">myDoc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">;</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">myPage</span> <span class="o">=</span> <span class="nx">myDoc</span><span class="p">.</span><span class="nx">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>     <span class="c1">// halaman pertama pd dokumen yg aktif</span>
+</span><span class="line">
+</span><span class="line"><span class="kd">var</span> <span class="nx">myRect</span> <span class="o">=</span> <span class="nx">myPage</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
+</span><span class="line"><span class="nx">myRect</span><span class="p">.</span><span class="nx">visibleBounds</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">y1</span><span class="p">,</span> <span class="nx">x1</span><span class="p">,</span> <span class="nx">y2</span><span class="p">,</span> <span class="nx">x2</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Untuk menggambar lingkaran (oval), pernyataan pada baris 9 harus diubah menjadi: <code>var myOval = myPage.ovals.add();</code>. Sedangkan pada baris 10, variabel <code>myRect</code> harus disesuaikan/diganti dg <code>myOval</code>. Sebagai catatan: <em>myRect</em> dan <em>myOval</em> hanyalah sebuah variabel. Anda boleh menggantinya dg nama variabel yg lain.</p>
+
+<p>Perlu juga diketahui bahwa menggambar objek lingkaran di InDesign pada dasarnya adalah menggambar segi empat yang merupakan <em>bounding box</em> bagi lingkaran tsb. Jadi, dimensi yg digunakan adalah panjang x lebar, bukan jari-jari, diameter, atau sudut.</p>
+
+<h3 id="latihan">Latihan</h3>
+
+<p>Gambarlah sebuah lingkaran (oval) dengan ketentuan sbb: panjang 150mm, lebar 150mm, dan koordinat titik sudut kiri-atas (30, 73)!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nurul Huda</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-06T04:41:00-04:00" pubdate data-updated="true">06 June 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tutorial-script-indesign/'>Tutorial Script InDesign</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nurulhuda.github.io/blog/2013/06/menggambar-objek/" data-via="NurhudaVanJava" data-counturl="http://nurulhuda.github.io/blog/2013/06/menggambar-objek/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/curhat-setan/" title="Previous Post: Curhat Setan: Al-Quran yang Dibakar!">&laquo; Curhat Setan: Al-Quran yang Dibakar!</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/berjamaah/" title="Next Post: Berjamaah">Berjamaah &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Komentar</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section class="search-section">
+  <form action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:nurulhuda.github.io" />
+      <input class="search" type="text" name="q" results="0" placeholder="Cari..."/>
+    </fieldset>
+  </form>
+</section>
+
+<section>
+  <h1>Profil</h1>
+  <p><a href="/about-me/"><img src="/images/nurul_huda.jpg" width="73" height="93" style="float:left; margin-right:10px; margin-bottom:1.5em;" /></a>Aku adalah aku dengan segala kelebihan dan kekurangannya</p>
+</section>
+<section>
+  <h1>Tulisan Terakhir</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/instalasi-octopres/">Instalasi Octopres di Debian Wheezy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-2/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/menggambar-poligon-1/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/berjamaah/">Berjamaah</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/menggambar-objek/">Tutorial Script InDesign CS3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/curhat-setan/">Curhat Setan: Al-Quran yang Dibakar!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/tiga-investasi-wajib/">Tiga Investasi Wajib</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/sedekah-ala-orang-kaya/">Sedekah ala Orang Kaya</a>
+      </li>
+    
+  </ul>
+</section>
+<section class="catlist">
+  <h1>Kategori</h1>
+  <ul id="cat_list">
+    <li><a href='/blog/categories/doa'>Doa (2)</a></li><li><a href='/blog/categories/indesign'>inDesign (1)</a></li><li><a href='/blog/categories/islam'>Islam (4)</a></li><li><a href='/blog/categories/keuangan'>Keuangan (1)</a></li><li><a href='/blog/categories/linux'>Linux (1)</a></li><li><a href='/blog/categories/motivasi'>Motivasi (9)</a></li><li><a href='/blog/categories/ms-excel'>MS Excel (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/resep'>Resep (1)</a></li><li><a href='/blog/categories/script-indesign'>Script Indesign (1)</a></li><li><a href='/blog/categories/tips'>Tips (2)</a></li><li><a href='/blog/categories/tutorial'>Tutorial (1)</a></li><li><a href='/blog/categories/tutorial-script-indesign'>Tutorial Script InDesign (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (1)</a></li><li><a href='/blog/categories/umum'>Umum (6)</a></li><li><a href='/blog/categories/vba'>VBA (1)</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/nurulhuda">@nurulhuda</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nurulhuda',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Tweet</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("NurhudaVanJava", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/NurhudaVanJava" class="twitter-follow-button" data-show-count="false">Ikuti @NurhudaVanJava</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/pruls34?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Nurul Huda -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'panduvanjava';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nurulhuda.github.io/blog/2013/06/menggambar-objek/';
+        var disqus_url = 'http://nurulhuda.github.io/blog/2013/06/menggambar-objek/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+<div id="bottom"></div>
+</body>
+</html>

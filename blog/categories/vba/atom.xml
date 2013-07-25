@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kategori: VBA | Pandu van Java]]></title>
+  <link href="http://nurulhuda.github.io/blog/categories/vba/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.io/"/>
+  <updated>2013-07-25T00:57:26-04:00</updated>
+  <id>http://nurulhuda.github.io/</id>
+  <author>
+    <name><![CDATA[Nurul Huda]]></name>
+    <email><![CDATA[elhuda34@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tahun Kabisat]]></title>
+    <link href="http://nurulhuda.github.io/blog/2013/02/tahun-kabisat/"/>
+    <updated>2013-02-04T10:51:00-05:00</updated>
+    <id>http://nurulhuda.github.io/blog/2013/02/tahun-kabisat</id>
+    <content type="html"><![CDATA[<p>Tahun kabisat adalah sebuah tahun syamsiah dimana pada tahun tersebut jumlah harinya adalah 366 hari, bukan 365.</p>
+
+<p>Satu tahun syamsiah tidak secara persis terdiri dari 365 hari, tetapi 365 hari 5 jam 48 menit 45,1814 detik. Jika hal ini tidak dihiraukan, maka setiap 4 tahun akan kekurangan hampir 1 hari (tepatnya 23 jam 15 menit 0,7256 detik).</p>
+
+<p>Maka untuk mengkompensasi hal ini, setiap 4 tahun sekali (tahun yang bisa dibagi 4), diberi 1 hari ekstra: 29 Februari. Tetapi karena 5 jam 48 menit 45,1814 detik kurang dari 6 jam, maka tahun-tahun yang bisa dibagi 100 (seperti tahun 1900), bukan tahun kabisat, kecuali bisa dibagi dengan 400 (seperti tahun 2000).
+<!-- more --></p>
+
+<h3 id="algoritma">Algoritma</h3>
+
+<p>Terdapat algoritma mudah untuk menentukan apakah suatu tahun termasuk tahun kabisat atau bukan, yaitu sebagai berikut:</p>
+
+<ul>
+  <li>Jika angka tahun itu habis dibagi 400, maka tahun itu sudah pasti tahun kabisat.</li>
+  <li>Jika angka tahun itu tidak habis dibagi 400 tetapi habis dibagi 100, maka tahun itu sudah pasti <strong>bukan</strong> merupakan tahun kabisat.</li>
+  <li>Jika angka tahun itu tidak habis dibagi 400, tidak habis dibagi 100 akan tetapi habis dibagi 4, maka tahun itu merupakan tahun kabisat.</li>
+  <li>Jika angka tahun tidak habis dibagi 400, tidak habis dibagi 100, dan tidak habis dibagi 4, maka tahun tersebut bukan merupakan tahun kabisat.</li>
+</ul>
+
+<p>Berdasarkan algoritma di atas, kita dapat membuat sebuah fungsi pada aplikasi MS Excel sebagai berikut.</p>
+
+<p>```
+Public Function CEKKABISAT(myRange As Range) As String
+    Dim tahun As Variant
+    Dim kabisat As Boolean</p>
+
+<pre><code>tahun = myRange.Value
+If tahun Mod 4 = 0 Then
+    If tahun Mod 100 = 0 Then
+        If tahun Mod 400 = 0 Then
+            kabisat = True
+        Else
+            kabisat = False
+        End If
+    Else
+        kabisat = True
+    End If
+Else
+    kabisat = False
+End If
+
+If kabisat Then
+    CEKKABISAT = "Kabisat"
+Else
+    CEKKABISAT = "Bukan Kabisat"
+End If End Function ```
+</code></pre>
+
+<p>Salin kode di atas ke dalam modul MS Excel. Selanjutnya fungsi di atas dapat digunakan dengan cara sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+
+<p><code>=CEKKABISAT(A1)</code></p>
+
+<p>Selain membuat fungsi sendiri, kita juga bisa menggunakan fungsi bawaan MS Excel sebagai berikut. Dengan asumsi angka tahun berada pada range “A1”, ketikkan formula berikut pada range “B1”.</p>
+
+<p><code>=IF(MOD(A1,4)=0,IF(MOD(A1,100)=0,IF(MOD(A1,400)=0,"Kabisat","Bukan Kabisat"),"Kabisat"),"Bukan Kabisat")</code></p>
+
+<p>Sumber: <a href="http://id.wikipedia.org/wiki/Tahun_Kabisat">id.wikipedia.org</a></p>
+
+]]></content>
+  </entry>
+  
+</feed>
