@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Kategori: Script Indesign | Pandu van Java]]></title>
-  <link href="http://nurulhuda.github.io/blog/categories/script-indesign/atom.xml" rel="self"/>
-  <link href="http://nurulhuda.github.io/"/>
-  <updated>2013-07-25T00:57:26-04:00</updated>
-  <id>http://nurulhuda.github.io/</id>
+  <link href="http://nurulhuda.github.com/blog/categories/script-indesign/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-08-28T05:08:21-04:00</updated>
+  <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
     <email><![CDATA[elhuda34@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Menggambar Spirograf di Indesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/03/spirograph/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/03/spirograph/"/>
     <updated>2013-03-23T16:06:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/03/spirograph</id>
+    <id>http://nurulhuda.github.com/blog/2013/03/spirograph</id>
     <content type="html"><![CDATA[<p><img src="/images/spirograf.png" alt="spirograph" /></p>
 
 <p>Sebaik apapun sebuah aplikasi dibuat, sudah pasti tidak akan bisa memenuhi semua kebutuhan penggunanya yang berbeda-beda latar belakang dan kebutuhannya. Untuk itulah aplikasi-aplikasi besar semacam Adobe Indesign menyediakan sarana berupa <em>script engine</em>. Dengan adanya sarana tersebut pengguna bisa membuat program kecil sesuai dengan kebutuhannya. Program kecil inilah yg disebut dengan script.</p>

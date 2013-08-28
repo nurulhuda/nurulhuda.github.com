@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Pandu van Java]]></title>
-  <link href="http://nurulhuda.github.io/atom.xml" rel="self"/>
-  <link href="http://nurulhuda.github.io/"/>
-  <updated>2013-07-25T00:57:26-04:00</updated>
-  <id>http://nurulhuda.github.io/</id>
+  <link href="http://nurulhuda.github.com/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-08-28T05:08:21-04:00</updated>
+  <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
     <email><![CDATA[elhuda34@gmail.com]]></email>
@@ -14,104 +14,63 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Instalasi Octopres di Debian Wheezy]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/07/instalasi-octopres/"/>
-    <updated>2013-07-24T03:12:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/07/instalasi-octopres</id>
-    <content type="html"><![CDATA[<p><a href="http://octopress.org/">Octopress</a> adalah sebuah kerangka kerja <em>(framework)</em> yang dirancang untuk <a href="http://jekyllrb.com/">Jekyll</a>, yaitu mesin blog yang mengubah file teks menjadi halaman2 blog statis. Untuk mulai ngeblog dengan Jekyll kita harus bekerja extra keras karena harus membuat sendiri template, css, javascript, dan konfigurasi lainnya. Namun dengan Octopress semuanya jadi mudah.</p>
+    <title type="html"><![CDATA[Pambukaning lan Panutuping Atur ing Acara Tahlilan]]></title>
+    <link href="http://nurulhuda.github.com/blog/2013/08/tahlilan/"/>
+    <updated>2013-08-28T04:42:00-04:00</updated>
+    <id>http://nurulhuda.github.com/blog/2013/08/tahlilan</id>
+    <content type="html"><![CDATA[<p class="arab">
+السلام عليكم ورحمة الله وبركاته
+<br />
+الحمد لله ربّ العالمين. والصلوة والسلام على اسرف الانبياء والمرسلين. وعلى اله واصحابه اجمعين. اما بعد
+</p>
 
-<h2 id="instalasi-octopress">Instalasi Octopress</h2>
+<p><em>Bapak-bapak para rawuh ingkang kula hormati,</em></p>
 
-<p>Sebelumnya, pastikan paket2 berikut ini telah terpasang dengan baik.</p>
+<p>Langkung rumiyin sumangga kula dherekaken sami ngunjukaken puji syukur dumateng ngarsanipun Allah SWT ingkang sampun paring pinten-pinten kenikmatan dumateng kula lan panjenengan sami, sahingga kula lan panjenengan sami saget makempal nyawiji wonten dalemipun Bapak …… kanthi kawontenan sehat wal afiat mboten wonten rubeda punapa-punapa. Mugi-mugi kerawuhan kula lan panjenengan sami estu-estu dipuncathet kalian Allah SWT dadosa amalan hasanah fiddini waddunya wal aakhirah, Amin…</p>
 
-<ul>
-  <li>git</li>
-  <li>build-essential</li>
-  <li>libssl-dev</li>
-  <li>zlib1g-dev</li>
-</ul>
-
-<p>Unduh kode sumber Octopress dengan git</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nb">cd</span>
-</span><span class="line">git clone git://github.com/imathis/octopress.git octopress
-</span><span class="line">cat octopress/.rbenv-version
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Perintah di atas akan mengunduh kode sumber Octopress ke dalam folder <code>octopress</code>. Sedangkan perintah pada baris 3 untuk mengetahui versi ruby yang digunakan. Versi ruby ini akan diperlukan pada saat instalasi ruby.</p>
+<p>Sak lajengipun sholawat lan salam mugi katur dhumateng junjungan kita kanjeng nabi Muhammad SAW, ingkang sampun paring pitedah dumateng kula lan panjenengan sami arupi agami Islam. Mugi-mugi dalu punika ngantos akhir hayat kula lan panjenengan sami tetep netepi agami Islam, lan mbenjang wonten yaumil qiyaamah, kula panjenengan sedaya angsal syafaatipun kanjeng nabi Muhammad SAW. Amin amin yaa robbal ‘alamin …</p>
 
 <!-- more -->
 
-<p>Selanjutnya adalah instalasi ruby menggunakan rbenv.</p>
+<p><em>Bapak-bapak para rawuh ingkang kula hormati,</em> dalu punika Bapak … sak kulawarga ageng anggadhahi hajat inggih punika kintun doa saha nyuwunaken pangapunten dumatheng almarhum/almarhumah …. ingkang sampun sowan marak dhumateng ngarsanipun Allah swt. Awit saking punika kula lan panjenengan sami dipunsuwun panyengkuyungipun inggih kanti maos surat Yasin saha zikir lan tahlil. Mugi2 kanthi waosan serat Yasin saha zikir lan tahlil samangke arwahipun almarhum/mah …. dipunpapanaken wonten ing papan ingkang sae, dipunapunten sedaya kalepatanipun, lan dipuntampi sedaya amal kesaenanipun rikala sugeng ing alam donya. Lan mugi2 sedanipun almarhum/mah … punika kagolong seda ingkang khusnul khatimah. Amin…</p>
 
-<h3 id="instal-rbenv">Instal rbenv</h3>
+<p>Bapak-bapak para rawuh ingkang kawula hormati, mangga kita awiti waosan surat Yasin saha zikir tahlil ing dalu punika kanthi waosan ummul kitab Al Fatihah ….</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">git clone git://github.com/sstephenson/rbenv.git .rbenv
-</span><span class="line"><span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bash_profile
-</span><span class="line"><span class="nb">echo</span> <span class="s1">&#39;eval &quot;$(rbenv init -)&quot;&#39;</span> &gt;&gt; ~/.bash_profile
-</span><span class="line">git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-</span><span class="line"><span class="nb">source</span> ~/.bash_profile
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>……………….</p>
 
-<h3 id="instal-ruby">Instal ruby</h3>
+<p>……………….</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">rbenv install 1.9.3-p0
-</span><span class="line">rbenv rehash
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>……………….</p>
 
-<p>1.9.3-p0 adalah versi ruby yang akan diinstal. Sesuaikan versi ruby ini dengan isi file <code>octopress/.rbenv-version</code>. Butuh waktu agak lama untuk proses download dan kompilasi. Tunggu sampai proses kompilasi dan instalasi selesai.</p>
+<p><em>Bapak-bapak para rawuh ingkang kula hormati,</em> mekaten wau waosan serat yasin, tahlil, lan doa sampun kalampahan kanthi sae, Mugi-mugi punapa ingkang dados niat lan hajatipun Bapak …… estu-estu dipuntampi lan dipunkabulaken dening Allah SWT. Amin…</p>
 
-<p>Setelah ruby terpasang dg baik, berikutnya adalah instalasi file-file dependensinya:</p>
+<p>Wasana cekap semanten anggen kula matur. Mbok bilih wonten kirang langkung atur kula dumateng panjenengan sami, kula nyuwun agenging pangapunten.</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nb">cd </span>octopress
-</span><span class="line">gem install bundler
-</span><span class="line">rbenv rehash    <span class="c"># If you use rbenv, rehash to be able to run the bundle command</span>
-</span><span class="line">bundle install
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Terakhir adalah instalasi tema. Banyak tema buatan pihak ketiga yang dapat kita unduh di <a href="http://octopressthemes.com/">sini</a>.</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">rake install <span class="o">[</span><span class="s1">&#39;nama tema&#39;</span><span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>Octopress sudah siap digunakan.</p>
+<p class="arab">
+السلام عليكم ورحمة الله وبركاته
+</p>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-2/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/"/>
     <updated>2013-07-18T03:05:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-2</id>
+    <id>http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2</id>
     <content type="html"><![CDATA[<h2 id="menggambar-poligon-tidak-beraturan">Menggambar Poligon Tidak Beraturan</h2>
 
-<p><img class="center" src="http://nurulhuda.github.io/images/innovations.png" /></p>
+<p><img class="center" src="http://nurulhuda.github.com/images/innovations.png" /></p>
 
 <p>Gambar di atas adalah frame atau border yang terdiri atas dua buah poligon tidak beraturan. Menggambar poligon tidak beraturan memang tidak semudah menggambar segiempat, lingkaran, atau poligon beraturan. Untuk menggambar poligon tidak beraturan kita harus menentukan koordinat tiap-tiap <em>path point</em>, <em>left direction</em>, dan <em>right direction</em>-nya (perhatikan gambar di bawah ini).</p>
 
-<p><img class="center" src="http://nurulhuda.github.io/images/pathpoint.png" /></p>
+<p><img class="center" src="http://nurulhuda.github.com/images/pathpoint.png" /></p>
 
 <p>Script di bawah ini saya ‘sedekahkan’ untuk anda (hehehe.. mumpung masih bulan Ramadhan mudah2an pahalanya berlipat ganda. Amin..). Silakan diunduh, dipelajari, atau disebarluaskan (jika perlu).</p>
 
 <!-- more -->
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (innovation.jsx)</span> <a href="http://nurulhuda.github.io/downloads/code/innovation.jsx">download</a></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (innovation.jsx)</span> <a href="http://nurulhuda.github.com/downloads/code/innovation.jsx">download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -552,16 +511,16 @@ Baris 51-194 adalah koordinat titik-titik pada poligon-2 relatif terhadap posisi
 
 <p>Semoga bermanfaat</p>
 
-<p>Baca juga: <a href="http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-1/">Menggambar poligon beraturan</a></p>
+<p>Baca juga: <a href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/">Menggambar poligon beraturan</a></p>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-1/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/"/>
     <updated>2013-07-18T01:33:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-1</id>
+    <id>http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1</id>
     <content type="html"><![CDATA[<h2 id="menggambar-poligon-beraturan">Menggambar Poligon Beraturan</h2>
 
 <p>Poligon beraturan adalah bangun segi banyak yang memiliki bentuk yang teratur, misalnya segitiga, segiempat, segilima, dst. Dengan menambahkan inset, kita bisa membuat poligon yang berbentuk bintang segitiga, segilima, segidelapan, dst.</p>
@@ -595,18 +554,18 @@ Baris 51-194 adalah koordinat titik-titik pada poligon-2 relatif terhadap posisi
 
 <p>Script di atas akan menghasilkan gambar di bawah ini.</p>
 
-<p><img class="center" src="http://nurulhuda.github.io/images/polygon1.png" /></p>
+<p><img class="center" src="http://nurulhuda.github.com/images/polygon1.png" /></p>
 
-<p>Baca juga: <a href="http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-2/">Menggambar poligon tidak beraturan</a></p>
+<p>Baca juga: <a href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/">Menggambar poligon tidak beraturan</a></p>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Berjamaah]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/06/berjamaah/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/06/berjamaah/"/>
     <updated>2013-06-19T11:51:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/06/berjamaah</id>
+    <id>http://nurulhuda.github.com/blog/2013/06/berjamaah</id>
     <content type="html"><![CDATA[<p>Islam memerintahkan pemeluknya untuk berjamaah. Tidak hanya dalam shalat. Tapi juga dalam ekonomi dan lain-lain hal, termasuk makan. <em>Innal barakata ma’al jamaa’ah</em>, sesungguhnya keberkahan itu ada di dalam kebersamaan. </p>
 
 <p>Shalat sendiri, beda dengan shalat berjamaah. Jika berjamaah, beda 27 derajat. 27 kali lipat dapatnya. Bahkan istimewanya, siapa yang shalatnya lebih bagus, baik dalam ilmu, rasa, keikhlasan, maka derajat dia yang dipakaikan ke semua yang ada di dalam shalat berjamaah tersebut. </p>
@@ -655,9 +614,9 @@ Sumber: <a href="http://www.republika.co.id/berita/dunia-islam/hikmah/13/06/16/m
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/06/menggambar-objek/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/06/menggambar-objek/"/>
     <updated>2013-06-06T04:41:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/06/menggambar-objek</id>
+    <id>http://nurulhuda.github.com/blog/2013/06/menggambar-objek</id>
     <content type="html"><![CDATA[<h2 id="menggambar-segiempat-dan-lingkaran">Menggambar Segiempat dan Lingkaran</h2>
 
 <p><em>Sintaks:</em><br />
@@ -672,7 +631,7 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
 
 <p>Gambarlah sebuah persegi yg memiliki ukuran 50 mm x 50 mm jika diketahui koordinat titik kiri-atas persegi tersebut adalah (30, 150)!</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (rectangle.jsx)</span> <a href="http://nurulhuda.github.io/downloads/code/rectangle.jsx">download</a></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (rectangle.jsx)</span> <a href="http://nurulhuda.github.com/downloads/code/rectangle.jsx">download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -707,9 +666,9 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
   <entry>
     <title type="html"><![CDATA[Curhat Setan: Al-Quran yang Dibakar!]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/05/curhat-setan/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/05/curhat-setan/"/>
     <updated>2013-05-30T08:28:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/05/curhat-setan</id>
+    <id>http://nurulhuda.github.com/blog/2013/05/curhat-setan</id>
     <content type="html"><![CDATA[<blockquote>
   <p>Pembatalan pembakaran Al-Quran hanya omong kosong belaka. Faktanya, dua pendeta justru melakukannya. Yang melakukan bukan Pendeta Terry Jones, tapi kedua pengikutnya. Pendeta Bob Old bersumpah melaksanakan aksinya membakar Al-Quran. Bersama Pendeta Danny Allen, Old melakukan aksinya di hadapan sekelompok orang yang sebagiannya merupakan awak media, Sabtu (11/9) lalu, sama persis pada hari yang dideklarasikan Terry Jones.</p>
 
@@ -822,9 +781,9 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
   <entry>
     <title type="html"><![CDATA[Tiga Investasi Wajib]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/05/tiga-investasi-wajib/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib/"/>
     <updated>2013-05-10T11:26:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/05/tiga-investasi-wajib</id>
+    <id>http://nurulhuda.github.com/blog/2013/05/tiga-investasi-wajib</id>
     <content type="html"><![CDATA[<p>Kehidupan kita di dunia ini terbatas padahal aktivitas kebaikan di depan kita begitu berlimpah. Walau setiap hari kita berbuat kebaikan, belum tentu itu cukup menjadi bekal kita untuk kehidupan yang kekal. Oleh karena itulah kita perlu melakukan kebaikan yang “pahalanya” terus mengalir walau kita sudah tiada.</p>
 
 <p>Ternyata ada tiga kebaikan yang pahalanya terus mengalir walau kita sudah tiada. Nabi bersabda, <em>“Apabila seorang anak Adam meninggal putuslah amalnya kecuali tiga perkara: sedekah jariah, ilmu yang memberi manfaat kepada orang lain, anak yang soleh yang berdoa untuknya.”</em> (Hadist Sahih – Riwayat Muslim dan lain-lainnya)</p>
@@ -849,10 +808,10 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
   <entry>
     <title type="html"><![CDATA[Sedekah ala Orang Kaya]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/05/sedekah-ala-orang-kaya/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/05/sedekah-ala-orang-kaya/"/>
     <updated>2013-05-03T09:01:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/05/sedekah-ala-orang-kaya</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.io/images/ForbesMECoverE.jpg" width="168" /> Majalah Forbes menyatakan bhw kekayaan &ldquo;Sulaiman Ar-Rajhi&rdquo; sekitar 5.9 Milyar Dollar. Orang Terkaya dg nomer urut 120 di dunia. Meskipun begitu penampilan &ldquo;Sulaiman Ar-Rajhi&rdquo; tetap sederhana, jauh dari kesan glamour. Ia memulai usaha dr nol, bahkan pernah jd kuli panggul. Dg ketekunan, kerja keras, terkenal hemat tapi tekun bersedekah &amp; berkah Allah SWT beliau akhirnya memiliki Kerajaan Bisnis di KSA. Salah satu bisnisnya adalah Bank Ar-Rajhi, Bank Syariah terbesar di Dunia. </p>
+    <id>http://nurulhuda.github.com/blog/2013/05/sedekah-ala-orang-kaya</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.com/images/ForbesMECoverE.jpg" width="168" /> Majalah Forbes menyatakan bhw kekayaan &ldquo;Sulaiman Ar-Rajhi&rdquo; sekitar 5.9 Milyar Dollar. Orang Terkaya dg nomer urut 120 di dunia. Meskipun begitu penampilan &ldquo;Sulaiman Ar-Rajhi&rdquo; tetap sederhana, jauh dari kesan glamour. Ia memulai usaha dr nol, bahkan pernah jd kuli panggul. Dg ketekunan, kerja keras, terkenal hemat tapi tekun bersedekah &amp; berkah Allah SWT beliau akhirnya memiliki Kerajaan Bisnis di KSA. Salah satu bisnisnya adalah Bank Ar-Rajhi, Bank Syariah terbesar di Dunia. </p>
 
 <p>Berikut ini adalah catatan sedekah &ldquo;Sulaiman Ar-Rajhi&rdquo; yg luar biasa:</p>
 
@@ -888,10 +847,10 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
   <entry>
     <title type="html"><![CDATA[Menulis Itu Menyenangkan]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/04/menulis-itu-menyenangkan/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/04/menulis-itu-menyenangkan/"/>
     <updated>2013-04-29T16:32:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/04/menulis-itu-menyenangkan</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.io/images/writing.jpg" alt="Writing" /></p>
+    <id>http://nurulhuda.github.com/blog/2013/04/menulis-itu-menyenangkan</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/writing.jpg" alt="Writing" /></p>
 
 <p>Michael Crichton, penulis novel “Jurassic Park” memberikan motivasi tentang menulis dengan kalimat-kalimat ini: “Sebuah karya akan memicu inspirasi. Teruslah berkarya. Jika Anda berhasil, teruslah berkarya. Jika Anda gagal, teruslah berkarya. Jika Anda tertarik, teruslah berkarya. Jika Anda bosan, teruslah berkarya.”</p>
 
@@ -917,10 +876,10 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
   <entry>
     <title type="html"><![CDATA[5 Kiat Ajarkan Anak Mulai Ngeblog]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/04/kiat-ajarkan-anak-ngeblog/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/04/kiat-ajarkan-anak-ngeblog/"/>
     <updated>2013-04-25T11:59:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/04/kiat-ajarkan-anak-ngeblog</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.io/images/kidblog.jpg" alt="kidblog" /></p>
+    <id>http://nurulhuda.github.com/blog/2013/04/kiat-ajarkan-anak-ngeblog</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/kidblog.jpg" alt="kidblog" /></p>
 
 <p>Ingin anak-anak kita tertarik ngeblog? Bagus sekali, sebab menulis blog membantu anak terbiasa menulis, berbagi cerita, dan terampil untuk bersosialisasi di dunia maya. Kini ada banyak situs penyedia layanan blog yang mudah dioperasikan.</p>
 
@@ -949,9 +908,9 @@ Memberi kebebasan bukan berarti kita tidak peduli dengan apa yang diposting anak
   
   <entry>
     <title type="html"><![CDATA[Menulislah]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/04/menulislah/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/04/menulislah/"/>
     <updated>2013-04-23T13:09:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/04/menulislah</id>
+    <id>http://nurulhuda.github.com/blog/2013/04/menulislah</id>
     <content type="html"><![CDATA[<ul>
   <li>Menulislah, maka kau tak akan tertimbun oleh <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a> buku bacaan. Buku2 itu akan tertata menjadi pondasi bagi bangunan pikiranmu sendiri</li>
   <li>Tanpa menulis, <a href="https://twitter.com/search?q=%23buku&amp;src=hash">#buku</a> buku bacaanmu tak akan menjadi tongkat penuntun, malah membuatmu berjalan sempoyongan tak tentu kiblat</li>
@@ -991,9 +950,9 @@ Memberi kebebasan bukan berarti kita tidak peduli dengan apa yang diposting anak
   
   <entry>
     <title type="html"><![CDATA[Cintailah Profesimu]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/04/cintailah-profesimu/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/04/cintailah-profesimu/"/>
     <updated>2013-04-17T13:01:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/04/cintailah-profesimu</id>
+    <id>http://nurulhuda.github.com/blog/2013/04/cintailah-profesimu</id>
     <content type="html"><![CDATA[<p>Setiap muslim wajib bekerja untuk mencari karunia Allah. Pekerjaan apapun asalkan halal adalah mulia di sisi Allah swt. Jangan pernah berfikir pekerjaanmu lebih hebat dari pekerjaan orang lain. Karena itu akan membuatmu takabur. Sebaliknya, jangan pernah kamu merasa pekerjaanmu lebih hina dari pekerjaan orang lain. Karena itu akan membuatmu rendah diri.</p>
 
 <p>Alkisah, ada seorang pemuda terpelajar dari Surabaya sedang berpergian naik pesawat ke Jakarta. Disampingnya duduk seorang ibu yang sudah berumur. Si pemuda menyapa, dan tak lama mereka terlarut dalam obrolan ringan. “Ibu, ada acara apa pergi ke Jakarta?” tanya si pemuda. “Oh… saya mau ke Jakarta terus <em>connecting flight</em> ke Singapura nengokin anak saya yang kedua”, jawab ibu itu.” “Wouw… hebat sekali putra ibu,” pemuda itu menyahut dan terdiam sejenak.</p>
@@ -1015,9 +974,9 @@ Memberi kebebasan bukan berarti kita tidak peduli dengan apa yang diposting anak
   
   <entry>
     <title type="html"><![CDATA[7 Tanda Besar Pasak daripada Tiang]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/04/besar-pasak-drpd-tiang/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/04/besar-pasak-drpd-tiang/"/>
     <updated>2013-04-17T08:40:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/04/besar-pasak-drpd-tiang</id>
+    <id>http://nurulhuda.github.com/blog/2013/04/besar-pasak-drpd-tiang</id>
     <content type="html"><![CDATA[<p>Banyak dari kita yang menerapkan cara hidup “besar pasak daripada tiang”, atau lebih banyak pengeluaran daripada pemasukan. Kalaupun kemudian bisa menabung, ternyata masih tidak stabil di bulan berikutnya. Bagaimana dengan Anda? Apakah Anda tipe orang yang pengelolaan uangnya “besar pasak daripada tiang”?</p>
 
 <p>Untuk mengetahuinya, ada sejumlah tanda yang bisa dijadikan acuan:</p>
@@ -1046,25 +1005,25 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
   
   <entry>
     <title type="html"><![CDATA[Menggambar Spirograf di Indesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/03/spirograph/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/03/spirograph/"/>
     <updated>2013-03-23T16:06:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/03/spirograph</id>
-    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.io/images/spirograf.png" alt="spirograph" /></p>
+    <id>http://nurulhuda.github.com/blog/2013/03/spirograph</id>
+    <content type="html"><![CDATA[<p><img src="http://nurulhuda.github.com/images/spirograf.png" alt="spirograph" /></p>
 
 <p>Sebaik apapun sebuah aplikasi dibuat, sudah pasti tidak akan bisa memenuhi semua kebutuhan penggunanya yang berbeda-beda latar belakang dan kebutuhannya. Untuk itulah aplikasi-aplikasi besar semacam Adobe Indesign menyediakan sarana berupa <em>script engine</em>. Dengan adanya sarana tersebut pengguna bisa membuat program kecil sesuai dengan kebutuhannya. Program kecil inilah yg disebut dengan script.</p>
 
 <p>Script akan sangat berguna ketika 1) kita harus melakukan suatu pekerjaan yang berulang-ulang dan 2) ketika kita tidak mungkin melakukan pekerjaan tsb secara manual. Sebagai contoh, untuk membuat gambar spirograf seperti gambar di atas bisa dibilang tidak mungkin jika dilakukan secara manual.
 <!-- more --></p>
 
-<p>Kali ini aku mempersembahkan sebuah script untuk menggambar spirograf di Indesign CS3. Sebetulnya script ini adalah karya saudara saya, Peter Kahrel. Hehehe… Aku hanya membuat <em>interface</em>-nya saja supaya lebih mudah digunakan. Kamu bisa mengunduh script tsb <a href="http://nurulhuda.github.io/downloads/code/spirograph.jsx">di sini</a>. Caranya: klik kanan pada link tsb lalu pilih “Save link as…”. Jangan lupa komentarnya ya….</p>
+<p>Kali ini aku mempersembahkan sebuah script untuk menggambar spirograf di Indesign CS3. Sebetulnya script ini adalah karya saudara saya, Peter Kahrel. Hehehe… Aku hanya membuat <em>interface</em>-nya saja supaya lebih mudah digunakan. Kamu bisa mengunduh script tsb <a href="http://nurulhuda.github.com/downloads/code/spirograph.jsx">di sini</a>. Caranya: klik kanan pada link tsb lalu pilih “Save link as…”. Jangan lupa komentarnya ya….</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/03/menggambar-garis/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/"/>
     <updated>2013-03-14T12:26:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/03/menggambar-garis</id>
+    <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
     <content type="html"><![CDATA[<h2 id="menggambar-garis">Menggambar Garis</h2>
 
 <p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
@@ -1075,7 +1034,7 @@ Inilah ciri khas lain orang yang besar pasak daripada tiang. Anda selalu mencari
 
 <!-- more -->
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (graphicline.jsx)</span> <a href="http://nurulhuda.github.io/downloads/code/graphicline.jsx">download</a></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (graphicline.jsx)</span> <a href="http://nurulhuda.github.com/downloads/code/graphicline.jsx">download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -1103,9 +1062,9 @@ Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan 
   
   <entry>
     <title type="html"><![CDATA[Sedekah Luar Biasa]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/03/sedekah-luar-biasa/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/03/sedekah-luar-biasa/"/>
     <updated>2013-03-09T13:45:00-05:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/03/sedekah-luar-biasa</id>
+    <id>http://nurulhuda.github.com/blog/2013/03/sedekah-luar-biasa</id>
     <content type="html"><![CDATA[<p>Sebagian kita selalu merasa khawatir ketika menginfakkan harta kita ke jalan yang benar. Infak di sini bisa jadi merupakan nafkah wajib untuk anak dan istri, menunaikan zakat maal (harta) atau mengeluarkan harta untuk sedekah sunnah. Selalu khawatir dalam hati kalau-kalau harta itu berkurang. Secara kuantitas bisa jadi berkurang, namun ingatlah bahwa bisa jadi dengan harta yang kita keluarkan tadi akan membuat harta kita semakin barokah, bahkan boleh jadi Allah ganti di dunia dengan harta yang melimpah, atau kita dianugerahi sifat qona’ah (merasa cukup). Lebih dari itu, Allah memberi janji akan menggandakan amalan kebaikan kita di akhirat. Yang terakhir tentu kenikmatan yang luar biasa dibanding dengan nikmat dunia.</p>
 
 <p>Allah Ta’ala berfirman:</p>
@@ -1158,9 +1117,9 @@ Pada tulisan berikutnya akan saya bahas mengenai cara mengatur warna, ketebalan 
   
   <entry>
     <title type="html"><![CDATA[Doa Dijauhkan dari Kesedihan, Malas, dan Hutang]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/02/doa-dijauhkan-dari-malas/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/02/doa-dijauhkan-dari-malas/"/>
     <updated>2013-02-26T18:01:00-05:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/02/doa-dijauhkan-dari-malas</id>
+    <id>http://nurulhuda.github.com/blog/2013/02/doa-dijauhkan-dari-malas</id>
     <content type="html"><![CDATA[<p class="arab">
 اَللهُمَّ اِنِّي اَعُوْذُبِكَ مِنَ الْهَمِّ وَالْحَزَنَ وَاَعُوْذُبِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَاَعُوْذُبِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَاَعُوْذُبِكَ مِن غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.
 </p>
@@ -1173,17 +1132,17 @@ Ya Allah, sesungguhnya aku berlindung kepadaMu dari kegundahan dan kesedihan, ak
   
   <entry>
     <title type="html"><![CDATA[Tutorial InDesign CS3: Find/Change dengan GREP]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/02/indesign-regexp/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/02/indesign-regexp/"/>
     <updated>2013-02-20T08:03:00-05:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/02/indesign-regexp</id>
+    <id>http://nurulhuda.github.com/blog/2013/02/indesign-regexp</id>
     <content type="html"><![CDATA[<p>GREP merupakan cara menemukan teks pada sebuah dokumen dengan menggunakan rumus <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression (regexp)</a>. Dengan GREP, pencarian dan penggantian teks dapat dilakukan dengan sangat efektif. Sebagai contoh, saya pernah menerima naskah dari penulis dengan format seperti ini:
 <!-- more --></p>
 
-<p><img src="http://nurulhuda.github.io/images/berantakan.jpg" /></p>
+<p><img src="http://nurulhuda.github.com/images/berantakan.jpg" /></p>
 
 <p>Berantakan ya? Padahal format yang benar seharusnya seperti ini.</p>
 
-<p><img src="http://nurulhuda.github.io/images/rapi.jpg" /></p>
+<p><img src="http://nurulhuda.github.com/images/rapi.jpg" /></p>
 
 <p>Apa yang akan anda lakukan dengan naskah dari penulis tersebut? Cara paling
 mudah tentu saja dengan menekan tombol Enter pada setiap pilihan b, c, dan d. 
@@ -1241,10 +1200,10 @@ atau d diikuti titik diikuti tab.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Kekuatan Dahsyat Tersembunyi di Otak Kanan]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/02/kekuatan-dahsyat-otak-kanan/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/02/kekuatan-dahsyat-otak-kanan/"/>
     <updated>2013-02-19T08:18:00-05:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/02/kekuatan-dahsyat-otak-kanan</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.io/images/right-brain.jpg" />Ada empat macam genius di muka bumi ini. <strong>Pertama</strong>, genius yang biasa lahir dengan otak normal dan melalui pendidikan formal. Genius seperti itu susah dihasilkan di Indonesia, karena kurikulum yang luar biasa padatnya, keseimbangan antara belajar dan bermain sama sekali timpang. Yang pasti, otak kanan anak sulit berkembang. Akibatnya, daya imaginasi, kreativitas, impian-impian dan karakter yang baik menjadi terhalang. </p>
+    <id>http://nurulhuda.github.com/blog/2013/02/kekuatan-dahsyat-otak-kanan</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://nurulhuda.github.com/images/right-brain.jpg" />Ada empat macam genius di muka bumi ini. <strong>Pertama</strong>, genius yang biasa lahir dengan otak normal dan melalui pendidikan formal. Genius seperti itu susah dihasilkan di Indonesia, karena kurikulum yang luar biasa padatnya, keseimbangan antara belajar dan bermain sama sekali timpang. Yang pasti, otak kanan anak sulit berkembang. Akibatnya, daya imaginasi, kreativitas, impian-impian dan karakter yang baik menjadi terhalang. </p>
 
 <p>Genius model <strong>kedua</strong>, yaitu <em>Born to be genius</em>. Ini adalah anak-anak yang memang dilahirkan sudah genius. Salah satu contohnya adalah Marc Yu dari Amerika Setikat. Dalam usia 6 tahun, dia sudah mampu memainkan komposisi-komposisi piano yang sulit, yang biasanya membutuhkan latihan belasan tahun. Dalam penelitian, ketika otak Marc Yu difoto dengan FMRI di Chicago School Of Medicine, lobo temporal otak kanan daerah seninya, ternyata jauh lebih tebal dan warnanya lebih tua daripada otak anak-anak yang normal. Selain Marc Yu, ada juga Chan Siauw Ming, 9 tahun pianis ajaib dari China, kemudian juga Alexender Prior 16 tahun dari AS, komponis / conductor termuda di dunia. Sejak usia 10 tahun, dia sudah membuat komposisi-komposisi musik untuk orkes simponi. Mozart, Chopin, Tchaikovsky, Michel Angelo diduga termasuk kategori di atas. 
 <!-- more --></p>
@@ -1255,7 +1214,7 @@ atau d diikuti titik diikuti tab.</em></p>
 
 <p>Banyak sekali penyandang autis mempunyai kemampuan <em>calender calculator</em>, yaitu menebak nama hari. Yang paling fenomenal adalah George Finn, remaja autis asal New York yang dalam hitungan detik dapat menebak dengan tepat, bahwa tanggal 6 Juni tahun 91.360 (abad ke 920) jatuh pada hari Jumat. Thomas Fuller lahir di Afrika Selatan, penyandang autis umur 15 tahun ini bisa menebak dengan tepat dalam waktu 30 detik saja, bahwa 70 tahun, 17 hari dan 12 jam sama dengan 2.210.500.800 detik. Daniel Tammet, lahir 1970 di London. Penyandang <em>Asperger Syndrome</em> sekaligus epilepsi ini, waktu menginjak usia remaja punya kemampuan memori dan menghitung yang luar biasa. Waktu dia diberi soal yang tidak dapat dibagi habis, yaitu 13 : 97, dia langsung menuliskan jawabannya sampai 100 desimal di belakang koma dalam waktu 30 detik saja. Leslie Lemke dari USA, penyandang <em>cerebal palsy</em> yang buta sejak lahir dan baru bisa berjalan pada usia 6 tahun. Ibunya memberikan sebuah piano waktu dia berusia 8 tahun. Tiba-tiba terjadi keajaiban, Leslie langsung bisa memainkan lagu Tchaikovsky’s Piano Concerto no 1 dengan sempurna, walau hanya baru sekali mendengar lagu tersebut lewat radio. Tanpa pernah belajar piano, Leslie Lemke kemudian berhasil menjadi pianis profesional yang hebat di jalur klasik maupun jazz. Zhou-Zhou adalah remaja <em>down syndrome</em> dari China yang IQ-nya cuma 30, jadi tergolong idiot. Walaupun tidak pernah belajar musik sepanjang hidupnya, tiba-tiba dia mampu menjadi konduktor hebat pada Orkes Simfoni Nasional China. Zhou-Zhou bersama orkes simfoninya berhasil mengguncang daratan China, Jepang, Amerika Utara dan Benua Eropa. Selama Zhou-Zhou memimpin orkestra, not-notnya betul-betul berterbangan di depan matanya.</p>
 
-<p><img src="http://nurulhuda.github.io/images/zhou-zhou.jpg" title="Zhou-Zhou" /></p>
+<p><img src="http://nurulhuda.github.com/images/zhou-zhou.jpg" title="Zhou-Zhou" /></p>
 
 <p>Sumber: <a href="http://www.suaramerdeka.com/v1/index.php/read/cetak/2012/11/30/207121/Kekuatan-Dahsyat-Tersembunyi-di-Otak-Kanan">www.suaramerdeka.com</a></p>
 ]]></content>
@@ -1263,13 +1222,13 @@ atau d diikuti titik diikuti tab.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Sifat Setan yang Hebat]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/02/sifat-setan-yang-hebat/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/02/sifat-setan-yang-hebat/"/>
     <updated>2013-02-16T08:36:00-05:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/02/sifat-setan-yang-hebat</id>
+    <id>http://nurulhuda.github.com/blog/2013/02/sifat-setan-yang-hebat</id>
     <content type="html"><![CDATA[<p>Setan pun punya sifat positif yang layak kita contoh.</p>
 
 <ol>
-  <li><strong>Pantang menyerah</strong> <img class="right" src="http://nurulhuda.github.io/images/setan.png" /> <br />Setan memiliki sifat pantang menyerah dalam menggoda manusia. Kita juga seharusnya pantang menyerah dalam menghadapi kesulitan hidup.</li>
+  <li><strong>Pantang menyerah</strong> <img class="right" src="http://nurulhuda.github.com/images/setan.png" /> <br />Setan memiliki sifat pantang menyerah dalam menggoda manusia. Kita juga seharusnya pantang menyerah dalam menghadapi kesulitan hidup.</li>
   <li><strong>Kreatif</strong> <br />Setan kreatif menciptakan godaan-godaan, selalu kreatif dan penuh ide, dalam menjebak manusia. Ketika setan gagal menggoda manusia dengan suatu cara, maka dia akan mencari cara yang lain. Begitu seterusnya sampai tujuannya berhasil. Begitu pun seharusnya seorang manusia, harus bisa sekreatif mungkin menciptakan suasana dan cara-cara untuk menuju sukses. Jika gagal dengan satu cara, jangan cepat putus asa. Masih ada cara-cara lain yang dapat kita gunakan.</li>
   <li><strong>Konsisten</strong> <br />Setan dari mulai menciptakan pekerjaan tak pernah mengeluh dan putus asa selalu konsisten. Begitu juga manusia harus konsisten dalam berusaha dan menghadapi tantangan.</li>
   <li><strong>Jenius</strong> <br />Setan paling pintar dalam mencari cara agar manusia tergoda. Kita harus pintar mencari celah agar usaha kita, apapun itu, bisa mengantarkan kita kepada keadaan yang kita impikan.</li>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Kategori: Tutorial Script InDesign | Pandu van Java]]></title>
-  <link href="http://nurulhuda.github.io/blog/categories/tutorial-script-indesign/atom.xml" rel="self"/>
-  <link href="http://nurulhuda.github.io/"/>
-  <updated>2013-07-25T00:57:26-04:00</updated>
-  <id>http://nurulhuda.github.io/</id>
+  <link href="http://nurulhuda.github.com/blog/categories/tutorial-script-indesign/atom.xml" rel="self"/>
+  <link href="http://nurulhuda.github.com/"/>
+  <updated>2013-08-28T05:08:21-04:00</updated>
+  <id>http://nurulhuda.github.com/</id>
   <author>
     <name><![CDATA[Nurul Huda]]></name>
     <email><![CDATA[elhuda34@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-2/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2/"/>
     <updated>2013-07-18T03:05:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-2</id>
+    <id>http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-2</id>
     <content type="html"><![CDATA[<h2 id="menggambar-poligon-tidak-beraturan">Menggambar Poligon Tidak Beraturan</h2>
 
 <p><img class="center" src="/images/innovations.png"></p>
@@ -478,9 +478,9 @@ Baris 51-194 adalah koordinat titik-titik pada poligon-2 relatif terhadap posisi
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-1/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1/"/>
     <updated>2013-07-18T01:33:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/07/menggambar-poligon-1</id>
+    <id>http://nurulhuda.github.com/blog/2013/07/menggambar-poligon-1</id>
     <content type="html"><![CDATA[<h2 id="menggambar-poligon-beraturan">Menggambar Poligon Beraturan</h2>
 
 <p>Poligon beraturan adalah bangun segi banyak yang memiliki bentuk yang teratur, misalnya segitiga, segiempat, segilima, dst. Dengan menambahkan inset, kita bisa membuat poligon yang berbentuk bintang segitiga, segilima, segidelapan, dst.</p>
@@ -523,9 +523,9 @@ Baris 51-194 adalah koordinat titik-titik pada poligon-2 relatif terhadap posisi
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/06/menggambar-objek/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/06/menggambar-objek/"/>
     <updated>2013-06-06T04:41:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/06/menggambar-objek</id>
+    <id>http://nurulhuda.github.com/blog/2013/06/menggambar-objek</id>
     <content type="html"><![CDATA[<h2 id="menggambar-segiempat-dan-lingkaran">Menggambar Segiempat dan Lingkaran</h2>
 
 <p><em>Sintaks:</em><br />
@@ -575,9 +575,9 @@ menggambar lingkaran: <code>obj.ovals.add();</code></p>
   
   <entry>
     <title type="html"><![CDATA[Tutorial Script InDesign CS3]]></title>
-    <link href="http://nurulhuda.github.io/blog/2013/03/menggambar-garis/"/>
+    <link href="http://nurulhuda.github.com/blog/2013/03/menggambar-garis/"/>
     <updated>2013-03-14T12:26:00-04:00</updated>
-    <id>http://nurulhuda.github.io/blog/2013/03/menggambar-garis</id>
+    <id>http://nurulhuda.github.com/blog/2013/03/menggambar-garis</id>
     <content type="html"><![CDATA[<h2 id="menggambar-garis">Menggambar Garis</h2>
 
 <p>Sebelum mempelajari cara menggambar garis dengan script, terlebih dahulu saya mengajak anda untuk mengingat sejenak pelajaran Matematika SD Kelas VI, yaitu mengenai ruas garis. Ruas garis AB adalah sebuah ruas garis yang menghubungkan titik A dan titik B. Jadi, untuk menggambar suatu garis terlebih dahulu kita harus menentukan koordinat titik A dan B.</p>
